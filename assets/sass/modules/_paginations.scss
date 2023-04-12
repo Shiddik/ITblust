@@ -1,0 +1,52 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+  .prev,
+  .next
+  {
+    span {
+      display: none;
+    }
+  }
+
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #9990b8;
+    border-radius: 50%;
+    border: 2px solid #eaebec;
+    height: 60px;
+    width: 60px;
+    line-height: 56px;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      background: $primary-color;
+      color: #FFFFFF;
+    }
+
+    &.current {
+      background: $primary-color;
+      border-color: $primary-color;
+      color: #FFFFFF;
+    }
+
+    &.next {
+      width: 82px;
+    }
+
+    &.prev {
+      width: 112px;
+    }
+  }
+}
