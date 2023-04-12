@@ -7,7 +7,7 @@
     <meta name="description" content="ITblust - IT Solutions Sass Html5 Template">
     <meta name="keywords"
           content="agency, audit, broker, business, company, consulting, corporate, creative, financial, portfolio, responsive, startup">
-    <meta name="author" content="ThemeEarth">
+    <meta name="author" content="BoomDevs">
 
     <title>ITblust - IT Solutions Sass Html5 Template</title>
 
@@ -24,6 +24,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -61,7 +62,12 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-6 d-flex align-items-center">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo.png" alt=""/></a>
+                        <a href="index.html" class="site-logo">
+                            <img src="assets/images/logo.png" alt="logo"/>
+                        </a>
+                        <a href="index.html" class="responsive-logo">
+                            <img src="assets/images/logo.png" alt="logo"/>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-9 d-flex align-items-center justify-content-end">
@@ -137,9 +143,9 @@
             <!-- Blog Post List Start -->
             <div class="col-lg-8 order-2 order-lg-1 post-list pr-25">
                 <!-- Single Blog Start -->
-                <article class="single-post  mb-50">
+                <article class="single-post post-format-image mb-50">
                     <div class="post-img mb-30">
-                        <a href="#">
+                        <a href="blog-details.html">
                             <img src="assets/images/06.jpg" alt="Blog Image"/>
                         </a>
                     </div>
@@ -149,18 +155,23 @@
                             <span><a href="#"><i class="icofont-user"></i>torun</a></span>
                             <span><a href="#"><i class="icofont-speech-comments"></i>no comment</a></span>
                         </div>
-                        <h2 class="post-title"><a href="#">Monthly Web Development To apdate React Hooks Cons</a></h2>
+                        <h2 class="post-title"><a href="blog-details.html">Monthly Web Development To apdate React Hooks Cons</a></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Bccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatisunde omnis iste natus […]</p>
-                        <a href="#" class="primary-btn">Read More<i class="icofont-long-arrow-right"></i></a>
+                        <a href="blog-details.html" class="primary-btn">Read More<i class="icofont-long-arrow-right"></i></a>
                     </div>
                 </article>
                 <!-- Single Blog End -->
                 <!-- Single Blog Start -->
-                <article class="single-post  mb-50">
+                <article class="single-post post-format-video mb-50">
                     <div class="post-img mb-30">
-                        <a href="#">
-                            <img src="assets/images/06.jpg" alt="Blog Image"/>
-                        </a>
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
+                        <div class="popup-video-wrapper">
+                            <div class="video-btn">
+                                <a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="mfp-iframe video-play">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="post-desc mb-20">
                         <div class="post-meta-info mb-15">
@@ -168,18 +179,21 @@
                             <span><a href="#"><i class="icofont-user"></i>torun</a></span>
                             <span><a href="#"><i class="icofont-speech-comments"></i>no comment</a></span>
                         </div>
-                        <h2 class="post-title"><a href="#">Monthly Web Development To apdate React Hooks Cons</a></h2>
+                        <h2 class="post-title"><a href="blog-details.html">Monthly Web Development To apdate React Hooks Cons</a></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Bccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatisunde omnis iste natus […]</p>
-                        <a href="#" class="primary-btn">Read More<i class="icofont-long-arrow-right"></i></a>
+                        <a href="blog-details.html" class="primary-btn">Read More<i class="icofont-long-arrow-right"></i></a>
                     </div>
                 </article>
                 <!-- Single Blog End -->
                 <!-- Single Blog Start -->
-                <article class="single-post  mb-50">
-                    <div class="post-img mb-30">
-                        <a href="#">
-                            <img src="assets/images/06.jpg" alt="Blog Image"/>
-                        </a>
+                <article class="single-post post-format-gallery mb-50">
+                    <div class="post-gallery mb-30">
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
+                        <img src="assets/images/06.jpg" alt="Blog Image"/>
                     </div>
                     <div class="post-desc mb-20">
                         <div class="post-meta-info mb-15">
@@ -187,9 +201,9 @@
                             <span><a href="#"><i class="icofont-user"></i>torun</a></span>
                             <span><a href="#"><i class="icofont-speech-comments"></i>no comment</a></span>
                         </div>
-                        <h2 class="post-title"><a href="#">Monthly Web Development To apdate React Hooks Cons</a></h2>
+                        <h2 class="post-title"><a href="blog-details.html">Monthly Web Development To apdate React Hooks Cons</a></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Bccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatisunde omnis iste natus […]</p>
-                        <a href="#" class="primary-btn">Read More<i class="icofont-long-arrow-right"></i></a>
+                        <a href="blog-details.html" class="primary-btn">Read More<i class="icofont-long-arrow-right"></i></a>
                     </div>
                 </article>
                 <!-- Single Blog End -->
@@ -230,46 +244,37 @@
                             <span class="animate-line-bar"></span>
                             <h4 class="widget-title">Popular Feeds</h4>
                         </div>
-                        <div class="widget-recent-post">
-                            <div class="recent-post-inner">
-                                <div class="media">
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="assets/images/r1.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="single-recent-desc">
-                                                <h3><a href="#">Learn to how to wordpress theme setup in live server.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
+                        <div class="widget-latest-post">
+
+                            <ul class="latest-post-list">
+                                <li>
+                                    <div class="latest-post-thumb">
+                                        <img src="assets/images/r1.jpg" alt="">
                                     </div>
-                                </div>
-                                <div class="media">
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="assets/images/r2.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="single-recent-desc">
-                                                <h3><a href="#">How to increase your site speed in gtmatrix</a></h3>
-                                            </div>
-                                        </div>
+                                    <div class="latest-post-desc">
+                                        <h3 class="latest-post-title"><a href="#">Monthly Web Development To Update React</a></h3>
+                                        <span class="latest-post-meta">September 25, 2019</span>
                                     </div>
-                                </div>
-                                <div class="media">
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="assets/images/r2.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="single-recent-desc">
-                                                <h3><a href="#">10 way secure your site & protect malicius</a></h3>
-                                            </div>
-                                        </div>
+                                </li>
+                                <li>
+                                    <div class="latest-post-thumb">
+                                        <img src="assets/images/r1.jpg" alt="">
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="latest-post-desc">
+                                        <h3 class="latest-post-title"><a href="#">Understanding API-Based Platforms Guide For Product</a></h3>
+                                        <span class="latest-post-meta">September 25, 2019</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="latest-post-thumb">
+                                        <img src="assets/images/r1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-post-desc">
+                                        <h3 class="latest-post-title"><a href="#">Quis Nostrud Exercitation Ullamco Laboris Nisi</a></h3>
+                                        <span class="latest-post-meta">September 25, 2019</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="single-widget mb-40">
@@ -393,8 +398,7 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/owl.animate.js"></script>
+<script src="assets/js/slick.min.js"></script>
 <script src="assets/js/jquery.counterup.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
 <script src="assets/js/jquery.easing.min.js"></script>

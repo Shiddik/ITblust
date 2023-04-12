@@ -206,61 +206,57 @@
   }
 }
 
-/*Recent News Category*/
-.widget-recent-post {
-  margin-bottom: 20px;
-}
-
-.single-recent-desc {
-  h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-
-    a {
-      color: $text-color;
-    }
-  }
-
+/* Latest Post Widget*/
+.latest-post-list {
   li {
-    display: inline-block;
-    margin-right: 10px;
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #eaedff;
+    padding: 20px 0;
 
-    a i {
-      color: $primary-color;
-      margin-right: 5px;
+    &:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    .latest-post-thumb {
+      flex-shrink: 0;
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+    .latest-post-desc {
+      .latest-post-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+
+        a {
+          color: #667286;
+          display: inline-block;
+          font-size: 15px;
+          font-weight: 400;
+          position: relative;
+          text-transform: capitalize;
+          transition: 0.3s;
+          line-height: 1;
+
+          &:hover {
+            color: $primary-color;
+            transition: 0.03s;
+          }
+        }
+      }
+      .latest-post-meta {
+        font-size: 12px;
+      }
     }
   }
-}
-
-.recent-post {
-  display: inline-block;
-  padding: 12px 0;
-  width: 100%;
-}
-
-.recent-post-thumb {
-  float: left;
-  margin-right: 25px;
-}
-
-.single-recent-desc {
-  li a {
-    color: $primary-color;
-
-    span {
-      color: #999999;
-    }
-  }
-
-  a:hover {
-    transition: all 0.4s ease-in-out 0s;
-    color: $primary-color;
-  }
-}
-
-.recent-post-inner .media {
-  margin-top: 0;
 }
 
 /*Widget Tag*/
