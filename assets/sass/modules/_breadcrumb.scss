@@ -1,0 +1,64 @@
+.page-breadcrumb-sec {
+  padding: 160px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-overlay {
+  @include bg-opacity($primary-color, 0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.page-heading h1 {
+  font-size: 54px;
+  text-align: center;
+  color: $white-color;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.breadcrumb-list {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 14px;
+
+    a {
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-family: $heading-font;
+      line-height: 1;
+      color: #fff;
+    }
+
+    &:last-child a {
+      color: $white-color;
+    }
+
+    &::before {
+      content: "\ea7c";
+      position: absolute;
+      right: -8px;
+      font-size: 16px;
+      color: #fff;
+      font-family: Icofont;
+    }
+
+    &:last-child::before {
+      display: none;
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.footer-widget-title {
+  font-family: $heading-font;
+  font-size: 20px;
+  color: $white;
+  position: relative;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+.footer-widget {
+  margin: 60px 0;
+
+  // Footer Info Widget
+  .footer-widget-info {
+    p {
+      color: $gray-white;
+      padding-right: 68px;
+      margin-bottom: 30px;
+    }
+    .footer-logo {
+      margin-bottom: 34px;
+      display: inline-block;
+    }
+  }
+
+  // Footer Menu Widget
+  .footer-widget-menu {
+    ul {
+      margin-top: -5px;
+    }
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 10px;
+
+      //&::before {
+      //  content: "";
+      //  left: 0px;
+      //  top: 50%;
+      //  position: absolute;
+      //  color: #fff;
+      //  width: 6px;
+      //  height: 6px;
+      //  -webkit-transform: translateY(-50%);
+      //  transform: translateY(-50%);
+      //  border: 1px solid $text-color;
+      //  border-radius: 100%;
+      //}
+
+      &:last-child {
+        padding-top: 0px;
+      }
+
+      a {
+        color: $gray-white;
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+    }
+  }
+
+  // Footer Contact Widget
+  .footer-widget-contact {
+    p {
+      color: $gray-white;
+    }
+    .footer-contact ul li {
+      //display: flex;
+      //width: 100%;
+      margin-bottom: 20px;
+      //align-items: center;
+      //gap: 10px;
+
+      .contact-icon {
+        color: $primary-color;
+        float: left;
+        margin-right: 11px;
+      }
+      .contact-text {
+        color: $gray-white;
+        font-size: 15px;
+
+        h4 {
+          color: $gray-white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+}
+
+
+// Footer Bottom Section
+.footer-bottom-sec {
+  padding: 20px 0;
+  border-top: 1px solid $light-black;
+
+  .copyright-text {
+      p {
+        color: $gray-white;
+        margin-bottom: 0;
+      }
+  }
+  .credit-text {
+    p {
+      color: $gray-white;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    a {
+      color: $primary-color;
+    }
+  }
+
+}
