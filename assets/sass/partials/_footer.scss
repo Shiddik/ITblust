@@ -5,6 +5,26 @@
   position: relative;
   padding-bottom: 24px;
   margin-bottom: 30px;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    height: 3px;
+    background: $primary-color;
+    content: "";
+    bottom: 0;
+  }
+
+  &:before {
+    width: 15px;
+    left: 0;
+  }
+  &:after {
+    width: 40px;
+    left: 25px;
+  }
+
 }
 .footer-widget {
   margin: 60px 0;
@@ -34,20 +54,6 @@
       width: 100%;
       padding-bottom: 10px;
 
-      //&::before {
-      //  content: "";
-      //  left: 0px;
-      //  top: 50%;
-      //  position: absolute;
-      //  color: #fff;
-      //  width: 6px;
-      //  height: 6px;
-      //  -webkit-transform: translateY(-50%);
-      //  transform: translateY(-50%);
-      //  border: 1px solid $text-color;
-      //  border-radius: 100%;
-      //}
-
       &:last-child {
         padding-top: 0px;
       }
@@ -66,11 +72,7 @@
       color: $gray-white;
     }
     .footer-contact ul li {
-      //display: flex;
-      //width: 100%;
       margin-bottom: 20px;
-      //align-items: center;
-      //gap: 10px;
 
       .contact-icon {
         color: $primary-color;
@@ -117,4 +119,66 @@
     }
   }
 
+}
+
+// Footer Subscribe Section
+.subscribe-sec {
+  border-bottom: 1px solid #1b2f3e;
+}
+// Subscribe Form
+.subscribe-form-widget {
+  display: flex;
+  gap: 5px;
+
+  .single-field {
+      flex-grow: 1;
+
+      input {
+          background-color: $light-black;
+          color: #cbcbcb;
+          height: 60px;
+          padding: 0 30px;
+          font-size: 15px;
+          border-radius: 5px;
+          width: 100%;
+      }
+  }
+  .submit-btn {
+    background-color: $primary-color;
+    color: $white;
+    cursor: pointer;
+    padding: 0 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-transform: capitalize;
+  }
+}
+
+// Social Widget
+.social-widget {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+
+  a {
+    background-color: $light-black;
+    color: #cbcbcb;
+    height: 60px;
+    width: 60px;
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      background-color: $primary-color;
+      color: $white-color;
+    }
+  }
 }

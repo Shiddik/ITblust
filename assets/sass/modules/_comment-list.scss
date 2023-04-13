@@ -1,0 +1,59 @@
+// Comment
+.commenter-list-sec {
+  .comment-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #140a20;
+  }
+  .single-commenter {
+    display: flex;
+    gap: 20px;
+    padding: 40px 30px;
+    margin-top: 20px;
+
+    .commenter-img {
+      width: 100px;
+      flex-shrink: 0;
+    }
+    .commenter-info {
+      h4 {
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: $primary-color;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .commenter-time {
+      font-size: 16px;
+      font-weight: 600;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .replay-button {
+      a {
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 600;
+
+        i {
+          color: $primary-color;
+          margin-right: 10px;
+        }
+      }
+      float: right;
+    }
+  }
+}
+
+
+
+
+
+
+
+

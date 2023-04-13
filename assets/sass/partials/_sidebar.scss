@@ -23,6 +23,16 @@
 .single-widget {
   border: 2px solid #eaedff;
   padding: 30px;
+
+  // Social Widget
+  .social-widget {
+    justify-content: flex-start;
+
+    a {
+      background-color: $secondary-color;
+      color: $white-color;
+    }
+  }
 }
 .widget-title-sec {
   position: relative;
@@ -75,66 +85,47 @@
   }
 }
 
-/*Brochures Widget*/
-.brochures-widget li {
-  &:first-child::before {
-    content: "\f1c1";
-    font-family: fontawesome;
-    left: 0px;
-    top: 0px;
-    position: relative;
-    color: #fff;
-    padding-right: 10px;
-  }
+/* About Info Widget*/
+.widget-about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-  &:last-child::before {
-    content: "\f0f6";
-    font-family: fontawesome;
-    left: 0px;
-    top: 0px;
-    position: relative;
-    color: #fff;
-    padding-right: 10px;
-  }
+  .about-desc {
+    text-align: center;
 
-  display: inline-block;
-  width: 100%;
-  padding: 10px 20px;
-  position: relative;
-  background: $primary-color;
-  margin-bottom: 5px;
-  transition: all 0.4s ease 0s;
-
-  a {
-    color: #fff;
-  }
-
-  &:hover {
-    background: #383949;
-    transition: all 0.4s ease 0s;
-
-    a, &::before, i {
-      color: #fff;
+    .about-title {
+      font-size: 18px;
+      letter-spacing: 1px;
     }
   }
 
-  a span {
-    float: right;
-    color: #fff;
+  .about-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .social-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      transition: 0.03s;
+
+      &:hover {
+        color: $primary-color;
+        transition: 0.03s;
+      }
+    }
   }
 }
 
 /*Search Widget*/
-
-//.search-field,
-//.widget-cat,
-//.widget-recent-post,
-//.widget-tag {
-//  border: 2px solid #eaedff;
-//  padding: 30px;
-//}
-
-.search-field {
+.widget-search {
   form {
     display: inline-block;
     width: 100%;

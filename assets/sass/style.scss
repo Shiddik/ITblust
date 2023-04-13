@@ -260,7 +260,9 @@ Theme Default CSS
 17.Sidebar
 =================*/
 @import "partials/sidebar";
+@import "modules/comment-list";
 @import "modules/comment-form";
+
 /*
 Footer Section 
 ======================*/

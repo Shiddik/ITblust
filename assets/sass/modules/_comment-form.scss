@@ -8,13 +8,8 @@
   font-size: 26px;
   font-weight: 700;
   color: #140a20;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
-
-.commentar-sec .media-body p {
-  margin-bottom: 0;
-}
-
 #commentform {
   background: #faf9ff;
   padding: 40px;
@@ -74,16 +69,3 @@
     transition: all 0.4s ease 0s;
   }
 }
-
-//.comment-title {
-//  margin-top: 60px;
-//
-//  h2 {
-//    font-size: 24px;
-//    border-bottom: 1px solid #f2f2f2;
-//    display: inline-block;
-//    width: 100%;
-//    padding-bottom: 20px;
-//    color: $secondary-color;
-//  }
-//}
