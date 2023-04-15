@@ -1,5 +1,4 @@
 .header-top {
-
   .header-contact-info {
     display: flex;
     align-items: center;
@@ -48,56 +47,6 @@
     }
   }
 }
-//.header-left {
-//  padding: 10px 0;
-//}
-//.header-left ul {
-//  display: inline-block;
-//}
-//.header-left li {
-//  padding-right: 40px;
-//  position: relative;
-//  display: inline-block;
-//  color: #fff;
-//  position: relative;
-//}
-//.header-left li:last-child{padding-right:0}
-//.header-left li i {
-//  color: #ff4500;
-//  margin-right: 6px;
-//  font-size: 20px;
-//  margin-right: 10px;
-//}
-//.header-right-div {
-//  text-align: right;
-//}
-//.header-right {
-//  text-align: right;
-//  position: relative;
-//  z-index: 1;
-//  padding: 10px 0;
-//  display: inline-block;
-//  z-index:99
-//}
-//.soical-profile {
-//  padding-top: 7px;
-//  margin-right: 40px;
-//}
-//.soical-profile ul,
-//.soical-profile li {
-//  display: inline-block;
-//}
-//.soical-profile li a i{
-//  color:#fff;
-//  width: 30px;
-//  height: 30px;
-//  text-align: center;
-//  line-height: 1.8;}
-//.soical-profile li a i:hover {
-//  color: #ff4500;
-//}
-
-
 
 // Start Header Nav
 .header-sec.sticky-header {
@@ -116,7 +65,6 @@
 }
 
 .logo {
-  padding: 38px 0;
   position: relative;
   z-index: 2;
 
@@ -150,13 +98,13 @@
       }
       a {
         display: block;
-        padding: 40px 0;
+        padding: 36px 0;
         text-decoration: none;
         text-transform: capitalize;
         transition: all 0.4s ease 0s;
         position: relative;
         font-weight: 400;
-        color:$extra-black;
+        color:$black;
         font-family: $heading_font;
         font-size: 16px;
         margin-left: 28px;
@@ -239,87 +187,12 @@
   }
 }
 
-//.search-bar-icon {
-//  display: inline-block;
-//  padding: 38px 0px;
-//  position: absolute;
-//  right: 0;
-//  top: 0;
-//}
-//
-//.site-search {
-//  span {
-//    display: inline-block;
-//    width: 30px;
-//    height: 30px;
-//    text-align: center;
-//    cursor: pointer;
-//    transition: all 0.4s ease 0s;
-//    line-height: 30px;
-//    position: relative;
-//    &::before {
-//      position: absolute;
-//      content: "";
-//      height: 50%;
-//      width: 1px;
-//      background:#a1b4c5;
-//      left: -8px;
-//      top: 8px;
-//    }
-//  }
-//  &.open span i.icofont-search-1::before {
-//    content: "\eedd" !important;
-//  }
-//  i {
-//    color:$text-color;
-//  }
-//}
-//
-//.search-forum {
-//
-//  left: -270px;
-//  position: absolute;
-//  top: 103px;
-//  transition: all 0.4s ease 0s;
-//  z-index: 99;
-//}
-
 .animation {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
-@-webkit-keyframes slideUpIn {
-  0% {
-    -webkit-transform: translateY(40px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-  }
-
-  0% {
-    -webkit-transform: translateY(40px);
-  }
-}
-
-
-@keyframes slideUpIn {
-  0% {
-    transform: translateY(40px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-
-  0% {
-    transform: translateY(40px);
-  }
-}
-
 
 .slideUpIn {
   -webkit-animation-name: slideUpIn;
@@ -336,15 +209,7 @@
   box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.03);
   background: #fff;
 }
-//.header-sec.sticky_menu .applay-button a:first-child{
-//  background: #fafafa;
-//}
-//.header-sec.sticky_menu .applay-button a:first-child:hover{
-//  background: $primary-color;
-//}
-//.applay-button-area {
-//  padding-left: 0;
-//}
+
 .header-btn {
   margin-left: 40px;
 }

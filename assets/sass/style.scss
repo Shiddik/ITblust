@@ -21,249 +21,49 @@
 12.Call To Action Section
 13.Team section
 14.Testimonial CSS
-15.Page Heading Section
+15.Page Breadcrumb Section
 16.Blog Section
 17.Sidebar
 18.Pricing Section
 19.About Us Section
 Footer Section 
 
-
 ===========================*/
 
-/*
- cerebri_sans_semibold Font
-====================================== */
 
-@font-face {
-    font-family: 'cerebri_sans';
-    src: url('../webfonts/cerebri_sans_semibold-webfont.woff2') format('woff2'),
-         url('../webfonts/cerebri_sans_semibold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  /* 1.Imported All CSS File */
+  @import "partials/file-import";
 
-}
+  /* Theme Default CSS */
+  @import 'variables';
+  @import 'mixin';
+  @import "partials/theme-default";
+  @import "keyframes";
 
-/*
- Default Container Width
-=========================== */
-.container {
-  max-width: 1200px;
-}
-
-
-/*
- Mixin 
-=========================== */
-@import 'mixin';
-
-
-/*
-1.Imported All CSS File 
-=========================== */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
-
-@import url(../css/bootstrap.min.css);
-@import url(../css/flaticon.css);
-@import url(../css/all-fontawesome.min.css);
-@import url(../css/icofont.min.css);
-@import url(../css/magnific-popup.css);
-@import url(../css/owl.carousel.min.css);
-@import url(../css/animate.css);
-@import "keyframes";
-
-/*
-Theme Default CSS
-=========================== */
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: none; }
-  
-  html,
-  body {
-  height: 100%;
-  font-size: 16px;
-  font-family:$body-font;
-  color:$text-color;
-  vertical-align: baseline;
-  line-height: 28px;
-  }
-  a:focus {
-	outline: 0px solid;
-  }
-  img {
-	max-width: 100%;
-	height: auto;
-  }
-  p {
-	margin: 0 0 20px;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 0px;
-    font-family: $heading-font !important;
-    color: $extra-black;
-    font-style: normal;
-  }
-  
-  h1 {
-  font-size: 32px;
-  }
-  h2 {
-  font-size: 18px;
-  }
-  h3 {
-  font-size: 16px;
-  }
-  a,
-  button,
-  a:active,
-  a:focus,
-  a:hover {
-    color: inherit;
-    outline: medium none;
-    text-decoration: none;
-  }
-  ul {
-	list-style: outside none none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  ::-moz-selection {
-	background: $extra-black;
-	text-shadow: none;
-    color: #fff
-  }
-  ::selection {
-    background: $extra-black;
-    text-shadow: none;
-    color: #fff
-  }
-  textarea:focus,
-  input:focus{
-	  outline: none;
-  }
-
-
-
-
-
-  /*
-  1.Preloader
-  ============================*/
+  /* 1.Preloader */
   @import "modules/preeloader";
   
- /*
-  2.Scrollup
-  ==============*/
-  #scrollUp {
-    bottom: 14px;
-    color: $primary-color;
-    font-size: 40px;
-    right: 20px;
-    text-decoration: none;
-    i {
-      display: block;
-      padding-top: 8px;
-    }    
-  }
-/*
-3. Nav Menu CSS
-=========================== */
-@import "partials/header";
-@import 'modules/meanmenu';
+ /* 2.Scrollup */
+  @import "partials/scrollup";
 
- /*
-  8.Title Section
-  =================*/
-  .sec-title {
-    text-align: center;
-    margin: 0 150px 50px 150px;
-  
-    h1 {
-      font-size: 32px;
-      text-transform: capitalize;
-      color: $secondary-color;
-      font-weight: bold;
-  
-      span {
-        font-weight: normal;
-      }
-    }
-  }
-  
-  .border-shape {
-    &::before {
-      background: #ddd none repeat scroll 0 0;
-      bottom: 0;
-      content: "";
-      height: 1px;
-      left: 0px;
-      position: absolute;
-      top: 3px;
-      width: 90px;
-      margin: 0px auto;
-      left: 0;
-      right: 0;
-    }
-  
-    background: #ddd;
-    display: block;
-    height: 1px;
-    left: 0;
-    margin: 20px auto;
-    position: relative;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 350px;
-  
-    &::after {
-      background: #ddd none repeat scroll 0 0;
-      bottom: 0;
-      content: "";
-      height: 1px;
-      position: absolute;
-      left: 0;
-      text-align: center;
-      top: 6px;
-      width: 70px;
-      margin: 0px auto;
-      left: 0;
-      right: 0;
-    }
-  }
-  
-  .sec-title p {
-    margin-bottom: 0;
-  }
+  /* 3. Nav Menu CSS */
+  @import "partials/header";
+  @import 'modules/meanmenu';
 
- /*
-  15.Page Heading Section
-  ==========================*/
+ /* 8.Title Section */
+  @import "modules/title-section";
+
+ /* 15.Page Breadcrumb Section */
  @import "modules/breadcrumb";
 
-/*
-16.Blog Section
-==================*/
-@import "modules/blog-card";
-@import "modules/paginations";
+  /* 16.Blog Section */
+  @import "modules/post-card";
+  @import "modules/paginations";
 
-/*
-17.Sidebar
-=================*/
-@import "partials/sidebar";
-@import "modules/comment-list";
-@import "modules/comment-form";
+  /* 17.Sidebar */
+  @import "partials/sidebar";
+  @import "modules/comment-list";
+  @import "modules/comment-form";
 
-/*
-Footer Section 
-======================*/
-@import "partials/footer";
+  /* Footer Section */
+  @import "partials/footer";

@@ -1,134 +1,3 @@
-//Variable Class Start
-$primary-color: #096bd8;
-$secondary-color: #091B29;
-$light-black: #1b2f3e;
-$dark-black : #0A1C2A;
-$extra-black: #333333;
-$text-color: #696969;
-$white-color: #ffffff;
-$gray-color: #f8f8f8;
-$gray-white: #b8b8b8;
-$white: #fff;
-$body-font:'Karla', sans-serif;
-$heading-font: 'cerebri_sans', sans-serif;
-
-
-
-.bg-black{
-  background-color:$secondary-color;
-}
-.bg-gray{
-  background-color:$gray-color;
-}
-.page-bg{
-  background-color:$dark-black;
-}
-
-// Padding Left
-.pl-50 {
-  padding-left: 50px;
-}
-
-// Padding Right
-.pr-25 {
-  padding-right: 25px;
-}
-// Padding Top
-.pt-120 {
-  padding-top: 120px;
-}
-.pt-80 {
-  padding-top: 80px;
-}
-.pt-25 {
-  padding-top: 25px;
-}
-
-// Padding Bottom
-.pb-80 {
-  padding-bottom: 80px;
-}
-.pb-50 {
-  padding-bottom: 50px;
-}
-.pb-25 {
-  padding-bottom: 25px;
-}
-
-// Margin Top
-.mt-50 {
-  margin-top: 50px;
-}
-// Margin Bottom
-.mb-50 {
-  margin-bottom: 80px;
-}
-.mb-50 {
-  margin-bottom: 50px;
-}
-.mb-40 {
-  margin-bottom: 40px;
-}
-.mb-30 {
-  margin-bottom: 30px;
-}
-.mb-20 {
-  margin-bottom: 20px;
-}
-.mb-15 {
-  margin-bottom: 15px;
-}
-
-
-
-@-webkit-keyframes animatelinebar {
-  0% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-
-  100% {
-    -webkit-transform: translateX(25px);
-    transform: translateX(25px);
-  }
-}
-
-@keyframes animatelinebar {
-  0% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-
-  100% {
-    -webkit-transform: translateX(25px);
-    transform: translateX(25px);
-  }
-}
-
-.animate-line-bar {
-  position: relative;
-  display: inline-block;
-  background: $primary-color;
-  width: 25px;
-  height: 4px;
-  overflow: hidden;
-
-  &:after {
-    position: absolute;
-    content: "";
-    width: 35px;
-    height: 4px;
-    left: 0;
-    top: 0;
-    border-left: 10px solid #ffffff;
-    border-right: 10px solid #ffffff;
-    -webkit-animation: animatelinebar 2s linear infinite;
-    animation: animatelinebar 2s linear infinite;
-  }
-}
-
-
-
 @mixin overlay($bg-color){
     position:absolute;
     top: 0;
@@ -176,14 +45,14 @@ $heading-font: 'cerebri_sans', sans-serif;
     position: $position;
     repeat: $repeat;
 }
-position: absolute;
-content: '';
-top: 0;
-left: 0;
-width: 100%;
-height: 100px;
-z-index: 0;
-background-size: 100%;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 0;
+  background-size: 100%;
 }
 
 //Before Icon mixin
@@ -282,7 +151,6 @@ background-size: 100%;
 
 
 //transition
-
 @mixin transition{
   transition: all 0.5s ease-out;
 }

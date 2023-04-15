@@ -30,7 +30,7 @@
 
     a {
       background-color: $secondary-color;
-      color: $white-color;
+      color: $white;
     }
   }
 }
@@ -44,6 +44,28 @@
     font-size: 21px;
     margin-bottom: 0px;
   }
+  .animate-line-bar {
+    position: relative;
+    display: inline-block;
+    background: $primary-color;
+    width: 25px;
+    height: 4px;
+    overflow: hidden;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 35px;
+      height: 4px;
+      left: 0;
+      top: 0;
+      border-left: 10px solid #ffffff;
+      border-right: 10px solid #ffffff;
+      -webkit-animation: animatelinebar 2s linear infinite;
+      animation: animatelinebar 2s linear infinite;
+    }
+  }
+
 }
 .service-cat-widget {
   margin-bottom: 50px;
@@ -114,11 +136,11 @@
     gap: 10px;
 
     a {
-      transition: 0.03s;
+      @include transition;
 
       &:hover {
         color: $primary-color;
-        transition: 0.03s;
+        @include transition;
       }
     }
   }
@@ -203,6 +225,13 @@
       border-top: 1px solid #eaedff;
       padding: 20px 0;
 
+      a {
+        padding-left: 0;
+
+        &:before {
+          display: none;
+        }
+      }
       &:first-child {
         padding-top: 0;
         border-top: 0;
@@ -232,12 +261,12 @@
             font-weight: 400;
             position: relative;
             text-transform: capitalize;
-            transition: 0.3s;
+            @include transition;
             line-height: 1;
 
             &:hover {
               color: $primary-color;
-              transition: 0.03s;
+              @include transition;
             }
           }
         }
@@ -268,7 +297,7 @@
         margin-right: 0px;
 
         &:hover {
-          color: $white-color;
+          color: $white;
           background: $primary-color;
         }
       }
@@ -290,7 +319,7 @@
       margin-right: 0px;
 
       &:hover {
-        color: $white-color;
+        color: $white;
         background: $primary-color;
       }
     }

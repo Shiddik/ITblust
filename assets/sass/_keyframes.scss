@@ -22,3 +22,59 @@
     box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
   }
 }
+
+// Animate Line Bar
+@-webkit-keyframes animatelinebar {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  100% {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+  }
+}
+
+@keyframes animatelinebar {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  100% {
+    -webkit-transform: translateX(25px);
+    transform: translateX(25px);
+  }
+}
+
+// Slide Up Down
+
+@-webkit-keyframes slideUpIn {
+  0% {
+    -webkit-transform: translateY(40px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+
+  0% {
+    -webkit-transform: translateY(40px);
+  }
+}
+
+
+@keyframes slideUpIn {
+  0% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+  0% {
+    transform: translateY(40px);
+  }
+}

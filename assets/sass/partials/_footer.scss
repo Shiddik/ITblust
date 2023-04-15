@@ -32,7 +32,7 @@
   // Footer Info Widget
   .footer-widget-info {
     p {
-      color: $gray-white;
+      color: $black-100;
       padding-right: 68px;
       margin-bottom: 30px;
     }
@@ -59,7 +59,7 @@
       }
 
       a {
-        color: $gray-white;
+        color: $black-100;
         text-transform: capitalize;
         font-size: 15px;
       }
@@ -69,7 +69,7 @@
   // Footer Contact Widget
   .footer-widget-contact {
     p {
-      color: $gray-white;
+      color: $black-100;
     }
     .footer-contact ul li {
       margin-bottom: 20px;
@@ -80,11 +80,11 @@
         margin-right: 11px;
       }
       .contact-text {
-        color: $gray-white;
+        color: $black-100;
         font-size: 15px;
 
         h4 {
-          color: $gray-white;
+          color: $black-100;
           font-size: 15px;
         }
       }
@@ -97,17 +97,17 @@
 // Footer Bottom Section
 .footer-bottom-sec {
   padding: 20px 0;
-  border-top: 1px solid $light-black;
+  border-top: 1px solid $black;
 
   .copyright-text {
       p {
-        color: $gray-white;
+        color: $black-100;
         margin-bottom: 0;
       }
   }
   .credit-text {
     p {
-      color: $gray-white;
+      color: $black-100;
       margin-bottom: 0;
       display: flex;
       align-items: center;
@@ -134,7 +134,7 @@
       flex-grow: 1;
 
       input {
-          background-color: $light-black;
+          background-color: $black;
           color: #cbcbcb;
           height: 60px;
           padding: 0 30px;
@@ -164,7 +164,7 @@
   justify-content: flex-end;
 
   a {
-    background-color: $light-black;
+    background-color: $black;
     color: #cbcbcb;
     height: 60px;
     width: 60px;
@@ -178,7 +178,7 @@
     &:hover {
       transition: 0.3s;
       background-color: $primary-color;
-      color: $white-color;
+      color: $white;
     }
   }
 }
