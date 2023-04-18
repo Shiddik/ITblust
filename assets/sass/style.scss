@@ -30,10 +30,6 @@ Footer Section
 
 ===========================*/
 
-
-  /* 1.Imported All CSS File */
-  @import "partials/file-import";
-
   /* Theme Default CSS */
   @import 'variables';
   @import 'mixin';
@@ -47,7 +43,7 @@ Footer Section
  /* 2.Scrollup */
   @import "partials/scrollup";
 
-  /* 3. Nav Menu CSS */
+  /* 3.Nav Menu CSS */
   @import "partials/header";
   @import 'modules/meanmenu';
 

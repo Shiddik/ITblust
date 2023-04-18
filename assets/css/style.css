@@ -29,14 +29,6 @@
 Footer Section 
 
 ===========================*/
-/* 1.Imported All CSS File */
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500&display=swap");
-@import url(../css/bootstrap.min.css);
-@import url(../css/flaticon.css);
-@import url(../css/all-fontawesome.min.css);
-@import url(../css/icofont.min.css);
-@import url(../css/magnific-popup.css);
-@import url(../css/animate.css);
 /* Theme Default CSS */
 * {
   margin: 0;
@@ -182,7 +174,7 @@ input:focus {
   margin-bottom: 15px; }
 
 /* WordPress Core
--------------------------------------------------------------- */
+===================*/
 body {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -225,7 +217,7 @@ body {
   width: auto;
   z-index: 100000; }
 
-/*===========================
+/*
  Caption
 ============================*/
 .wp-caption {
@@ -245,7 +237,7 @@ body {
 .wp-caption-text {
   text-align: center; }
 
-/*===========================
+/*
  Galleries
 ============================*/
 .gallery {
@@ -294,7 +286,7 @@ img.emoji {
   width: 15px;
   height: 15px; }
 
-/*===========================
+/*
  Alignments
 ============================*/
 .alignleft {
@@ -314,7 +306,7 @@ img.emoji {
   margin-right: auto !important;
   text-align: center; }
 
-/*===========================
+/*
  Block Unit Test Widget
 ============================*/
 .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
@@ -581,7 +573,7 @@ html {
     display: block;
     padding-top: 8px; }
 
-/* 3. Nav Menu CSS */
+/* 3.Nav Menu CSS */
 .header-top .header-contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
