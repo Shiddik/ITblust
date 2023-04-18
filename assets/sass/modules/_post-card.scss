@@ -1,11 +1,27 @@
-.single-post {
+.postbox {
 
-  .post-title {
+  /* Sticky Post */
+
+  &.sticky {
+    padding: 25px 30px 30px 30px;
+    border: 2px solid $primary-color;
+
+    .post-text {
+      margin-bottom: 0;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .blog-title {
     font-size: 30px;
+    margin-bottom: 20px;
 
     &:hover {
       a {
         color: $primary-color;
+        @include transition;
       }
     }
   }
@@ -46,7 +62,7 @@
       }
   }
   // Post Image
-  .post-img {
+  .post-thumbnail {
     position: relative;
 
     .popup-video-wrapper {
@@ -136,10 +152,11 @@
     }
   }
     // Post Meta
-  .post-meta-info {
+  .post-meta {
       display: flex;
       align-items: center;
       gap: 26px;
+      margin-bottom: 20px;
 
       span {
         letter-spacing: 2px;
@@ -164,7 +181,7 @@
 
   // Blockquote
   blockquote {
-    border-left: solid 5px #1876df;
+    border-left: solid 5px $primary-color;
     padding: 35px 25px !important;
     margin: 25px 0;
     position: relative;
@@ -178,7 +195,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: "IcoFont";
-      color: #13287e;
+      color: $primary-color;
       font-size: 150px;
       line-height: 1;
       opacity: 0.1;
@@ -186,9 +203,13 @@
     }
     p {
       font-size: 20px;
-      color: #233d63;
+      color: $black;
       line-height: 1.3;
       font-weight: 700;
+
+      a {
+        color: $primary-color;
+      }
     }
     footer {
       font-family: $heading-font;

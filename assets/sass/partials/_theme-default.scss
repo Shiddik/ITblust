@@ -64,6 +64,7 @@ a:hover {
   color: inherit;
   outline: medium none;
   text-decoration: none;
+  @include transition;
 }
 ul {
   list-style: outside none none;
