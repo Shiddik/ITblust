@@ -34,6 +34,11 @@
     position: relative;
     padding: 0px 14px;
 
+    &.active {
+      a {
+        color: $primary-color;
+      }
+    }
     a {
       font-size: 17px;
       font-weight: 600;
@@ -41,10 +46,12 @@
       font-family: $heading-font;
       line-height: 1;
       color: #fff;
-    }
+      @include transition;
 
-    &:last-child a {
-      color: $white;
+      &:hover {
+        @include transition;
+        color: $primary-color;
+      }
     }
 
     &::before {

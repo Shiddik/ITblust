@@ -175,6 +175,12 @@
           display: flex;
           align-items: center;
           gap: 10px;
+          @include transition;
+
+          &:hover {
+            color: $primary-color;
+            @include transition;
+          }
         }
       }
   }

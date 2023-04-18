@@ -54,7 +54,7 @@ body {
   line-height: 28px; }
 
 .container {
-  max-width: 1296px; }
+  max-width: 1140px; }
 
 a:focus {
   outline: 0px solid; }
@@ -181,75 +181,17 @@ input:focus {
 .mb-15 {
   margin-bottom: 15px; }
 
+/* WordPress Core
+-------------------------------------------------------------- */
 body {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: hidden; }
 
-/* WordPress Core
--------------------------------------------------------------- */
-.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto; }
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-a img.alignnone {
-  margin: 5px 20px 20px 0; }
-
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.wp-caption {
-  background: #fff;
-  border: 1px solid #f0f0f0;
-  max-width: 96%;
-  /* Image does not overflow the content area */
-  padding: 5px 3px 10px;
-  text-align: center; }
-
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignleft {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px; }
-
-.wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto; }
-
-.wp-caption p.wp-caption-text {
-  font-size: 11px;
-  line-height: 17px;
-  margin: 0;
-  padding: 0 4px 5px; }
+.page-sec .comment-field {
+  margin-bottom: 0;
+  clear: both;
+  padding-top: 0; }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -281,28 +223,51 @@ a img.aligncenter {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */ }
+  z-index: 100000; }
 
-/* Gallery */
-.sticky .post-container {
-  border-radius: 0 0 5px 5px; }
+/*===========================
+ Caption
+============================*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
 
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+  font-size: 14px;
+  font-style: italic; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/*===========================
+ Galleries
+============================*/
 .gallery {
-  margin-bottom: 0.5em; }
+  margin-bottom: 10px; }
 
 .gallery-item {
   display: inline-block;
+  max-width: 33.33%;
   text-align: center;
   vertical-align: top;
   width: 100%;
-  margin-bottom: 30px; }
+  padding-right: 5px !important; }
+
+.gallery-columns-1 .gallery-item {
+  max-width: 100%;
+  width: 100%; }
 
 .gallery-columns-2 .gallery-item {
   max-width: 50%; }
 
 .gallery-columns-3 .gallery-item {
-  max-width: 33.33333%; }
+  max-width: 33.33%; }
 
 .gallery-columns-4 .gallery-item {
   max-width: 25%; }
@@ -311,39 +276,47 @@ a img.aligncenter {
   max-width: 20%; }
 
 .gallery-columns-6 .gallery-item {
-  max-width: 16.66667%; }
+  max-width: 16.66%; }
 
 .gallery-columns-7 .gallery-item {
-  max-width: 14.28571%; }
+  max-width: 14.28%; }
 
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%; }
 
 .gallery-columns-9 .gallery-item {
-  max-width: 11.11111%; }
+  max-width: 11.11%; }
 
 .gallery-caption {
   display: block; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center; }
 
 img.emoji {
   width: 15px;
   height: 15px; }
 
-/* Block Unit Test Widget */
+/*===========================
+ Alignments
+============================*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em !important; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em !important; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center; }
+
+/*===========================
+ Block Unit Test Widget
+============================*/
 .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
   margin-left: 10px; }
 
@@ -1042,15 +1015,21 @@ a.meanmenu-reveal {
     display: inline-block;
     position: relative;
     padding: 0px 14px; }
+    .breadcrumb-list li.active a {
+      color: #D54400; }
     .breadcrumb-list li a {
       font-size: 17px;
       font-weight: 600;
       text-transform: capitalize;
       font-family: "Playfair Display", serif;
       line-height: 1;
-      color: #fff; }
-    .breadcrumb-list li:last-child a {
-      color: #FFFFFF; }
+      color: #fff;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+      .breadcrumb-list li a:hover {
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        color: #D54400; }
     .breadcrumb-list li::before {
       content: "\ea7c";
       position: absolute;
@@ -1218,7 +1197,13 @@ a.meanmenu-reveal {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        gap: 10px; }
+        gap: 10px;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
+        .postbox .post-meta span a:hover {
+          color: #D54400;
+          -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out; }
   .postbox blockquote {
     border-left: solid 5px #D54400;
     padding: 35px 25px !important;
