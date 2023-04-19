@@ -1,7 +1,6 @@
 .postbox {
 
   /* Sticky Post */
-
   &.sticky {
     padding: 25px 30px 30px 30px;
     border: 2px solid $primary-color;
@@ -23,6 +22,11 @@
         color: $primary-color;
         @include transition;
       }
+    }
+  }
+  .post-text {
+    a {
+      color: $primary-color;
     }
   }
   // Post Tags

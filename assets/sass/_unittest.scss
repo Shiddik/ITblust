@@ -5,6 +5,20 @@ body {
   word-wrap: break-word;
   overflow-x: hidden;
 }
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+ul {
+  list-style: disc;
+}
+.blog-details-sec {
+  .post-text {
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
 .page-sec .comment-field {
   margin-bottom: 0;
   clear: both;
