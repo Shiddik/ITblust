@@ -322,8 +322,12 @@
 
           &#today {
             background: $primary-color;
-            color: #fff;
+            color: $white;
             border-radius: 5px;
+
+            a {
+              color: $white;
+            }
           }
         }
       }

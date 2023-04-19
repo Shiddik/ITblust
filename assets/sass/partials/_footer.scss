@@ -71,21 +71,25 @@
     p {
       color: $black-100;
     }
-    .footer-contact ul li {
-      margin-bottom: 20px;
+    .footer-contact ul {
+      list-style: none;
 
-      .contact-icon {
-        color: $primary-color;
-        float: left;
-        margin-right: 11px;
-      }
-      .contact-text {
-        color: $black-100;
-        font-size: 15px;
+      li {
+        margin-bottom: 20px;
 
-        h4 {
+        .contact-icon {
+          color: $primary-color;
+          float: left;
+          margin-right: 11px;
+        }
+        .contact-text {
           color: $black-100;
           font-size: 15px;
+
+          h4 {
+            color: $black-100;
+            font-size: 15px;
+          }
         }
       }
     }

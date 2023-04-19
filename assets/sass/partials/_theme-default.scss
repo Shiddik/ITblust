@@ -14,15 +14,20 @@ body {
   line-height: 28px;
 }
 .container { max-width: 1200px;}
-a:focus {
-  outline: 0px solid;
-}
 img {
   max-width: 100%;
   height: auto;
 }
 p {
   margin: 0 0 20px;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
 }
 h1,
 h2,
@@ -34,6 +39,7 @@ h6 {
   font-family: $heading-font !important;
   color: $black;
   font-style: normal;
+  @include transition;
 }
 
 h1 {
@@ -56,16 +62,34 @@ h3 {
   line-height: 28px;
   font-weight: 600;
 }
+
+button {
+  cursor: pointer;
+  @include transition;
+}
 a,
-button,
-a:active,
-a:focus,
-a:hover {
-  color: inherit;
-  outline: medium none;
+.button {
   text-decoration: none;
   @include transition;
 }
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:focus,
+a:hover{
+  color: $primary-color;
+  text-decoration: none;
+  @include transition;
+}
+a,
+button {
+  color: $primary-color;
+  outline: medium none;
+  @include transition;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
 ul {
   list-style: outside none none;
   margin: 0;

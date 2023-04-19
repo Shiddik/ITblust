@@ -48,15 +48,20 @@ body {
 .container {
   max-width: 1200px; }
 
-a:focus {
-  outline: 0px solid; }
-
 img {
   max-width: 100%;
   height: auto; }
 
 p {
   margin: 0 0 20px; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; }
 
 h1,
 h2,
@@ -67,7 +72,9 @@ h6 {
   margin-top: 0px;
   font-family: "Playfair Display", serif !important;
   color: #003B4A;
-  font-style: normal; }
+  font-style: normal;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
 h1 {
   font-size: 62px;
@@ -89,16 +96,38 @@ h3 {
   line-height: 28px;
   font-weight: 600; }
 
+button {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
 a,
-button,
-a:active,
-a:focus,
-a:hover {
-  color: inherit;
-  outline: medium none;
+.button {
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:focus,
+a:hover {
+  color: #D54400;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+a,
+button {
+  color: #D54400;
+  outline: medium none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0; }
 
 ul {
   list-style: outside none none;
@@ -1202,6 +1231,7 @@ a.meanmenu-reveal {
             -ms-flex-align: center;
                 align-items: center;
         gap: 10px;
+        color: #777777;
         -webkit-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out; }
         .postbox .post-meta span a:hover {
@@ -1544,8 +1574,10 @@ a.meanmenu-reveal {
     transition: .3s; }
     .widget_calendar .wp-calendar-table tbody tr td#today {
       background: #D54400;
-      color: #fff;
+      color: #FFFFFF;
       border-radius: 5px; }
+      .widget_calendar .wp-calendar-table tbody tr td#today a {
+        color: #FFFFFF; }
 
 .post-comments {
   border-bottom: 1px solid #eaedff;
@@ -1800,18 +1832,20 @@ ul.children {
       font-size: 15px; }
   .footer-widget .footer-widget-contact p {
     color: #D7D7D7; }
-  .footer-widget .footer-widget-contact .footer-contact ul li {
-    margin-bottom: 20px; }
-    .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-      color: #D54400;
-      float: left;
-      margin-right: 11px; }
-    .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
-      color: #D7D7D7;
-      font-size: 15px; }
-      .footer-widget .footer-widget-contact .footer-contact ul li .contact-text h4 {
+  .footer-widget .footer-widget-contact .footer-contact ul {
+    list-style: none; }
+    .footer-widget .footer-widget-contact .footer-contact ul li {
+      margin-bottom: 20px; }
+      .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
+        color: #D54400;
+        float: left;
+        margin-right: 11px; }
+      .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
         color: #D7D7D7;
         font-size: 15px; }
+        .footer-widget .footer-widget-contact .footer-contact ul li .contact-text h4 {
+          color: #D7D7D7;
+          font-size: 15px; }
 
 .footer-bottom-sec {
   padding: 20px 0;
