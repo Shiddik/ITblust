@@ -1,11 +1,11 @@
-.postbox {
+.single-post {
 
   /* Sticky Post */
   &.sticky {
     padding: 25px 30px 30px 30px;
     border: 2px solid $primary-color;
 
-    .post-text {
+    .post-content {
       margin-bottom: 0;
       p {
         margin-bottom: 0;
@@ -24,7 +24,7 @@
       }
     }
   }
-  .post-text {
+  .post-content {
     a {
       color: $primary-color;
     }
