@@ -1386,11 +1386,16 @@ a.meanmenu-reveal {
 .widget {
   border: 2px solid #eaedff;
   padding: 30px;
+  /* Widget Title */
   /* Social Widget */
   /* Select Option  */
   /* Search Widget */
   /* Tagcloud Widget */
   /* Default Widget */ }
+  .widget .wp-block-heading {
+    font-size: 21px;
+    display: block;
+    margin-bottom: 30px; }
   .widget .social-widget {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
