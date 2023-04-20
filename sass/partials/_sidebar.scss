@@ -11,6 +11,7 @@
   .wp-block-heading {
     font-size: 21px;
     display: block;
+    line-height: 22px;
     margin-bottom: 30px;
   }
   /* Social Widget */
@@ -33,7 +34,7 @@
     color: $text-color;
   }
   /* Search Widget */
-  .search-form {
+  .wp-block-search {
     display: inline-block;
     width: 100%;
     position: relative;

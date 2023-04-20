@@ -1395,6 +1395,7 @@ a.meanmenu-reveal {
   .widget .wp-block-heading {
     font-size: 21px;
     display: block;
+    line-height: 22px;
     margin-bottom: 30px; }
   .widget .social-widget {
     -webkit-box-pack: start;
@@ -1411,19 +1412,19 @@ a.meanmenu-reveal {
     padding: 0 10px;
     border-radius: 5px;
     color: #777777; }
-  .widget .search-form {
+  .widget .wp-block-search {
     display: inline-block;
     width: 100%;
     position: relative;
     overflow: hidden; }
-    .widget .search-form input {
+    .widget .wp-block-search input {
       background: #fff;
       border: 2px solid #4770F7;
       padding: 10px 60px 14px 30px;
       width: 100%;
       color: #000;
       font-size: 18px; }
-    .widget .search-form button {
+    .widget .wp-block-search button {
       color: #fff;
       padding: 15px 22px;
       position: absolute;
