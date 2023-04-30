@@ -106,11 +106,10 @@
 
   /* Default Widget */
   ul {
+    margin-bottom: 0;
     li {
       display: block;
-      padding: 15px 0;
-      border-bottom: 1px solid #eaedff;
-
+      padding: 10px 0;
 
       &:first-child {
         padding-top: 0;
@@ -141,7 +140,6 @@
       a {
         color: $text-color;
         position: relative;
-        padding-left: 25px;
         display: inline-block;
         text-transform: capitalize;
         font-size: 15px;
@@ -150,19 +148,6 @@
         &:hover {
           color: $primary-color;
           @include transition;
-        }
-
-        &::before {
-          content: "\ea7c";
-          position: absolute;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          -webkit-transition: all 0.4s ease 0s;
-          transition: all 0.4s ease 0s;
-          padding-right: 10px;
-          left: 0;
-          font-family: Icofont;
         }
 
         /* RSS Widget */
@@ -246,23 +231,21 @@
 /* About Info Widget*/
 .widget-about-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
 
   .about-desc {
-    text-align: center;
+    text-align: left;
 
     .about-title {
-      font-size: 18px;
-      letter-spacing: 1px;
+      font-size: 20px;
     }
   }
 
   .about-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
   }
@@ -270,26 +253,43 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 30px;
+    border-top: 1px solid $gray;
+    width: 100%;
+    margin-top: 10px;
 
     a {
       @include transition;
+      width: 44px;
+      height: 44px;
+      background-color: $gray-100;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $secondary-color;
+      @include transition;
+
 
       &:hover {
-        color: $primary-color;
+        color: $white;
         @include transition;
+        background-color: $primary-color;
       }
     }
   }
 }
-
 /* Latest Post Widget*/
 .widget_latest_post {
   ul {
     li {
       display: flex;
-      gap: 20px;
-      padding: 20px 0;
+      gap: 15px;
+      margin-bottom: 10px;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
       a {
         padding-left: 0;
 
@@ -302,25 +302,25 @@
         flex-shrink: 0;
 
         img {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
+          width: 90px;
+          height: 90px;
+          border-radius: 10px;
         }
       }
       .latest-post-desc {
         .latest-post-title {
           margin-bottom: 10px;
           font-size: 16px;
+          line-height: 19px;
+          color: $secondary-color;
 
           a {
-            color: #667286;
-            display: inline-block;
-            font-size: 15px;
-            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $secondary-color;
             position: relative;
             text-transform: capitalize;
             @include transition;
-            line-height: 1;
 
             &:hover {
               color: $primary-color;
