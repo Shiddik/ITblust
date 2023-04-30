@@ -48,28 +48,39 @@
   .wp-block-search {
     display: inline-block;
     width: 100%;
-    position: relative;
     overflow: hidden;
 
+    .wp-block-search__inside-wrapper {
+      display: flex;
+    }
+    label {
+      font-size: 24px;
+      display: block;
+      line-height: 28px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: $secondary-color;
+      font-family: $heading-font;
+    }
     input {
       background-color: $gray-200;
       border: 1px solid $gray-300;
-      padding: 0 88px 0 25px;
+      padding: 0 25px;
       height: 52px;
       width: 100%;
       color: $text-color;
       font-size: 15px;
       font-weight: 600;
-      border-radius: 10px;
+      border-radius: 10px 0 0 10px;
     }
     button {
       color: #fff;
       padding: 0 20px;
-      position: absolute;
+      position: relative;
       right: 0;
       background: $primary-color;
       top: 0;
-      height: 100%;
+      height: auto;
       width: 62px;
       border-radius: 0 10px 10px 0;
       font-size: 0;

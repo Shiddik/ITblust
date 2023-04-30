@@ -49,8 +49,8 @@
 		   loop: true,
 		   dots: false,
 		   speed: 300,
-		   prevArrow:"<button type='button' class='post-gallery-btn prev-btn'><i class='icofont-arrow-left'></i></button>",
-		   nextArrow:"<button type='button' class='post-gallery-btn next-btn'><i class='icofont-arrow-right'></i></button>",
+		   prevArrow:"<button type='button' class='post-gallery-btn prev-btn'><i class='icon-arrow-left'></i></button>",
+		   nextArrow:"<button type='button' class='post-gallery-btn next-btn'><i class='icon-arrow-right'></i></button>",
 
 		   })
 
