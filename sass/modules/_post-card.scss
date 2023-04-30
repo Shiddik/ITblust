@@ -1,8 +1,13 @@
 .single-post {
+  background-color: $white;
+  border-radius: 14px;
+  overflow: hidden;
 
+  .postbox-text {
+    padding: 30px;
+  }
   /* Sticky Post */
   &.sticky {
-    padding: 25px 30px 30px 30px;
     border: 2px solid $primary-color;
 
     .post-content {
@@ -138,7 +143,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: 0.3s;
-      color: $black-100;
+      color: $gray;
       font-size: 14px;
       transition: 0.3s;
     }
@@ -164,7 +169,6 @@
       display: flex;
       align-items: center;
       gap: 26px;
-      margin-bottom: 20px;
 
       span {
         letter-spacing: 2px;
