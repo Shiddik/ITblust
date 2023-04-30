@@ -1185,7 +1185,7 @@ a.meanmenu-reveal {
   overflow: hidden;
   /* Sticky Post */
 }
-.single-post .postbox-text {
+.single-post .post-content-wrapper {
   padding: 30px;
 }
 .single-post.sticky {
