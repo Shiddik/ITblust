@@ -767,7 +767,7 @@ html {
   transition: all 0.4s ease 0s;
   position: relative;
   font-weight: 600;
-  color: #020A27;
+  color: #04144E;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   margin-left: 28px;
@@ -1113,7 +1113,7 @@ a.meanmenu-reveal {
 
 /* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
-  padding: 160px 0;
+  padding: 88px 0;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1133,39 +1133,43 @@ a.meanmenu-reveal {
 }
 
 .page-heading h1 {
-  font-size: 54px;
+  font-size: 60px;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 20px;
   text-transform: capitalize;
-  line-height: 1;
+  line-height: 72px;
+  font-weight: 700;
 }
 
 .breadcrumb-list {
   text-align: center;
 }
-.breadcrumb-list li {
+.breadcrumb-list ul {
+  margin-bottom: 10px;
+}
+.breadcrumb-list ul li {
   display: inline-block;
   position: relative;
   padding: 0px 14px;
 }
-.breadcrumb-list li.active a {
+.breadcrumb-list ul li.active a {
   color: #4770F7;
 }
-.breadcrumb-list li a {
-  font-size: 17px;
-  font-weight: 600;
+.breadcrumb-list ul li a {
+  font-size: 18px;
+  text-align: center;
+  color: #F7CF47;
   text-transform: capitalize;
-  font-family: "Playfair Display", serif;
-  line-height: 1;
-  color: #fff;
+  line-height: 28px;
+  font-weight: 700;
   transition: all 0.5s ease-out;
 }
-.breadcrumb-list li a:hover {
+.breadcrumb-list ul li a:hover {
   transition: all 0.5s ease-out;
   color: #4770F7;
 }
-.breadcrumb-list li::before {
+.breadcrumb-list ul li::before {
   content: "\ea7c";
   position: absolute;
   right: -8px;
@@ -1173,7 +1177,7 @@ a.meanmenu-reveal {
   color: #fff;
   font-family: Icofont;
 }
-.breadcrumb-list li:last-child::before {
+.breadcrumb-list ul li:last-child::before {
   display: none;
   display: none;
 }
@@ -1316,20 +1320,20 @@ a.meanmenu-reveal {
 .single-post .post-meta {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 32px;
 }
 .single-post .post-meta span {
-  letter-spacing: 2px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   color: #777777;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .single-post .post-meta span i {
   color: #4770F7;
+  font-size: 19px;
 }
 .single-post .post-meta span a {
   display: flex;
@@ -1345,10 +1349,9 @@ a.meanmenu-reveal {
 .single-post blockquote {
   border-left: solid 5px #4770F7;
   padding: 35px 25px !important;
-  margin: 25px 0;
+  margin: 0;
   position: relative;
   z-index: 1;
-  background: #faf9ff;
 }
 .single-post blockquote:before {
   content: "\efce";
@@ -1532,8 +1535,16 @@ a.meanmenu-reveal {
   justify-content: flex-start;
 }
 .widget .social-widget a {
-  background-color: #4770F7;
+  width: 44px;
+  height: 44px;
+  background-color: #F3F4F8;
+  color: #04144E;
+  transition: all 0.5s ease-out;
+}
+.widget .social-widget a:hover {
   color: #FFFFFF;
+  transition: all 0.5s ease-out;
+  background-color: #4770F7;
 }
 .widget select {
   max-width: 100%;
@@ -1587,15 +1598,16 @@ a.meanmenu-reveal {
   height: 15px;
 }
 .widget .tagcloud a {
-  background: #f7f7f7;
-  color: #6b7b98;
+  background: #F3F4F8;
+  color: #777777;
   display: inline-block;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   padding: 12px 15px;
   margin-bottom: 5px;
   margin-right: 0px;
+  border-radius: 8px;
   transition: all 0.5s ease-out;
 }
 .widget .tagcloud a:hover {
@@ -1618,9 +1630,6 @@ a.meanmenu-reveal {
 .widget ul li:last-child {
   padding-bottom: 0;
   border-bottom: 0;
-}
-.widget ul li.recentcomments .comment-author-link a {
-  padding-left: 25px;
 }
 .widget ul li.recentcomments .comment-author-link a:before {
   display: block;

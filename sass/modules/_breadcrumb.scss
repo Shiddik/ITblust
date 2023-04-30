@@ -1,5 +1,5 @@
 .page-breadcrumb-sec {
-  padding: 160px 0;
+  padding: 88px 0;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,54 +18,59 @@
 }
 
 .page-heading h1 {
-  font-size: 54px;
+  font-size: 60px;
   text-align: center;
   color: $white;
   margin-bottom: 20px;
   text-transform: capitalize;
-  line-height: 1;
+  line-height: 72px;
+  font-weight: 700;
 }
 
 .breadcrumb-list {
   text-align: center;
 
-  li {
-    display: inline-block;
-    position: relative;
-    padding: 0px 14px;
+  ul {
+    margin-bottom: 10px;
 
-    &.active {
+    li {
+      display: inline-block;
+      position: relative;
+      padding: 0px 14px;
+
+      &.active {
+        a {
+          color: $primary-color;
+        }
+      }
       a {
-        color: $primary-color;
-      }
-    }
-    a {
-      font-size: 17px;
-      font-weight: 600;
-      text-transform: capitalize;
-      font-family: $heading-font;
-      line-height: 1;
-      color: #fff;
-      @include transition;
-
-      &:hover {
+        font-size: 18px;
+        text-align: center;
+        color: $orange-color;
+        text-transform: capitalize;
+        line-height: 28px;
+        font-weight: 700;
         @include transition;
-        color: $primary-color;
+
+        &:hover {
+          @include transition;
+          color: $primary-color;
+        }
       }
-    }
 
-    &::before {
-      content: "\ea7c";
-      position: absolute;
-      right: -8px;
-      font-size: 16px;
-      color: #fff;
-      font-family: Icofont;
-    }
+      &::before {
+        content: "\ea7c";
+        position: absolute;
+        right: -8px;
+        font-size: 16px;
+        color: #fff;
+        font-family: Icofont;
+      }
 
-    &:last-child::before {
-      display: none;
-      display: none;
+      &:last-child::before {
+        display: none;
+        display: none;
+      }
     }
   }
 }
