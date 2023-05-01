@@ -1191,6 +1191,10 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
+.blog-post {
+  padding-right: 38px;
+}
+
 .single-post {
   background-color: #FFFFFF;
   border-radius: 14px;
