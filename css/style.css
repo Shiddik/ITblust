@@ -2041,22 +2041,20 @@ ul.children {
 */
 /*Comment Input Filed*/
 .comment-field {
-  margin-top: 30px;
-  padding-top: 30px;
-}
-
-.leave-comment-title {
-  font-size: 26px;
-  font-weight: 700;
-  color: #140a20;
-  margin-bottom: 20px;
-}
-
-#commentform {
+  margin-top: 50px;
   background-color: #FFFFFF;
   padding: 30px;
   border-radius: 14px;
 }
+
+.leave-comment-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #04144E;
+  margin-bottom: 25px;
+}
+
 #commentform input[type=text] {
   padding: 0 20px;
   height: 55px;
@@ -2065,8 +2063,35 @@ ul.children {
   border: 1px solid #D2D2D2;
   border-radius: 10px;
   font-size: 14px;
+  font-weight: 600;
   background-color: #FFFFFF;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
+}
+#commentform *::-webkit-input-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+}
+#commentform *:-moz-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+  opacity: 1;
+}
+#commentform *::-moz-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+  opacity: 1;
+}
+#commentform *:-ms-input-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+}
+#commentform *::-ms-input-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+}
+#commentform *::placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
 }
 #commentform textarea {
   resize: vertical;
@@ -2078,31 +2103,32 @@ ul.children {
   font-size: 14px;
   background-color: #FFFFFF;
   font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 #commentform input#submit {
   display: inline-flex;
   background: #4770F7;
-  color: #fff;
-  padding: 16px 34px;
+  color: #FFFFFF;
+  padding: 12px 34px;
   text-align: center;
-  font-weight: 400;
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
   position: relative;
   z-index: 1;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
   align-items: center;
   gap: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 #commentform input#submit:hover {
-  background: transparent;
-  transition: all 0.4s ease 0s;
-  color: #4770F7;
+  background: #071c34;
+  color: #fff;
+  border-color: #071c34;
 }
 #commentform p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #commentform input:focus, #commentform textarea:focus {
   outline: none !important;
