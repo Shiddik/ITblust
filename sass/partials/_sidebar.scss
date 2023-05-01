@@ -103,6 +103,10 @@
   }
   /* Tagcloud Widget */
   .tagcloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
     a {
       background: $gray-100;
       color: $text-color;
@@ -110,9 +114,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 1;
-      padding: 12px 15px;
-      margin-bottom: 5px;
-      margin-right: 0px;
+      padding: 13px 16px;
       border-radius: 8px;
       @include transition;
 
@@ -328,7 +330,7 @@
       }
       .latest-post-desc {
         .latest-post-title {
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           font-size: 16px;
           line-height: 19px;
           color: $secondary-color;
@@ -348,7 +350,12 @@
           }
         }
         .latest-post-meta {
-          font-size: 12px;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          gap: 8px;
+          color: $primary-color;
         }
       }
     }

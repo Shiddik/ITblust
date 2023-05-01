@@ -1,13 +1,14 @@
 .page-breadcrumb-sec {
   padding: 88px 0;
   position: relative;
+  z-index: 2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .page-overlay {
-  @include bg-opacity($primary-color, 0.5);
+  background-color: rgba(2, 10, 39, 0.7);
   height: 100%;
   left: 0;
   position: absolute;

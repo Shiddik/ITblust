@@ -18,9 +18,11 @@
     }
   }
 
-  .blog-title {
-    font-size: 30px;
-    margin-bottom: 20px;
+  .post-title {
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 600;
+    margin-bottom: 10px;
 
     &:hover {
       a {
@@ -142,18 +144,17 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: 0.3s;
       color: $secondary-color;
-      font-size: 14px;
-      transition: 0.3s;
+      font-size: 17px;
+      @include transition;
     }
     &:hover{
-      transition: 0.3s;
+      @include transition;
       background-color: $primary-color;
 
       i{
         color: $white;
-        transition: 0.3s;
+        @include transition;
       }
     }
   }

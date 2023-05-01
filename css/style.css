@@ -186,28 +186,36 @@ input:focus {
   padding-right: 25px;
 }
 
-.pt-120 {
-  padding-top: 120px;
+.pt-25 {
+  padding-top: 25px;
 }
 
 .pt-80 {
   padding-top: 80px;
 }
 
-.pt-25 {
-  padding-top: 25px;
+.pt-100 {
+  padding-top: 100px;
 }
 
-.pb-80 {
-  padding-bottom: 80px;
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
 }
 
 .pb-50 {
   padding-bottom: 50px;
 }
 
-.pb-25 {
-  padding-bottom: 25px;
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
 }
 
 .mt-50 {
@@ -1115,14 +1123,14 @@ a.meanmenu-reveal {
 .page-breadcrumb-sec {
   padding: 88px 0;
   position: relative;
+  z-index: 2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .page-overlay {
-  background: #4770F7;
-  background: rgba(71, 112, 247, 0.5);
+  background-color: rgba(2, 10, 39, 0.7);
   height: 100%;
   left: 0;
   position: absolute;
@@ -1201,11 +1209,13 @@ a.meanmenu-reveal {
 .single-post.sticky .post-content p {
   margin-bottom: 0;
 }
-.single-post .blog-title {
-  font-size: 30px;
-  margin-bottom: 20px;
+.single-post .post-title {
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.single-post .blog-title:hover a {
+.single-post .post-title:hover a {
   color: #4770F7;
   transition: all 0.5s ease-out;
 }
@@ -1301,18 +1311,17 @@ a.meanmenu-reveal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3s;
   color: #04144E;
-  font-size: 14px;
-  transition: 0.3s;
+  font-size: 17px;
+  transition: all 0.5s ease-out;
 }
 .single-post button.post-gallery-btn:hover {
-  transition: 0.3s;
+  transition: all 0.5s ease-out;
   background-color: #4770F7;
 }
 .single-post button.post-gallery-btn:hover i {
   color: #FFFFFF;
-  transition: 0.3s;
+  transition: all 0.5s ease-out;
 }
 .single-post .post-audio iframe {
   width: 100%;
@@ -1461,50 +1470,45 @@ a.meanmenu-reveal {
   color: #FE4536;
 }
 
-.pagination {
+.basic-pagination ul {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+  list-style: none;
 }
 @media only screen and (max-width: 767px) {
-  .pagination {
+  .basic-pagination ul {
     margin-top: 50px;
   }
 }
-.pagination .prev span,
-.pagination .next span {
+.basic-pagination ul .prev span,
+.basic-pagination ul .next span {
   display: none;
 }
-.pagination .page-numbers {
+.basic-pagination ul .page-numbers {
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: #9990b8;
-  border-radius: 50%;
-  border: 2px solid #eaebec;
-  height: 60px;
-  width: 60px;
-  line-height: 56px;
-  transition: all 0.2s ease-in-out;
-  font-size: 16px;
-  font-weight: 500;
+  color: #4770F7;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s ease-out;
+  font-size: 18px;
+  font-weight: 600;
 }
-.pagination .page-numbers:hover {
+.basic-pagination ul .page-numbers:hover {
   background: #4770F7;
   color: #FFFFFF;
+  transition: all 0.5s ease-out;
 }
-.pagination .page-numbers.current {
+.basic-pagination ul .page-numbers.current {
   background: #4770F7;
-  border-color: #4770F7;
   color: #FFFFFF;
-}
-.pagination .page-numbers.next {
-  width: 82px;
-}
-.pagination .page-numbers.prev {
-  width: 112px;
+  transition: all 0.5s ease-out;
 }
 
 /* 17.Sidebar */
@@ -1608,6 +1612,11 @@ a.meanmenu-reveal {
   width: 15px;
   height: 15px;
 }
+.widget .tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .widget .tagcloud a {
   background: #F3F4F8;
   color: #777777;
@@ -1615,9 +1624,7 @@ a.meanmenu-reveal {
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
-  padding: 12px 15px;
-  margin-bottom: 5px;
-  margin-right: 0px;
+  padding: 13px 16px;
   border-radius: 8px;
   transition: all 0.5s ease-out;
 }
@@ -1789,7 +1796,7 @@ a.meanmenu-reveal {
   border-radius: 10px;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 19px;
   color: #04144E;
@@ -1807,7 +1814,12 @@ a.meanmenu-reveal {
   transition: all 0.5s ease-out;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-meta {
-  font-size: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 8px;
+  color: #4770F7;
 }
 
 .widget_calendar .wp-calendar-table {
