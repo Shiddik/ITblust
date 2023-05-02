@@ -127,19 +127,25 @@
 
 // Footer Subscribe Section
 .subscribe-sec {
-  border-bottom: 1px solid #1b2f3e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .subscribe-title {
+    color: $white;
+    text-transform: capitalize;
+  }
 }
 // Subscribe Form
 .subscribe-form-widget {
   display: flex;
   gap: 5px;
+  background-color: $primary-color;
+  border-radius: 5px;
 
   .single-field {
       flex-grow: 1;
 
       input {
-          background-color: $black;
-          color: #cbcbcb;
+          background-color: $white;
+          color: $black;
           height: 60px;
           padding: 0 30px;
           font-size: 15px;
@@ -148,11 +154,9 @@
       }
   }
   .submit-btn {
-    background-color: $primary-color;
     color: $white;
     cursor: pointer;
     padding: 0 30px;
-    border-radius: 5px;
     display: flex;
     align-items: center;
     gap: 9px;
