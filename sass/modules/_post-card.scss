@@ -1,3 +1,16 @@
+.blog-details-area {
+  .single-post-item {
+    .post-content {
+      p {
+        margin-bottom: 15px;
+
+        img {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
 .single-post-item {
   background-color: $white;
   border-radius: 14px;
@@ -6,6 +19,10 @@
 
   .post-content-wrapper {
     padding: 30px;
+
+    a.primary-btn {
+      margin-top: 30px;
+    }
   }
   /* Sticky Post */
   &.sticky {
@@ -33,7 +50,10 @@
     }
   }
   .post-content {
-    margin-bottom: 30px;
+
+    p {
+      margin-bottom: unset;
+    }
 
     a {
       color: $primary-color;
@@ -46,6 +66,7 @@
     align-items: center;
     border-top: 1px solid $gray;
     padding-top: 15px;
+    margin-top: 30px;
 
   }
   // Social Share

@@ -1203,6 +1203,13 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
+.blog-details-area .single-post-item .post-content p {
+  margin-bottom: 15px;
+}
+.blog-details-area .single-post-item .post-content p img {
+  margin: 15px 0;
+}
+
 .single-post-item {
   background-color: #FFFFFF;
   border-radius: 14px;
@@ -1212,6 +1219,9 @@ a.meanmenu-reveal {
 }
 .single-post-item .post-content-wrapper {
   padding: 30px;
+}
+.single-post-item .post-content-wrapper a.primary-btn {
+  margin-top: 30px;
 }
 .single-post-item.sticky {
   border: 2px solid #4770F7;
@@ -1232,8 +1242,8 @@ a.meanmenu-reveal {
   color: #4770F7;
   transition: all 0.5s ease-out;
 }
-.single-post-item .post-content {
-  margin-bottom: 30px;
+.single-post-item .post-content p {
+  margin-bottom: unset;
 }
 .single-post-item .post-content a {
   color: #4770F7;
@@ -1244,6 +1254,7 @@ a.meanmenu-reveal {
   align-items: center;
   border-top: 1px solid #D7D7D7;
   padding-top: 15px;
+  margin-top: 30px;
 }
 .single-post-item .social-share {
   display: flex;
@@ -2216,9 +2227,6 @@ ul.children {
   left: 25px;
 }
 
-.footer-widget {
-  margin: 60px 0;
-}
 .footer-widget .footer-widget-info p {
   color: #D7D7D7;
   padding-right: 68px;
@@ -2298,28 +2306,29 @@ ul.children {
 
 .subscribe-form-widget {
   display: flex;
-  gap: 5px;
-  background-color: #4770F7;
-  border-radius: 5px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 4px;
 }
 .subscribe-form-widget .single-field {
   flex-grow: 1;
 }
 .subscribe-form-widget .single-field input {
-  background-color: #FFFFFF;
   color: #020A27;
-  height: 60px;
+  height: 52px;
   padding: 0 30px;
   font-size: 15px;
   border-radius: 5px;
   width: 100%;
 }
 .subscribe-form-widget .submit-btn {
+  background-color: #4770F7;
   color: #FFFFFF;
   cursor: pointer;
   padding: 0 30px;
   display: flex;
   align-items: center;
+  border-radius: 10px;
   gap: 9px;
   text-transform: capitalize;
 }
