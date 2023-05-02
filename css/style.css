@@ -218,6 +218,10 @@ input:focus {
   padding-bottom: 80px;
 }
 
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
