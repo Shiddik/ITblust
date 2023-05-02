@@ -1233,7 +1233,7 @@ a.meanmenu-reveal {
   margin-bottom: 0;
 }
 .single-post-item .post-title {
-  font-size: 44px;
+  font-size: 40px;
   line-height: 54px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1650,6 +1650,7 @@ a.meanmenu-reveal {
   border-radius: 0 10px 10px 0;
   font-size: 0;
   line-height: 0;
+  border: 0;
 }
 .widget .wp-block-search button:before {
   position: absolute;
