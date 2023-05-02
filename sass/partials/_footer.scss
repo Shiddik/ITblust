@@ -1,37 +1,20 @@
+.footer {
+  background-color: $black;
+}
 .footer-widget-title {
   font-family: $heading-font;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 28px;
   color: $white;
   position: relative;
-  padding-bottom: 24px;
-  margin-bottom: 30px;
-  position: relative;
-
-  &:before,
-  &:after {
-    position: absolute;
-    height: 3px;
-    background: $primary-color;
-    content: "";
-    bottom: 0;
-  }
-
-  &:before {
-    width: 15px;
-    left: 0;
-  }
-  &:after {
-    width: 40px;
-    left: 25px;
-  }
-
+  margin-bottom: 26px;
 }
 .footer-widget {
 
   // Footer Info Widget
   .footer-widget-info {
     p {
-      color: $gray;
+     color: $white-50;
       padding-right: 68px;
       margin-bottom: 30px;
     }
@@ -58,9 +41,15 @@
       }
 
       a {
-        color: $gray;
+        color: $white-50;
         text-transform: capitalize;
-        font-size: 15px;
+        font-size: 16px;
+        @include transition;
+
+        &:hover {
+          @include transition;
+          color: $primary-color;
+        }
       }
     }
   }
@@ -68,7 +57,7 @@
   // Footer Contact Widget
   .footer-widget-contact {
     p {
-      color: $gray;
+      color: $white-50;
     }
     .footer-contact ul {
       list-style: none;
@@ -77,17 +66,25 @@
         margin-bottom: 20px;
 
         .contact-icon {
-          color: $primary-color;
+          background-color: $black-100;
+          color: $orange-color;
+          width: 32px;
+          height: 32px;
+          border-radius: 4px;
           float: left;
-          margin-right: 11px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
         }
         .contact-text {
-          color: $gray;
-          font-size: 15px;
+          color: $white-50;
+          font-size: 16px;
+          overflow: hidden;
 
-          h4 {
-            color: $gray;
-            font-size: 15px;
+          span {
+           color: $white-50;
+            font-size: 16px;
           }
         }
       }
@@ -98,19 +95,46 @@
 
 
 // Footer Bottom Section
-.footer-bottom-sec {
-  padding: 20px 0;
-  border-top: 1px solid $black;
+.footer-bottom-border {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px 0;
+}
+.footer-bottom-menu {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+
+    li {
+      a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $white-50;
+        @include transition;
+
+        &:hover {
+          @include transition;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom-area {
 
   .copyright-text {
       p {
-        color: $gray;
+        color: $white-50;
         margin-bottom: 0;
       }
   }
   .credit-text {
     p {
-      color: $gray;
+      color: $white-50;
       margin-bottom: 0;
       display: flex;
       align-items: center;
@@ -124,15 +148,14 @@
 
 }
 
-// Footer Subscribe Section
-.subscribe-sec {
+// Footer Subscribe
+.subscribe-area {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   .subscribe-title {
     color: $white;
     text-transform: capitalize;
   }
 }
-// Subscribe Form
 .subscribe-form-widget {
   display: flex;
   background-color: $white;
@@ -142,24 +165,47 @@
   .single-field {
       flex-grow: 1;
       input {
-          color: $black;
+          color: $secondary-color;
           height: 52px;
           padding: 0 30px;
-          font-size: 15px;
+          font-size: 16px;
+          font-weight: 600;
           border-radius: 5px;
           width: 100%;
       }
+    *::-webkit-input-placeholder {
+      color: $secondary-color;
+    }
+    *:-moz-placeholder {
+      color: $secondary-color;
+      opacity: 1;
+    }
+    *::-moz-placeholder {
+      color: $secondary-color;
+      opacity: 1;
+    }
+    *:-ms-input-placeholder {
+      color: $secondary-color;
+    }
+    *::-ms-input-placeholder {
+      color: $secondary-color;
+    }
+    *::placeholder {
+      color: $secondary-color;
+    }
   }
   .submit-btn {
     background-color: $primary-color;
     color: $white;
     cursor: pointer;
-    padding: 0 30px;
+    padding: 0 35px;
     display: flex;
     align-items: center;
     border-radius: 10px;
     gap: 9px;
     text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 
@@ -168,22 +214,21 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: flex-end;
 
   a {
-    background-color: $black;
-    color: #cbcbcb;
-    height: 60px;
-    width: 60px;
-    font-size: 15px;
-    border-radius: 5px;
+    background-color: $orange-color;
+    color: $secondary-color;
+    height: 44px;
+    width: 44px;
+    font-size: 18px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    @include transition;
 
     &:hover {
-      transition: 0.3s;
+      @include transition;
       background-color: $primary-color;
       color: $white;
     }
