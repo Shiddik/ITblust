@@ -1195,10 +1195,6 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
-.blog-post {
-  padding-right: 38px;
-}
-
 .single-post {
   background-color: #FFFFFF;
   border-radius: 14px;
@@ -1544,6 +1540,7 @@ a.meanmenu-reveal {
 /* 17.Sidebar */
 .sidebar {
   margin-bottom: 50px;
+  padding-left: 18px;
 }
 
 /* Widget */
@@ -1873,6 +1870,50 @@ a.meanmenu-reveal {
 }
 .widget_calendar .wp-calendar-table tbody tr td#today a {
   color: #FFFFFF;
+}
+
+.widget_promotion {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #020A27;
+}
+.widget_promotion .wp-block-heading {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 10px;
+}
+.widget_promotion .secondary-btn {
+  display: inline-block;
+  background: #F7CF47;
+  color: #04144E;
+  padding: 12px 104px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+  font-size: 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+.widget_promotion .secondary-btn i {
+  color: #fff;
+  font-size: 16px;
+}
+.widget_promotion .secondary-btn:hover {
+  transition: all 0.5s ease-out;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.widget_promotion p {
+  color: rgba(255, 255, 255, 0.53);
+  margin-bottom: 32px;
 }
 
 .post-comments {

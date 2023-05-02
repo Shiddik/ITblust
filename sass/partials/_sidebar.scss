@@ -1,5 +1,6 @@
 .sidebar {
   margin-bottom: 50px;
+  padding-left: 18px;
 }
 
 /* Widget */
@@ -247,8 +248,6 @@
 }
 
 
-
-
 /* About Info Widget*/
 .widget-about-info {
   display: flex;
@@ -392,5 +391,52 @@
         }
       }
     }
+  }
+}
+
+// Widget Promotion
+.widget_promotion {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: $black;
+
+  .wp-block-heading {
+    width: 100%;
+    text-align: center;
+    color: $white;
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+  .secondary-btn {
+    display: inline-block;
+    background: $orange-color;
+    color: $secondary-color;
+    padding: 12px 104px;
+    font-weight: 600;
+    font-family: $body-font;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    @include transition;
+    font-size: 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+    i {
+      color: #fff;
+      font-size: 16px;
+    }
+    &:hover {
+      @include transition;
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+  p {
+    color: rgba(255, 255, 255, 0.53);
+    margin-bottom: 32px;
   }
 }
