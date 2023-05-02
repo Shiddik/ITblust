@@ -1,5 +1,13 @@
 .footer {
   background-color: $black;
+  position: relative;
+
+  //footer shape
+  .footer-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 .footer-widget-title {
   font-family: $heading-font;
@@ -19,7 +27,7 @@
       margin-bottom: 30px;
     }
     .footer-logo {
-      margin-bottom: 34px;
+      margin-bottom: 35px;
       display: inline-block;
     }
   }

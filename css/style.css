@@ -1216,6 +1216,7 @@ a.meanmenu-reveal {
 }
 .blog-details-area .single-post-item .post-content p img {
   margin: 15px 0;
+  border-radius: 14px;
 }
 
 .single-post-item {
@@ -2214,6 +2215,12 @@ ul.children {
 /* Footer Section */
 .footer {
   background-color: #020A27;
+  position: relative;
+}
+.footer .footer-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-widget-title {
@@ -2231,7 +2238,7 @@ ul.children {
   margin-bottom: 30px;
 }
 .footer-widget .footer-widget-info .footer-logo {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   display: inline-block;
 }
 .footer-widget .footer-widget-menu ul {
