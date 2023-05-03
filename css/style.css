@@ -2003,17 +2003,15 @@ a.meanmenu-reveal {
 .latest-comments li .comments-box {
   padding: 30px 0;
   border-top: 1px solid #D2D2D2;
+  display: flex;
+  gap: 20px;
 }
 .latest-comments li .comments-box .comments-avatar {
-  float: left;
+  flex-shrink: 0;
 }
 .latest-comments li .comments-box .comments-avatar img {
   width: 100px;
-  margin-right: 20px;
   border-radius: 10px;
-}
-.latest-comments li .comments-box .comments-text {
-  overflow: hidden;
 }
 .latest-comments li .comments-box .comments-text p {
   font-size: 14px;
@@ -2021,13 +2019,12 @@ a.meanmenu-reveal {
   margin-bottom: 20px;
 }
 .latest-comments li .comments-box .comments-text .avatar-name {
-  margin-bottom: 3px;
-  overflow: hidden;
+  margin-bottom: 10px;
   position: relative;
 }
 .latest-comments li .comments-box .comments-text .avatar-name h5 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2050,6 +2047,9 @@ a.meanmenu-reveal {
   border: 1px solid #4770F7;
   padding: 6px 17px;
   gap: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .latest-comments li .comments-box .comments-text .comment-reply-link:hover {
   background-color: #FFFFFF;
