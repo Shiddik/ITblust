@@ -2157,27 +2157,27 @@ ul.children {
   color: #4770F7;
 }
 
-.post-comments-form .comment-respond {
+.comment-respond {
   margin-top: 50px;
   background-color: #FFFFFF;
   padding: 30px;
   border-radius: 14px;
 }
-.post-comments-form .comment-respond .contacts-email,
-.post-comments-form .comment-respond .contacts-name {
+.comment-respond .contacts-email,
+.comment-respond .contacts-name {
   margin-bottom: 20px;
 }
-.post-comments-form .comment-respond label {
+.comment-respond label {
   display: block;
   font-size: 16px;
   font-weight: 600;
   color: #777777;
   margin-bottom: 12px;
 }
-.post-comments-form .comment-respond .comment-form-cookies-consent {
+.comment-respond .comment-form-cookies-consent {
   display: none;
 }
-.post-comments-form .comment-respond input[type=text] {
+.comment-respond input[type=text] {
   padding: 0 20px;
   height: 55px;
   width: 100%;
@@ -2189,33 +2189,33 @@ ul.children {
   background-color: #FFFFFF;
   font-family: "Raleway", sans-serif !important;
 }
-.post-comments-form .comment-respond *::-webkit-input-placeholder {
+.comment-respond *::-webkit-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.post-comments-form .comment-respond *:-moz-placeholder {
-  font-family: "Raleway", sans-serif !important;
-  color: #777777;
-  opacity: 1;
-}
-.post-comments-form .comment-respond *::-moz-placeholder {
+.comment-respond *:-moz-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
   opacity: 1;
 }
-.post-comments-form .comment-respond *:-ms-input-placeholder {
+.comment-respond *::-moz-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+  opacity: 1;
+}
+.comment-respond *:-ms-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.post-comments-form .comment-respond *::-ms-input-placeholder {
+.comment-respond *::-ms-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.post-comments-form .comment-respond *::placeholder {
+.comment-respond *::placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.post-comments-form .comment-respond textarea {
+.comment-respond textarea {
   resize: vertical;
   padding: 20px;
   width: 100%;
@@ -2228,7 +2228,7 @@ ul.children {
   font-weight: 600;
   height: 130px;
 }
-.post-comments-form .comment-respond .theme-btn {
+.comment-respond .theme-btn {
   display: inline-flex;
   background: #4770F7;
   color: #FFFFFF;
@@ -2246,15 +2246,15 @@ ul.children {
   border-radius: 10px;
   margin-top: 20px;
 }
-.post-comments-form .comment-respond .theme-btn:hover {
+.comment-respond .theme-btn:hover {
   background: #071c34;
   color: #fff;
   border-color: #071c34;
 }
-.post-comments-form .comment-respond p {
+.comment-respond p {
   margin-bottom: 20px;
 }
-.post-comments-form .comment-respond input:focus, .post-comments-form .comment-respond textarea:focus {
+.comment-respond input:focus, .comment-respond textarea:focus {
   outline: none !important;
   border-color: #4770F7;
   transition: all 0.4s ease 0s;
