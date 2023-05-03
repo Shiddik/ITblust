@@ -171,6 +171,15 @@ img {
 .wp-block-quote, blockquote {
   border-left: solid 5px $primary-color;
 }
+
+.wp-block-pullquote {
+  border-top: 5px solid $primary-color !important;
+  border-bottom: 5px solid $primary-color !important;
+}
+.wp-block-quote__citation, .wp-block-quote cite, .wp-block-quote footer {
+  margin-top: 10px;
+  display: block;
+}
 .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
   margin-left: 10px;
 }
