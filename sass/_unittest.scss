@@ -177,20 +177,23 @@ img {
 .wp-block-column:nth-child(2n+1) {
   margin-right: 10px;
 }
-.post-text > .alignwide {
+.post-content > .alignwide {
   margin-left: 0;
   margin-right: 0;
   width: calc(100% + 20px);
   max-width: calc(100% + 20px);
 }
-.post-text p.has-large-font-size {
+.post-content p.has-large-font-size {
   font-size: 36px;
   line-height: 1.2;
 }
 
 .has-very-light-gray-color.has-very-light-gray-color {
   color: #fff;
-  background: #ff5b5b  !important;
+  background: $primary-color !important;
+}
+.wp-block-button {
+  margin-bottom: 10px;
 }
 .wp-block-archives select {
   height: 50px;
