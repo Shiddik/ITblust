@@ -1269,6 +1269,9 @@ a.meanmenu-reveal {
   color: #4770F7;
   transition: all 0.5s ease-out;
 }
+.single-post-item .post-content ul {
+  padding-left: 20px;
+}
 .single-post-item .post-content p {
   margin-bottom: unset;
 }
