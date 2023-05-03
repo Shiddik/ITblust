@@ -2227,6 +2227,7 @@ ul.children {
   background-color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  height: 130px;
 }
 .comment-form .comment-respond .theme-btn {
   display: inline-flex;
