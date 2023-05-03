@@ -25,6 +25,23 @@
       margin-top: 30px;
     }
   }
+  /* Quote Format Post */
+  &.format-quote {
+    blockquote {
+      margin: 0;
+
+      cite {
+        a {
+          font-family: $body-font;
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: $text-color;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
   /* Sticky Post */
   &.sticky {
     border: 2px solid $primary-color;

@@ -1224,6 +1224,7 @@ a.meanmenu-reveal {
   border-radius: 14px;
   overflow: hidden;
   margin-bottom: 50px;
+  /* Quote Format Post */
   /* Sticky Post */
 }
 .single-post-item .post-content-wrapper {
@@ -1231,6 +1232,17 @@ a.meanmenu-reveal {
 }
 .single-post-item .post-content-wrapper a.primary-btn {
   margin-top: 30px;
+}
+.single-post-item.format-quote blockquote {
+  margin: 0;
+}
+.single-post-item.format-quote blockquote cite a {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #777777;
+  margin-top: 20px;
 }
 .single-post-item.sticky {
   border: 2px solid #4770F7;
