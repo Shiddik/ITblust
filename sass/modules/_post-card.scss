@@ -84,6 +84,14 @@
 
     a {
       color: $primary-color;
+
+      &.wp-block-button__link {
+        color: inherit;
+
+        &:hover {
+          color: inherit;
+        }
+      }
     }
   }
 

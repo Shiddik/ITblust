@@ -1278,6 +1278,12 @@ a.meanmenu-reveal {
 .single-post-item .post-content a {
   color: #4770F7;
 }
+.single-post-item .post-content a.wp-block-button__link {
+  color: inherit;
+}
+.single-post-item .post-content a.wp-block-button__link:hover {
+  color: inherit;
+}
 .single-post-item .single-post-meta {
   display: flex;
   justify-content: space-between;
