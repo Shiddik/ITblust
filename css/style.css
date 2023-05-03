@@ -2168,6 +2168,9 @@ ul.children {
   color: #777777;
   margin-bottom: 12px;
 }
+.comment-form .comment-form-cookies-consent {
+  display: none;
+}
 .comment-form input[type=text] {
   padding: 0 20px;
   height: 55px;
