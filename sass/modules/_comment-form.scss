@@ -1,10 +1,4 @@
 /*Comment Input Filed*/
-.post-comments-form {
-  margin-top: 50px;
-  background-color: $white;
-  padding: 30px;
-  border-radius: 14px;
-}
 
 .post-comments-title {
    h2 {
@@ -24,7 +18,14 @@
    }
 }
 .post-comments-form {
+
   .comment-respond {
+    margin-top: 50px;
+    background-color: $white;
+    padding: 30px;
+    border-radius: 14px;
+
+
     .contacts-email,
     .contacts-name {
       margin-bottom: 20px;

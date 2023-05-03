@@ -2142,13 +2142,6 @@ ul.children {
 
 */
 /*Comment Input Filed*/
-.post-comments-form {
-  margin-top: 50px;
-  background-color: #FFFFFF;
-  padding: 30px;
-  border-radius: 14px;
-}
-
 .post-comments-title h2 {
   font-size: 24px;
   line-height: 28px;
@@ -2164,6 +2157,12 @@ ul.children {
   color: #4770F7;
 }
 
+.post-comments-form .comment-respond {
+  margin-top: 50px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 14px;
+}
 .post-comments-form .comment-respond .contacts-email,
 .post-comments-form .comment-respond .contacts-name {
   margin-bottom: 20px;
