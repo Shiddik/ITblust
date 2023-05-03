@@ -38,6 +38,13 @@
           text-transform: capitalize;
           color: $text-color;
           margin-top: 20px;
+          font-style: normal;
+          @include transition;
+
+          &:hover {
+            @include transition;
+            color: $primary-color;
+          }
         }
       }
     }
