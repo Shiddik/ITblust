@@ -1551,10 +1551,9 @@ a.meanmenu-reveal {
 .blog-details-border {
   margin-top: 40px;
   background: #fff;
-  padding: 40px 0;
+  padding: 40px;
   padding-bottom: 22px;
-  border-top: 1px solid #eaedff;
-  border-bottom: 1px solid #eaedff;
+  border-radius: 14px;
 }
 
 .bakix-navigation span {
