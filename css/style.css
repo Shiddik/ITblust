@@ -1211,10 +1211,10 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
-.blog-details-area .single-post-item .post-content p {
+.blog-details-wrapper .single-post-item .post-content p {
   margin-bottom: 15px;
 }
-.blog-details-area .single-post-item .post-content p img {
+.blog-details-wrapper .single-post-item .post-content p img {
   margin: 15px 0;
   border-radius: 14px;
 }
