@@ -79,8 +79,7 @@ a:focus,
   text-decoration: none;
   outline: none;
 }
-a:focus,
-a:hover{
+a:focus{
   color: $primary-color;
   text-decoration: none;
   @include transition;
