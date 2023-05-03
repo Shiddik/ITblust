@@ -280,15 +280,6 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: $primary-color;
-      height: 100%;
-      width: 5px;
-    }
     p {
       font-family: $heading-font;
       font-size: 24px;

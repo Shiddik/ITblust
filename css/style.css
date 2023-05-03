@@ -435,6 +435,10 @@ img.emoji {
 /*
  Block Unit Test Widget
 ============================*/
+.wp-block-quote, blockquote {
+  border-left: solid 5px #4770F7;
+}
+
 .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
   margin-left: 10px;
 }
@@ -1473,15 +1477,6 @@ a.meanmenu-reveal {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
-}
-.single-post-item blockquote:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #4770F7;
-  height: 100%;
-  width: 5px;
 }
 .single-post-item blockquote p {
   font-family: "Playfair Display", serif;

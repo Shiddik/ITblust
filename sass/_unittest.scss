@@ -168,6 +168,9 @@ img {
 /*
  Block Unit Test Widget
 ============================*/
+.wp-block-quote, blockquote {
+  border-left: solid 5px $primary-color;
+}
 .wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
   margin-left: 10px;
 }
