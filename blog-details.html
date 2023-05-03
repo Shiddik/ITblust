@@ -305,26 +305,32 @@
                 </div>
                 <!-- Comment List End -->
                 <!-- Comment Form Start -->
-                <div class="comment-field">
-                    <h3 class="leave-comment-title">Leave a Reply </h3>
-                    <form action="#" method="post" id="commentform">
-                        <div class="row form-fields">
-                            <p class="comment-author col-md-6">
-                                <input placeholder="Name*" id="author" name="author" value="" size="30" type="text" aria-required="true">
-                            </p>
-                            <p class="author-email col-md-6">
-                                <input placeholder="Email" id="email" name="email" value="" size="30" type="text"  aria-required="true">
-                            </p>
-                            <p class="author-website col-md-12">
-                                <input placeholder="Website" id="url" name="url" value="" size="30" type="text">
-                            </p>
-                            <p class="comment-form col-12">
-                                <textarea placeholder="Write Your Comment" id="comment" name="comment" cols="20" rows="3" aria-required="true"></textarea>
-                            </p>
+                <div class="post-comments-form mt-45 mb-30">
+                    <div class="post-comments-title">
+                        <h2>Leave a Reply</h2>
+                    </div>
+                    <form action="#" method="post" class="comment-form">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="contacts-name">
+                                    <label>Your name *</label>
+                                    <input name="author" type="text">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="contacts-email">
+                                    <label>Your email *</label>
+                                    <input name="email" type="text">
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="contacts-message">
+                                    <label>Comments *</label>
+                                    <textarea name="comment" cols="20" rows="3" type="text"></textarea>
+                                    <button class="theme-btn" type="submit">Post Comment </button>
+                                </div>
+                            </div>
                         </div>
-                        <span class="form-submit">
-                            <input name="submit" id="submit" class="submit" value="Post Comment" type="submit">
-                        </span>
                     </form>
                 </div>
                 <!-- Comment Form End -->

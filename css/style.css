@@ -2142,14 +2142,14 @@ ul.children {
 
 */
 /*Comment Input Filed*/
-.comment-field {
+.post-comments-form {
   margin-top: 50px;
   background-color: #FFFFFF;
   padding: 30px;
   border-radius: 14px;
 }
 
-.leave-comment-title {
+.post-comments-title h2 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -2157,7 +2157,18 @@ ul.children {
   margin-bottom: 25px;
 }
 
-#commentform input[type=text] {
+.comment-form .contacts-email,
+.comment-form .contacts-name {
+  margin-bottom: 20px;
+}
+.comment-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  margin-bottom: 12px;
+}
+.comment-form input[type=text] {
   padding: 0 20px;
   height: 55px;
   width: 100%;
@@ -2169,33 +2180,33 @@ ul.children {
   background-color: #FFFFFF;
   font-family: "Raleway", sans-serif !important;
 }
-#commentform *::-webkit-input-placeholder {
+.comment-form *::-webkit-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-#commentform *:-moz-placeholder {
-  font-family: "Raleway", sans-serif !important;
-  color: #777777;
-  opacity: 1;
-}
-#commentform *::-moz-placeholder {
+.comment-form *:-moz-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
   opacity: 1;
 }
-#commentform *:-ms-input-placeholder {
+.comment-form *::-moz-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+  opacity: 1;
+}
+.comment-form *:-ms-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-#commentform *::-ms-input-placeholder {
+.comment-form *::-ms-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-#commentform *::placeholder {
+.comment-form *::placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-#commentform textarea {
+.comment-form textarea {
   resize: vertical;
   padding: 20px;
   width: 100%;
@@ -2207,7 +2218,7 @@ ul.children {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
-#commentform input#submit {
+.comment-form .theme-btn {
   display: inline-flex;
   background: #4770F7;
   color: #FFFFFF;
@@ -2223,16 +2234,17 @@ ul.children {
   align-items: center;
   gap: 10px;
   border-radius: 10px;
+  margin-top: 20px;
 }
-#commentform input#submit:hover {
+.comment-form .theme-btn:hover {
   background: #071c34;
   color: #fff;
   border-color: #071c34;
 }
-#commentform p {
+.comment-form p {
   margin-bottom: 20px;
 }
-#commentform input:focus, #commentform textarea:focus {
+.comment-form input:focus, .comment-form textarea:focus {
   outline: none !important;
   border-color: #4770F7;
   transition: all 0.4s ease 0s;
