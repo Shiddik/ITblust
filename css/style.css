@@ -2155,23 +2155,30 @@ ul.children {
   font-weight: 700;
   color: #04144E;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.post-comments-title h2 small {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #4770F7;
 }
 
-.comment-form .contacts-email,
-.comment-form .contacts-name {
+.comment-form .comment-respond .contacts-email,
+.comment-form .comment-respond .contacts-name {
   margin-bottom: 20px;
 }
-.comment-form label {
+.comment-form .comment-respond label {
   display: block;
   font-size: 16px;
   font-weight: 600;
   color: #777777;
   margin-bottom: 12px;
 }
-.comment-form .comment-form-cookies-consent {
+.comment-form .comment-respond .comment-form-cookies-consent {
   display: none;
 }
-.comment-form input[type=text] {
+.comment-form .comment-respond input[type=text] {
   padding: 0 20px;
   height: 55px;
   width: 100%;
@@ -2183,33 +2190,33 @@ ul.children {
   background-color: #FFFFFF;
   font-family: "Raleway", sans-serif !important;
 }
-.comment-form *::-webkit-input-placeholder {
+.comment-form .comment-respond *::-webkit-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.comment-form *:-moz-placeholder {
-  font-family: "Raleway", sans-serif !important;
-  color: #777777;
-  opacity: 1;
-}
-.comment-form *::-moz-placeholder {
+.comment-form .comment-respond *:-moz-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
   opacity: 1;
 }
-.comment-form *:-ms-input-placeholder {
+.comment-form .comment-respond *::-moz-placeholder {
+  font-family: "Raleway", sans-serif !important;
+  color: #777777;
+  opacity: 1;
+}
+.comment-form .comment-respond *:-ms-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.comment-form *::-ms-input-placeholder {
+.comment-form .comment-respond *::-ms-input-placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.comment-form *::placeholder {
+.comment-form .comment-respond *::placeholder {
   font-family: "Raleway", sans-serif !important;
   color: #777777;
 }
-.comment-form textarea {
+.comment-form .comment-respond textarea {
   resize: vertical;
   padding: 20px;
   width: 100%;
@@ -2221,7 +2228,7 @@ ul.children {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
-.comment-form .theme-btn {
+.comment-form .comment-respond .theme-btn {
   display: inline-flex;
   background: #4770F7;
   color: #FFFFFF;
@@ -2239,15 +2246,15 @@ ul.children {
   border-radius: 10px;
   margin-top: 20px;
 }
-.comment-form .theme-btn:hover {
+.comment-form .comment-respond .theme-btn:hover {
   background: #071c34;
   color: #fff;
   border-color: #071c34;
 }
-.comment-form p {
+.comment-form .comment-respond p {
   margin-bottom: 20px;
 }
-.comment-form input:focus, .comment-form textarea:focus {
+.comment-form .comment-respond input:focus, .comment-form .comment-respond textarea:focus {
   outline: none !important;
   border-color: #4770F7;
   transition: all 0.4s ease 0s;
