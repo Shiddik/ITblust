@@ -20,13 +20,10 @@
     //    padding-top: 0;
     //  }
     //}
-    &.comment {
-      &:last-child {
-
-        background-color: red !important;
-        .comments-box {
-          padding-bottom: 0;
-        }
+    &:last-child {
+      background-color: red !important;
+      .comments-box {
+        padding-bottom: 0;
       }
     }
     .children {

@@ -2081,10 +2081,10 @@ a.meanmenu-reveal {
   margin-bottom: 0;
 }
 
-.latest-comments li.comment:last-child {
+.latest-comments li:last-child {
   background-color: red !important;
 }
-.latest-comments li.comment:last-child .comments-box {
+.latest-comments li:last-child .comments-box {
   padding-bottom: 0;
 }
 .latest-comments li .children .comments-box {
