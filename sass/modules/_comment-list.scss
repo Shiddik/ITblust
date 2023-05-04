@@ -22,6 +22,8 @@
     //}
     &.comment {
       &:last-child {
+
+        background-color: red !important;
         .comments-box {
           padding-bottom: 0;
         }
