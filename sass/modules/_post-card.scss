@@ -65,7 +65,7 @@
     font-size: 40px;
     line-height: 54px;
     font-weight: 600;
-    margin-bottom: 10px;
+
 
     &:hover {
       a {
@@ -75,6 +75,15 @@
     }
   }
   .post-content {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+      margin-bottom: 10px;
+    }
+
     ul {
       padding-left: 20px;
     }
