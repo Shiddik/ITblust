@@ -1353,6 +1353,9 @@ a.meanmenu-reveal {
 .single-post-item .post-content-wrapper a.primary-btn {
   margin-top: 30px;
 }
+.single-post-item.format-quote .post-content {
+  margin: 0;
+}
 .single-post-item.format-quote blockquote {
   margin: 0;
 }

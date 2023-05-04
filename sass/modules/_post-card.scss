@@ -29,6 +29,9 @@
   }
   /* Quote Format Post */
   &.format-quote {
+    .post-content {
+      margin: 0;
+    }
     blockquote {
       margin: 0;
 
