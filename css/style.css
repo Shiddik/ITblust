@@ -436,6 +436,10 @@ ul {
   display: block;
 }
 
+.size-thumbnail {
+  margin-bottom: 20px;
+}
+
 img.emoji {
   width: 15px;
   height: 15px;
