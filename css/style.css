@@ -1328,6 +1328,9 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
+.blog-details-wrapper .single-post-item .post-content-wrapper {
+  padding-bottom: 10px;
+}
 .blog-details-wrapper .single-post-item .post-content {
   margin-bottom: 20px;
 }
