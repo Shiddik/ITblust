@@ -13,12 +13,12 @@
 .latest-comments {
   li {
 
-    &.depth-1 {
-      > .comments-box {
-        border-top: 0;
-        padding-top: 0;
-      }
-    }
+    //&.depth-1 {
+    //  > .comments-box {
+    //    border-top: 0;
+    //    padding-top: 0;
+    //  }
+    //}
 
     .children {
       .comments-box {
@@ -36,18 +36,19 @@
     .comments-box {
       padding: 30px 0;
       border-top: 1px solid #D2D2D2;
-      display: flex;
-      gap: 20px;
 
       .comments-avatar {
-        flex-shrink: 0;
+        float: left;
 
         img {
+          margin-right: 20px;
           width: 100px;
           border-radius: 10px;
         }
       }
       .comments-text {
+          overflow: hidden;
+
 
         p {
           font-size: 14px;
