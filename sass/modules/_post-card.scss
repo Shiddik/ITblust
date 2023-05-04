@@ -84,8 +84,13 @@
       margin-bottom: 10px;
     }
 
-    ul {
+    ol,
+    ul{
       padding-left: 20px;
+
+      li {
+        padding-top: 7px;
+      }
     }
     p {
       margin-bottom: unset;

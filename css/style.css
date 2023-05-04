@@ -1388,8 +1388,13 @@ a.meanmenu-reveal {
 .single-post-item .post-content h6 {
   margin-bottom: 10px;
 }
+.single-post-item .post-content ol,
 .single-post-item .post-content ul {
   padding-left: 20px;
+}
+.single-post-item .post-content ol li,
+.single-post-item .post-content ul li {
+  padding-top: 7px;
 }
 .single-post-item .post-content p {
   margin-bottom: unset;
