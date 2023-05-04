@@ -285,40 +285,6 @@ ul {
   list-style: disc;
 }
 
-.page-links {
-  width: 100%;
-  clear: both;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-
-.page-links > span.page-links-title {
-  border: 0;
-  color: inherit;
-}
-
-.page-links a, .page-links > span {
-  border: 2px solid #FFFFFF;
-  display: inline-block;
-  min-width: 35px;
-  text-align: center;
-  margin-left: 2px;
-  height: 33px;
-  line-height: 30px;
-  margin-right: 3px;
-  color: #777777;
-}
-
-.page-links > span {
-  border: 2px solid #4770F7;
-  color: #096bd8;
-}
-
-.page-links a:hover {
-  border: 2px solid #4770F7;
-  color: #4770F7;
-}
-
 /* Table */
 .blog-details-wrapper table {
   margin-bottom: 30px;
@@ -1626,7 +1592,8 @@ a.meanmenu-reveal {
   color: #FE4536;
 }
 
-.basic-pagination ul {
+.basic-pagination ul,
+.page-links ul {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1634,15 +1601,21 @@ a.meanmenu-reveal {
   list-style: none;
 }
 @media only screen and (max-width: 767px) {
-  .basic-pagination ul {
+  .basic-pagination ul,
+  .page-links ul {
     margin-top: 50px;
   }
 }
 .basic-pagination ul .prev span,
-.basic-pagination ul .next span {
+.basic-pagination ul .next span,
+.page-links ul .prev span,
+.page-links ul .next span {
   display: none;
 }
-.basic-pagination ul .page-numbers {
+.basic-pagination .page-numbers,
+.basic-pagination .post-page-numbers,
+.page-links .page-numbers,
+.page-links .post-page-numbers {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1656,12 +1629,18 @@ a.meanmenu-reveal {
   font-size: 18px;
   font-weight: 600;
 }
-.basic-pagination ul .page-numbers:hover {
+.basic-pagination .page-numbers:hover,
+.basic-pagination .post-page-numbers:hover,
+.page-links .page-numbers:hover,
+.page-links .post-page-numbers:hover {
   background: #4770F7;
   color: #FFFFFF;
   transition: all 0.5s ease-out;
 }
-.basic-pagination ul .page-numbers.current {
+.basic-pagination .page-numbers.current,
+.basic-pagination .post-page-numbers.current,
+.page-links .page-numbers.current,
+.page-links .post-page-numbers.current {
   background: #4770F7;
   color: #FFFFFF;
   transition: all 0.5s ease-out;

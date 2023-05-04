@@ -12,36 +12,36 @@ dl, ol, ul {
 ul {
   list-style: disc;
 }
-
-.page-links {
-  width: 100%;
-  clear: both;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-.page-links > span.page-links-title {
-  border: 0;
-  color: inherit;
-}
-.page-links a, .page-links > span {
-  border: 2px solid $white;
-  display: inline-block;
-  min-width: 35px;
-  text-align: center;
-  margin-left: 2px;
-  height: 33px;
-  line-height: 30px;
-  margin-right: 3px;
-  color: $text-color;
-}
-.page-links > span {
-  border: 2px solid $primary-color ;
-  color: #096bd8 ;
-}
-.page-links a:hover {
-  border: 2px solid $primary-color;
-  color: $primary-color;
-}
+//
+//.page-links {
+//  width: 100%;
+//  clear: both;
+//  margin-bottom: 30px;
+//  margin-top: 20px;
+//}
+//.page-links > span.page-links-title {
+//  border: 0;
+//  color: inherit;
+//}
+//.page-links a, .page-links > span {
+//  border: 2px solid $white;
+//  display: inline-block;
+//  min-width: 35px;
+//  text-align: center;
+//  margin-left: 2px;
+//  height: 33px;
+//  line-height: 30px;
+//  margin-right: 3px;
+//  color: $text-color;
+//}
+//.page-links > span {
+//  border: 2px solid $primary-color ;
+//  color: #096bd8 ;
+//}
+//.page-links a:hover {
+//  border: 2px solid $primary-color;
+//  color: $primary-color;
+//}
 
 /* Table */
 .blog-details-wrapper {
