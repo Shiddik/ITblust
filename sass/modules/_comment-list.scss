@@ -20,11 +20,16 @@
     //    padding-top: 0;
     //  }
     //}
-
+    &.comment {
+      &:last-child {
+        .comments-box {
+          padding-bottom: 0;
+        }
+      }
+    }
     .children {
       .comments-box {
         padding-left: 100px;
-
       }
       .children {
         .comments-box {

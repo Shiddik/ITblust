@@ -2081,6 +2081,9 @@ a.meanmenu-reveal {
   margin-bottom: 0;
 }
 
+.latest-comments li.comment:last-child .comments-box {
+  padding-bottom: 0;
+}
 .latest-comments li .children .comments-box {
   padding-left: 100px;
 }
