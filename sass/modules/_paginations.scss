@@ -1,16 +1,20 @@
 .basic-pagination,
 .page-links{
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 
   ul {
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
     list-style: none;
+    margin-bottom: 0;
 
-    @media only screen and (max-width: 767px) {
-      margin-top: 50px;
-    }
     .prev,
     .next
     {
@@ -19,12 +23,14 @@
       }
     }
   }
+  .post-page-numbers {
+    background-color: rgba(71, 112, 247, 0.1) !important;
+  }
   .page-numbers,
   .post-page-numbers {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
     color: $primary-color;
     background-color: $white;
     border-radius: 10px;
@@ -35,13 +41,13 @@
     font-weight: 600;
 
     &:hover {
-      background: $primary-color;
+      background: $primary-color !important;
       color: $white;
       @include transition;
     }
 
     &.current {
-      background: $primary-color;
+      background: $primary-color !important;
       color: $white;
       @include transition;
     }

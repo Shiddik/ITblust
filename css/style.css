@@ -1592,25 +1592,33 @@ a.meanmenu-reveal {
   color: #FE4536;
 }
 
+.basic-pagination,
+.page-links {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 .basic-pagination ul,
 .page-links ul {
-  display: flex;
+  display: inline-flex;
+  width: 100%;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
   list-style: none;
-}
-@media only screen and (max-width: 767px) {
-  .basic-pagination ul,
-  .page-links ul {
-    margin-top: 50px;
-  }
+  margin-bottom: 0;
 }
 .basic-pagination ul .prev span,
 .basic-pagination ul .next span,
 .page-links ul .prev span,
 .page-links ul .next span {
   display: none;
+}
+.basic-pagination .post-page-numbers,
+.page-links .post-page-numbers {
+  background-color: rgba(71, 112, 247, 0.1) !important;
 }
 .basic-pagination .page-numbers,
 .basic-pagination .post-page-numbers,
@@ -1619,7 +1627,6 @@ a.meanmenu-reveal {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
   color: #4770F7;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -1633,7 +1640,7 @@ a.meanmenu-reveal {
 .basic-pagination .post-page-numbers:hover,
 .page-links .page-numbers:hover,
 .page-links .post-page-numbers:hover {
-  background: #4770F7;
+  background: #4770F7 !important;
   color: #FFFFFF;
   transition: all 0.5s ease-out;
 }
@@ -1641,7 +1648,7 @@ a.meanmenu-reveal {
 .basic-pagination .post-page-numbers.current,
 .page-links .page-numbers.current,
 .page-links .post-page-numbers.current {
-  background: #4770F7;
+  background: #4770F7 !important;
   color: #FFFFFF;
   transition: all 0.5s ease-out;
 }
