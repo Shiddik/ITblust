@@ -1599,6 +1599,7 @@ a.meanmenu-reveal {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .basic-pagination ul,
 .page-links ul {
