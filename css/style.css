@@ -1438,10 +1438,12 @@ a.meanmenu-reveal {
 .single-post-item .blog-post-tag a {
   background: #F3F4F8;
   color: #777777;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 25px;
   padding: 13px 16px;
   border-radius: 8px;
   transition: all 0.5s ease-out;
