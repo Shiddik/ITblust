@@ -289,6 +289,8 @@ ul {
 .post-password-form label {
   width: 100%;
   display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .post-password-form input[type=password] {
   font-size: 1.2rem;
