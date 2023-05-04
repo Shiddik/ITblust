@@ -285,6 +285,31 @@ ul {
   list-style: disc;
 }
 
+/* Protected Post Type */
+.post-password-form label {
+  width: 100%;
+  display: block;
+}
+.post-password-form input[type=password] {
+  font-size: 1.2rem;
+  line-height: 20px;
+  padding: 12px 20px;
+  border: 1px solid #E4E4F2;
+  width: 100%;
+}
+.post-password-form input[type=submit] {
+  background-color: #4770F7;
+  border: none;
+  padding: 10px 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease-out;
+}
+.post-password-form input[type=submit]:hover {
+  background-color: #04144E;
+}
+
 /* Table */
 .blog-details-wrapper table {
   margin-bottom: 30px;
