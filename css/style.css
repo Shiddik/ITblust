@@ -322,6 +322,7 @@ ul {
 /* Table */
 .blog-details-wrapper table {
   margin-bottom: 30px;
+  width: 100%;
 }
 .blog-details-wrapper table tbody th,
 .blog-details-wrapper table tbody td {
