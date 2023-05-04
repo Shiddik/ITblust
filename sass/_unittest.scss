@@ -42,6 +42,24 @@ ul {
   border: 2px solid $primary-color;
   color: $primary-color;
 }
+
+/* Table */
+.blog-details-wrapper {
+  table{
+    margin-bottom: 30px;
+
+    tbody {
+      th,
+      td
+      {
+        text-align: center;
+        border: 1px solid $gray;
+        padding: 12px 12px;
+      }
+    }
+  }
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;

@@ -319,6 +319,17 @@ ul {
   color: #4770F7;
 }
 
+/* Table */
+.blog-details-wrapper table {
+  margin-bottom: 30px;
+}
+.blog-details-wrapper table tbody th,
+.blog-details-wrapper table tbody td {
+  text-align: center;
+  border: 1px solid #D7D7D7;
+  padding: 12px 12px;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
