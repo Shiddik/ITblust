@@ -1328,6 +1328,9 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
+.blog-details-wrapper .single-post-item .post-content {
+  margin-bottom: 20px;
+}
 .blog-details-wrapper .single-post-item .post-content p {
   margin-bottom: 15px;
 }
@@ -1380,6 +1383,7 @@ a.meanmenu-reveal {
   font-size: 40px;
   line-height: 54px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .single-post-item .post-title:hover a {
   color: #4770F7;
