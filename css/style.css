@@ -597,10 +597,6 @@ blockquote footer {
   padding-left: 14px;
 }
 
-.wp-block-latest-posts__list.is-grid {
-  padding-left: 0;
-}
-
 .wp-block-cover p.wp-block-cover-text {
   color: #fff;
 }
@@ -1354,6 +1350,15 @@ a.meanmenu-reveal {
 }
 
 /* 16.Blog Section */
+.blog-area ol,
+.blog-area ul {
+  padding-left: 20px;
+}
+.blog-area ol li,
+.blog-area ul li {
+  padding-top: 7px;
+}
+
 .blog-details-wrapper .single-post-item .post-content-wrapper {
   padding-bottom: 10px;
 }
@@ -1427,14 +1432,6 @@ a.meanmenu-reveal {
 .single-post-item .post-content h5,
 .single-post-item .post-content h6 {
   margin-bottom: 10px;
-}
-.single-post-item .post-content ol,
-.single-post-item .post-content ul {
-  padding-left: 20px;
-}
-.single-post-item .post-content ol li,
-.single-post-item .post-content ul li {
-  padding-top: 7px;
 }
 .single-post-item .post-content p {
   margin-bottom: unset;

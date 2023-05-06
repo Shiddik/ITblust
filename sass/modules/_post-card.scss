@@ -1,3 +1,13 @@
+.blog-area {
+  ol,
+  ul{
+    padding-left: 20px;
+
+    li {
+      padding-top: 7px;
+    }
+  }
+}
 .blog-details-wrapper {
   .single-post-item {
     .post-content-wrapper {
@@ -92,14 +102,6 @@
       margin-bottom: 10px;
     }
 
-    ol,
-    ul{
-      padding-left: 20px;
-
-      li {
-        padding-top: 7px;
-      }
-    }
     p {
       margin-bottom: unset;
     }
