@@ -333,6 +333,7 @@ table caption {
   background-color: #eaedff;
   text-align: center;
 }
+table tbody tr th,
 table tbody tr td {
   background: #FFFFFF;
   border: 1px solid #eaedff;
@@ -340,10 +341,12 @@ table tbody tr td {
   padding: 8px;
   transition: 0.3s;
 }
+table tbody tr th#today,
 table tbody tr td#today {
   background: #4770F7;
   color: #FFFFFF;
 }
+table tbody tr th#today a,
 table tbody tr td#today a {
   color: #FFFFFF;
 }
