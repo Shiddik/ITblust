@@ -335,7 +335,7 @@ table caption {
 }
 table th,
 table td {
-  background: #FFFFFF;
+  background-color: transparent;
   border: 1px solid #eaedff;
   text-align: center;
   padding: 8px;
