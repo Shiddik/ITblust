@@ -130,15 +130,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
+    padding-bottom: 20px;
       span {
         font-size: 18px;
         font-weight: 600;
-        display: block;
+        display: inline-block;
         font-family: $heading-font;
         color: $black;
-        display: block;
         margin-bottom: 17px;
+        width: 100%;
       }
     a {
       background: $gray-100;

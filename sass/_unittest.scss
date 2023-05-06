@@ -64,7 +64,6 @@ ul {
           &#today {
             background: $primary-color;
             color: $white;
-            border-radius: 5px;
 
             a {
               color: $white;
@@ -322,6 +321,9 @@ blockquote {
 }
 .wp-block-cover-text a {
   color: #fff;
+}
+.wp-block-rss {
+  padding-left: 0;
 }
 /*
  Media

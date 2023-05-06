@@ -338,7 +338,6 @@ ul {
 .blog-details-wrapper table tbody tr td#today {
   background: #4770F7;
   color: #FFFFFF;
-  border-radius: 5px;
 }
 .blog-details-wrapper table tbody tr td#today a {
   color: #FFFFFF;
@@ -599,6 +598,10 @@ blockquote footer {
 
 .wp-block-cover-text a {
   color: #fff;
+}
+
+.wp-block-rss {
+  padding-left: 0;
 }
 
 /*
@@ -1451,15 +1454,16 @@ a.meanmenu-reveal {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding-bottom: 20px;
 }
 .single-post-item .blog-post-tag span {
   font-size: 18px;
   font-weight: 600;
-  display: block;
+  display: inline-block;
   font-family: "Playfair Display", serif;
   color: #020A27;
-  display: block;
   margin-bottom: 17px;
+  width: 100%;
 }
 .single-post-item .blog-post-tag a {
   background: #F3F4F8;
