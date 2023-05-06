@@ -325,26 +325,26 @@ ul {
 }
 
 /* Table */
-.blog-details-wrapper table {
+table {
   margin-bottom: 30px;
   width: 100%;
 }
-.blog-details-wrapper table caption {
+table caption {
   background-color: #eaedff;
   text-align: center;
 }
-.blog-details-wrapper table tbody tr td {
+table tbody tr td {
   background: #FFFFFF;
   border: 1px solid #eaedff;
   text-align: center;
   padding: 8px;
   transition: 0.3s;
 }
-.blog-details-wrapper table tbody tr td#today {
+table tbody tr td#today {
   background: #4770F7;
   color: #FFFFFF;
 }
-.blog-details-wrapper table tbody tr td#today a {
+table tbody tr td#today a {
   color: #FFFFFF;
 }
 

@@ -43,31 +43,29 @@ ul {
 }
 
 /* Table */
-.blog-details-wrapper {
-  table {
-    margin-bottom: 30px;
-    width: 100%;
+table {
+  margin-bottom: 30px;
+  width: 100%;
 
-    caption {
-      background-color: #eaedff;
-      text-align: center;
-    }
-    tbody {
-      tr {
-        td {
-          background: #FFFFFF;
-          border: 1px solid #eaedff;
-          text-align: center;
-          padding: 8px;
-          transition: .3s;
+  caption {
+    background-color: #eaedff;
+    text-align: center;
+  }
+  tbody {
+    tr {
+      td {
+        background: #FFFFFF;
+        border: 1px solid #eaedff;
+        text-align: center;
+        padding: 8px;
+        transition: .3s;
 
-          &#today {
-            background: $primary-color;
+        &#today {
+          background: $primary-color;
+          color: $white;
+
+          a {
             color: $white;
-
-            a {
-              color: $white;
-            }
           }
         }
       }
