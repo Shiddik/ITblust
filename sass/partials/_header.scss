@@ -50,14 +50,11 @@
 
 // Start Header Nav
 .header-sec.sticky-header {
-  //position: absolute;
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease 0s;
-  //background: transparent;
 }
 .header-sec{
-  //position: absolute;
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease 0s;
@@ -90,6 +87,7 @@
       display: inline-block;
       padding: 0;
       position: relative;
+
       &.active {
         position: relative;
         > a {
@@ -109,16 +107,28 @@
         margin-left: 28px;
 
       }
-      ul:hover .main-menu ul li a {
-        background: #fafafa;
-      }
-      a:hover {
-        transition: all 0.4s 0s ease;
-        color: $primary-color;
-      }
       &:first-child {
         a {
           margin-left: 0;
+        }
+      }
+      &:hover {
+        >
+        ul {
+          visibility: visible;
+          transition: all 0.4s ease 0s;
+          opacity: 1;
+          top: 100px;
+        }
+      }
+      ul {
+        li {
+          &:hover {
+           ul {
+             visibility: visible;
+             top: 0;
+           }
+          }
         }
       }
     }
@@ -132,46 +142,35 @@
       visibility: hidden;
       z-index: 99999;
       transition: all 0.3s ease 0s;
-      padding: 30px 20px;
       border-top: 2px solid $primary-color;
-      border-left: 3px solid #f9f9f9;
-      border-bottom: 3px solid #f9f9f9;
-      border-right: 3px solid #f9f9f9;
+
       li {
         float: none;
-        width: 200px;
+        width: 250px;
 
         ul {
-          visibility: hidden !important;
+          visibility: hidden;
         }
         i {
           float: right;
         }
-        &:hover {
-          ul {
-            visibility: visible !important;
-            top: 0px;
-            transition: all 0.3s ease 0s;
-            opacity: 1;
 
-
-          }
-        }
         a {
           line-height: 120%;
           padding: 10px 20px;
           color:$text-color;
-          font-size: 14px;
-          border-bottom: 1px solid #f2f2f2;
+          border-bottom: 1px solid $gray-200;
           margin-left: 0;
+
+          &:hover {
+            background-color: $primary-color;
+            color: $white;
+          }
         }
         &:last-child a {
           border-bottom: 0px;
         }
-        a:hover {
-          color: $primary-color;
-          background: #fff;
-        }
+
       }
       ul {
         left: 100%;
@@ -179,14 +178,7 @@
         opacity: 0;
         border-top: 0px;
         border-top: 2px solid $primary-color;
-        border-bottom: 1px solid #071c34;
       }
-    }
-    li:hover ul {
-      visibility: visible;
-      transition: all 0.4s ease 0s;
-      opacity: 1;
-      top: 100px;
     }
   }
 }

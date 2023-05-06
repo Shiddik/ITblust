@@ -959,15 +959,18 @@ html {
   font-size: 16px;
   margin-left: 28px;
 }
-.main-menu ul li ul:hover .main-menu ul li a {
-  background: #fafafa;
-}
-.main-menu ul li a:hover {
-  transition: all 0.4s 0s ease;
-  color: #4770F7;
-}
 .main-menu ul li:first-child a {
   margin-left: 0;
+}
+.main-menu ul li:hover > ul {
+  visibility: visible;
+  transition: all 0.4s ease 0s;
+  opacity: 1;
+  top: 100px;
+}
+.main-menu ul li ul li:hover ul {
+  visibility: visible;
+  top: 0;
 }
 .main-menu ul ul {
   background: #fff;
@@ -979,42 +982,31 @@ html {
   visibility: hidden;
   z-index: 99999;
   transition: all 0.3s ease 0s;
-  padding: 30px 20px;
   border-top: 2px solid #4770F7;
-  border-left: 3px solid #f9f9f9;
-  border-bottom: 3px solid #f9f9f9;
-  border-right: 3px solid #f9f9f9;
 }
 .main-menu ul ul li {
   float: none;
-  width: 200px;
+  width: 250px;
 }
 .main-menu ul ul li ul {
-  visibility: hidden !important;
+  visibility: hidden;
 }
 .main-menu ul ul li i {
   float: right;
-}
-.main-menu ul ul li:hover ul {
-  visibility: visible !important;
-  top: 0px;
-  transition: all 0.3s ease 0s;
-  opacity: 1;
 }
 .main-menu ul ul li a {
   line-height: 120%;
   padding: 10px 20px;
   color: #777777;
-  font-size: 14px;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #F5F5F5;
   margin-left: 0;
+}
+.main-menu ul ul li a:hover {
+  background-color: #4770F7;
+  color: #FFFFFF;
 }
 .main-menu ul ul li:last-child a {
   border-bottom: 0px;
-}
-.main-menu ul ul li a:hover {
-  color: #4770F7;
-  background: #fff;
 }
 .main-menu ul ul ul {
   left: 100%;
@@ -1022,13 +1014,6 @@ html {
   opacity: 0;
   border-top: 0px;
   border-top: 2px solid #4770F7;
-  border-bottom: 1px solid #071c34;
-}
-.main-menu ul li:hover ul {
-  visibility: visible;
-  transition: all 0.4s ease 0s;
-  opacity: 1;
-  top: 100px;
 }
 
 .animation {
