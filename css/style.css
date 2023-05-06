@@ -356,6 +356,14 @@ table td#today a {
   color: #FFFFFF;
 }
 
+.page-content .size-full.alignright {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+.page-content figure.wp-caption.aligncenter {
+  margin-top: 40px;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
