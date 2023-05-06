@@ -51,25 +51,21 @@ table {
     background-color: #eaedff;
     text-align: center;
   }
-  tbody {
-    tr {
-      th,
-      td,
-      {
-        background: #FFFFFF;
-        border: 1px solid #eaedff;
-        text-align: center;
-        padding: 8px;
-        transition: .3s;
+  th,
+  td,
+  {
+    background: #FFFFFF;
+    border: 1px solid #eaedff;
+    text-align: center;
+    padding: 8px;
+    transition: .3s;
 
-        &#today {
-          background: $primary-color;
-          color: $white;
+    &#today {
+      background: $primary-color;
+      color: $white;
 
-          a {
-            color: $white;
-          }
-        }
+      a {
+        color: $white;
       }
     }
   }
