@@ -26,6 +26,9 @@
       }
     }
   }
+  .wp-block-calendar {
+    margin-bottom: 30px;
+  }
 }
 .single-post-item {
   background-color: $white;
@@ -131,13 +134,14 @@
     flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 20px;
+
       span {
         font-size: 18px;
         font-weight: 600;
         display: inline-block;
         font-family: $heading-font;
         color: $black;
-        margin-bottom: 17px;
+        margin-bottom: 0;
         width: 100%;
       }
     a {

@@ -1371,6 +1371,9 @@ a.meanmenu-reveal {
   margin: 15px 0;
   border-radius: 14px;
 }
+.blog-details-wrapper .wp-block-calendar {
+  margin-bottom: 30px;
+}
 
 .single-post-item {
   background-color: #FFFFFF;
@@ -1462,7 +1465,7 @@ a.meanmenu-reveal {
   display: inline-block;
   font-family: "Playfair Display", serif;
   color: #020A27;
-  margin-bottom: 17px;
+  margin-bottom: 0;
   width: 100%;
 }
 .single-post-item .blog-post-tag a {
