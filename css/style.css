@@ -324,18 +324,23 @@ ul {
   margin-bottom: 30px;
   width: 100%;
 }
-.blog-details-wrapper table tbody th,
-.blog-details-wrapper table tbody td {
+.blog-details-wrapper table caption {
+  background-color: #eaedff;
   text-align: center;
-  border: 1px solid #D7D7D7;
-  padding: 12px 12px;
 }
-.blog-details-wrapper table tbody #today {
+.blog-details-wrapper table tbody tr td {
+  background: #FFFFFF;
+  border: 1px solid #eaedff;
+  text-align: center;
+  padding: 8px;
+  transition: 0.3s;
+}
+.blog-details-wrapper table tbody tr td#today {
   background: #4770F7;
   color: #FFFFFF;
   border-radius: 5px;
 }
-.blog-details-wrapper table tbody #today a {
+.blog-details-wrapper table tbody tr td#today a {
   color: #FFFFFF;
 }
 
@@ -2036,14 +2041,6 @@ a.meanmenu-reveal {
   font-weight: 600;
   gap: 8px;
   color: #4770F7;
-}
-
-.widget_calendar .wp-calendar-table {
-  width: 100%;
-}
-.widget_calendar .wp-calendar-table caption {
-  background-color: #eaedff;
-  text-align: center;
 }
 
 .widget_promotion {

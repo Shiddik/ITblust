@@ -44,26 +44,32 @@ ul {
 
 /* Table */
 .blog-details-wrapper {
-  table{
+  table {
     margin-bottom: 30px;
     width: 100%;
 
+    caption {
+      background-color: #eaedff;
+      text-align: center;
+    }
     tbody {
-      th,
-      td
-      {
-        text-align: center;
-        border: 1px solid $gray;
-        padding: 12px 12px;
+      tr {
+        td {
+          background: #FFFFFF;
+          border: 1px solid #eaedff;
+          text-align: center;
+          padding: 8px;
+          transition: .3s;
 
-      }
-      #today {
-        background: $primary-color;
-        color: $white;
-        border-radius: 5px;
+          &#today {
+            background: $primary-color;
+            color: $white;
+            border-radius: 5px;
 
-        a {
-          color: $white;
+            a {
+              color: $white;
+            }
+          }
         }
       }
     }
