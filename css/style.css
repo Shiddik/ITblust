@@ -580,7 +580,8 @@ blockquote footer {
   margin-bottom: 10px;
 }
 
-.wp-block-archives select {
+.wp-block-archives select,
+.wp-block-categories select {
   height: 50px;
   width: 200px;
   border: 1px solid #ddd;

@@ -304,12 +304,15 @@ blockquote {
 .wp-block-button {
   margin-bottom: 10px;
 }
-.wp-block-archives select {
-  height: 50px;
-  width: 200px;
-  border: 1px solid #ddd;
-  padding: 0 10px;
-  margin-bottom: 10px;
+.wp-block-archives,
+.wp-block-categories {
+  select {
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
 }
 .wp-block-latest-comments {
   padding-left: 0 !important;
