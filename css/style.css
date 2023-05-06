@@ -119,6 +119,11 @@ button {
   transition: all 0.5s ease-out;
 }
 
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
 a,
 .button {
   text-decoration: none;
@@ -601,7 +606,7 @@ blockquote footer {
 }
 
 .wp-block-rss {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 /*
@@ -898,10 +903,10 @@ html {
   position: relative;
   z-index: 2;
 }
-.logo .responsive-logo {
+.logo .retina-logo {
   display: none;
 }
-.logo .responsive-logo img {
+.logo .retina-logo img {
   width: 134px;
 }
 
@@ -1458,6 +1463,7 @@ a.meanmenu-reveal {
   flex-wrap: wrap;
   gap: 10px;
   padding-bottom: 20px;
+  width: 100%;
 }
 .single-post-item .blog-post-tag span {
   font-size: 18px;
