@@ -140,17 +140,22 @@
       li {
         float: none;
         width: 200px;
+
         ul {
           visibility: hidden !important;
         }
         i {
           float: right;
         }
-        &:hover ul {
-          visibility: visible !important;
-          top: 0px;
-          transition: all 0.3s ease 0s;
-          opacity: 1;
+        &:hover {
+          ul {
+            visibility: visible !important;
+            top: 0px;
+            transition: all 0.3s ease 0s;
+            opacity: 1;
+
+
+          }
         }
         a {
           line-height: 120%;
@@ -227,7 +232,7 @@
   font-size: 16px;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: 50px;
 
   i {
     color: #fff;

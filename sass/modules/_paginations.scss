@@ -34,12 +34,12 @@
     justify-content: center;
     color: $primary-color;
     background-color: $white;
-    border-radius: 10px;
+    border-radius: 50px;
     height: 50px;
     width: 50px;
     @include transition;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 
     &:hover {
       background: $primary-color !important;

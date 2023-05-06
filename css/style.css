@@ -1072,7 +1072,7 @@ html {
   font-size: 16px;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 .primary-btn i {
   color: #fff;
@@ -1595,7 +1595,7 @@ a.meanmenu-reveal {
 }
 .single-post-item .post-meta span {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #777777;
   text-transform: capitalize;
   display: flex;
@@ -1733,12 +1733,12 @@ a.meanmenu-reveal {
   justify-content: center;
   color: #4770F7;
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 50px;
   height: 50px;
   width: 50px;
   transition: all 0.5s ease-out;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .basic-pagination .page-numbers:hover,
 .basic-pagination .post-page-numbers:hover,
@@ -1831,7 +1831,6 @@ a.meanmenu-reveal {
   width: 100%;
   color: #777777;
   font-size: 15px;
-  font-weight: 600;
   border-radius: 10px 0 0 10px;
 }
 .widget .wp-block-search button {
@@ -2068,7 +2067,7 @@ a.meanmenu-reveal {
   font-size: 14px;
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   gap: 8px;
   color: #4770F7;
 }
@@ -2425,7 +2424,7 @@ ul.children {
 }
 
 .footer-widget .footer-widget-info p {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   padding-right: 68px;
   margin-bottom: 30px;
 }
@@ -2435,6 +2434,7 @@ ul.children {
 }
 .footer-widget .footer-widget-menu ul {
   margin-top: -5px;
+  padding-left: 0;
 }
 .footer-widget .footer-widget-menu li {
   position: relative;
@@ -2446,7 +2446,7 @@ ul.children {
   padding-top: 0px;
 }
 .footer-widget .footer-widget-menu li a {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   text-transform: capitalize;
   font-size: 16px;
   transition: all 0.5s ease-out;
@@ -2456,7 +2456,7 @@ ul.children {
   color: #4770F7;
 }
 .footer-widget .footer-widget-contact p {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
 }
 .footer-widget .footer-widget-contact .footer-contact ul {
   list-style: none;
@@ -2465,11 +2465,11 @@ ul.children {
   margin-bottom: 20px;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  background-color: #1F2438;
+  border: 1px solid #424B6A;
   color: #F7CF47;
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
   float: left;
   display: flex;
   align-items: center;
@@ -2477,12 +2477,12 @@ ul.children {
   margin-right: 10px;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   font-size: 16px;
   overflow: hidden;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   font-size: 16px;
 }
 
@@ -2502,7 +2502,7 @@ ul.children {
 .footer-bottom-menu ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   transition: all 0.5s ease-out;
 }
 .footer-bottom-menu ul li a:hover {
@@ -2511,11 +2511,11 @@ ul.children {
 }
 
 .footer-bottom-area .copyright-text p {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   margin-bottom: 0;
 }
 .footer-bottom-area .credit-text p {
-  color: rgba(255, 255, 255, 0.5019607843);
+  color: #A5AABB;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -2592,8 +2592,8 @@ ul.children {
   gap: 10px;
 }
 .social-widget a {
-  background-color: #F7CF47;
-  color: #04144E;
+  background-color: #424B6A;
+  color: #FFFFFF;
   height: 44px;
   width: 44px;
   font-size: 18px;

@@ -36,6 +36,7 @@
   .footer-widget-menu {
     ul {
       margin-top: -5px;
+      padding-left: 0;
     }
 
     li {
@@ -74,11 +75,11 @@
         margin-bottom: 20px;
 
         .contact-icon {
-          background-color: $black-100;
+          border: 1px solid $black-100;
           color: $orange-color;
-          width: 32px;
-          height: 32px;
-          border-radius: 4px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
           float: left;
           display: flex;
           align-items: center;
@@ -224,8 +225,8 @@
   gap: 10px;
 
   a {
-    background-color: $orange-color;
-    color: $secondary-color;
+    background-color: $black-100;
+    color: $white;
     height: 44px;
     width: 44px;
     font-size: 18px;
