@@ -341,7 +341,7 @@ table caption {
 table th,
 table td {
   background-color: transparent;
-  border: 1px solid #eaedff;
+  border: 1px solid #D7D7D7;
   text-align: center;
   padding: 8px;
   transition: 0.3s;
