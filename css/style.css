@@ -593,10 +593,6 @@ blockquote footer {
   padding-left: 0 !important;
 }
 
-.wp-block-latest-posts.has-dates {
-  padding-left: 14px;
-}
-
 .wp-block-cover p.wp-block-cover-text {
   color: #fff;
 }
