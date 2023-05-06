@@ -41,7 +41,7 @@ body {
   height: 100%;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #777777;
   vertical-align: baseline;
   line-height: 28px;
@@ -295,11 +295,15 @@ body {
 dl, ol, ul {
   margin-top: 0;
   margin-bottom: 25px;
+}
+
+ol {
   padding-left: 20px;
 }
 
 ul {
   list-style: disc;
+  padding-left: 20px;
 }
 
 /* Protected Post Type */
@@ -543,9 +547,10 @@ blockquote p {
 }
 blockquote p a {
   color: #4770F7;
+  text-decoration: underline;
 }
 blockquote footer {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
@@ -872,7 +877,7 @@ html {
   color: #8f8f8f;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 .header-top .header-contact-info span i {
   color: #4770F7;
@@ -884,7 +889,7 @@ html {
   color: #8f8f8f;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 .header-top .header-contact-info span a i {
   color: #4770F7;
@@ -951,7 +956,7 @@ html {
   position: relative;
   font-weight: 600;
   color: #04144E;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   margin-left: 28px;
 }
@@ -1060,7 +1065,7 @@ html {
   padding: 12px 32px;
   text-align: center;
   font-weight: 600;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
   position: relative;
   z-index: 1;
@@ -1417,7 +1422,7 @@ a.meanmenu-reveal {
   margin: 0;
 }
 .single-post-item.format-quote blockquote cite a {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
@@ -1444,6 +1449,7 @@ a.meanmenu-reveal {
   line-height: 54px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 .single-post-item .post-title:hover a {
   color: #4770F7;
@@ -1862,10 +1868,9 @@ a.meanmenu-reveal {
 }
 .widget .tagcloud a {
   background: #F3F4F8;
-  color: #777777;
+  color: #4770F7;
   display: inline-block;
   font-size: 14px;
-  font-weight: 600;
   line-height: 1;
   padding: 13px 16px;
   border-radius: 8px;
@@ -1876,8 +1881,12 @@ a.meanmenu-reveal {
   background: #4770F7;
   transition: all 0.5s ease-out;
 }
+.widget ol {
+  padding-left: 0;
+}
 .widget ul {
   margin-bottom: 0;
+  padding-left: 0;
   /* Tag Cloud Widget */
 }
 .widget ul li {
@@ -1907,7 +1916,6 @@ a.meanmenu-reveal {
   display: inline-block;
   text-transform: capitalize;
   font-size: 16px;
-  font-weight: 600;
   transition: all 0.5s ease-out;
   /* RSS Widget */
 }
@@ -2086,7 +2094,7 @@ a.meanmenu-reveal {
   color: #04144E;
   padding: 12px 104px;
   font-weight: 600;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
   position: relative;
   z-index: 1;
@@ -2166,7 +2174,7 @@ a.meanmenu-reveal {
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 .latest-comments li .comments-box .comments-text .comment-reply-link {
   display: inline-flex;
@@ -2275,7 +2283,7 @@ ul.children {
 */
 /*Comment Input Filed*/
 .page-content .post-comments-form {
-  padding-top: 50px;
+  padding-top: 1px;
   clear: both;
 }
 
@@ -2290,7 +2298,7 @@ ul.children {
 }
 .post-comments-title h2 small {
   font-size: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #4770F7;
 }
 
@@ -2324,32 +2332,32 @@ ul.children {
   font-size: 14px;
   font-weight: 600;
   background-color: #FFFFFF;
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
 }
 .comment-respond *::-webkit-input-placeholder {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
   color: #777777;
 }
 .comment-respond *:-moz-placeholder {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
   color: #777777;
   opacity: 1;
 }
 .comment-respond *::-moz-placeholder {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
   color: #777777;
   opacity: 1;
 }
 .comment-respond *:-ms-input-placeholder {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
   color: #777777;
 }
 .comment-respond *::-ms-input-placeholder {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
   color: #777777;
 }
 .comment-respond *::placeholder {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "DM Sans", sans-serif !important;
   color: #777777;
 }
 .comment-respond textarea {
@@ -2361,7 +2369,7 @@ ul.children {
   border-radius: 10px;
   font-size: 14px;
   background-color: #FFFFFF;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   height: 130px;
 }
@@ -2372,7 +2380,7 @@ ul.children {
   padding: 12px 34px;
   text-align: center;
   font-weight: 600;
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Sans", sans-serif;
   text-transform: capitalize;
   position: relative;
   z-index: 1;

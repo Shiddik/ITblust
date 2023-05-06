@@ -8,10 +8,13 @@ body {
 dl, ol, ul {
   margin-top: 0;
   margin-bottom: 25px;
+}
+ol {
   padding-left: 20px;
 }
 ul {
   list-style: disc;
+  padding-left: 20px;
 }
 /* Protected Post Type */
 .post-password-form {
@@ -261,6 +264,7 @@ blockquote {
     margin-top: 10px;
     a {
       color: $primary-color;
+      text-decoration: underline;
     }
   }
   footer {
