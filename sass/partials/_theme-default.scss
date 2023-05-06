@@ -65,7 +65,12 @@ h4 {
   line-height: 28px;
   font-weight: 600;
 }
-
+label {
+  color: $text-color;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
 button {
   cursor: pointer;
   @include transition;

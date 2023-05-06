@@ -107,6 +107,13 @@ h4 {
   font-weight: 600;
 }
 
+label {
+  color: #777777;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 button {
   cursor: pointer;
   transition: all 0.5s ease-out;
@@ -322,6 +329,14 @@ ul {
   text-align: center;
   border: 1px solid #D7D7D7;
   padding: 12px 12px;
+}
+.blog-details-wrapper table tbody #today {
+  background: #4770F7;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+.blog-details-wrapper table tbody #today a {
+  color: #FFFFFF;
 }
 
 /* Text meant only for screen readers. */
@@ -565,6 +580,7 @@ blockquote footer {
   width: 200px;
   border: 1px solid #ddd;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .wp-block-latest-comments {
@@ -2028,21 +2044,6 @@ a.meanmenu-reveal {
 .widget_calendar .wp-calendar-table caption {
   background-color: #eaedff;
   text-align: center;
-}
-.widget_calendar .wp-calendar-table tbody tr td {
-  background: #FFFFFF;
-  border: 1px solid #eaedff;
-  text-align: center;
-  padding: 8px;
-  transition: 0.3s;
-}
-.widget_calendar .wp-calendar-table tbody tr td#today {
-  background: #4770F7;
-  color: #FFFFFF;
-  border-radius: 5px;
-}
-.widget_calendar .wp-calendar-table tbody tr td#today a {
-  color: #FFFFFF;
 }
 
 .widget_promotion {
