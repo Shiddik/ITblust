@@ -122,13 +122,17 @@
 
   }
   /* Search Widget */
-  .wp-block-search {
+  .search-form {
+    display: flex;
+  }
+  .wp-block-search,
+  .search-form
+  {
     display: inline-block;
     width: 100%;
     overflow: hidden;
 
-    .wp-block-search__inside-wrapper,
-    .search-form {
+    .wp-block-search__inside-wrapper {
       display: flex;
     }
     label {
