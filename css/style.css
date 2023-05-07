@@ -1777,6 +1777,7 @@ a.meanmenu-reveal {
   background-color: #F3F4F8;
   color: #04144E;
   transition: all 0.5s ease-out;
+  border-radius: 50px;
 }
 .widget .social-widget a:hover {
   color: #FFFFFF;
@@ -1876,6 +1877,7 @@ a.meanmenu-reveal {
 .widget ul li {
   display: block;
   padding: 10px 0;
+  border-bottom: 1px solid #D2D6E4;
   /* Recent Comment Widget */
 }
 .widget ul li:first-child {
@@ -2013,6 +2015,7 @@ a.meanmenu-reveal {
   display: flex;
   gap: 15px;
   margin-bottom: 10px;
+  border: 0;
 }
 .widget_latest_post ul li:last-child {
   margin-bottom: 0;
@@ -2523,40 +2526,39 @@ ul.children {
 .subscribe-form-widget {
   display: flex;
   background-color: #FFFFFF;
-  border-radius: 12px;
+  border-radius: 50px;
   padding: 4px;
 }
 .subscribe-form-widget .single-field {
   flex-grow: 1;
 }
 .subscribe-form-widget .single-field input {
-  color: #04144E;
+  color: #A5AABB;
   height: 52px;
   padding: 0 30px;
   font-size: 16px;
-  font-weight: 600;
-  border-radius: 5px;
+  border-radius: 50px;
   width: 100%;
 }
 .subscribe-form-widget .single-field *::-webkit-input-placeholder {
-  color: #04144E;
+  color: #A5AABB;
 }
 .subscribe-form-widget .single-field *:-moz-placeholder {
-  color: #04144E;
+  color: #A5AABB;
   opacity: 1;
 }
 .subscribe-form-widget .single-field *::-moz-placeholder {
-  color: #04144E;
+  color: #A5AABB;
   opacity: 1;
 }
 .subscribe-form-widget .single-field *:-ms-input-placeholder {
-  color: #04144E;
+  color: #A5AABB;
 }
 .subscribe-form-widget .single-field *::-ms-input-placeholder {
-  color: #04144E;
+  color: #A5AABB;
 }
 .subscribe-form-widget .single-field *::placeholder {
-  color: #04144E;
+  color: #A5AABB;
 }
 .subscribe-form-widget .submit-btn {
   background-color: #4770F7;
@@ -2565,11 +2567,11 @@ ul.children {
   padding: 0 35px;
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 50px;
   gap: 9px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .social-widget {

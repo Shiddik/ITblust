@@ -168,39 +168,38 @@
 .subscribe-form-widget {
   display: flex;
   background-color: $white;
-  border-radius: 12px;
+  border-radius: 50px;
   padding: 4px;
 
   .single-field {
       flex-grow: 1;
       input {
-          color: $secondary-color;
+          color: $white-50;
           height: 52px;
           padding: 0 30px;
           font-size: 16px;
-          font-weight: 600;
-          border-radius: 5px;
+          border-radius: 50px;
           width: 100%;
       }
     *::-webkit-input-placeholder {
-      color: $secondary-color;
+      color: $white-50;
     }
     *:-moz-placeholder {
-      color: $secondary-color;
+      color: $white-50;
       opacity: 1;
     }
     *::-moz-placeholder {
-      color: $secondary-color;
+      color: $white-50;
       opacity: 1;
     }
     *:-ms-input-placeholder {
-      color: $secondary-color;
+      color: $white-50;
     }
     *::-ms-input-placeholder {
-      color: $secondary-color;
+      color: $white-50;
     }
     *::placeholder {
-      color: $secondary-color;
+      color: $white-50;
     }
   }
   .submit-btn {
@@ -210,11 +209,11 @@
     padding: 0 35px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
     gap: 9px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
