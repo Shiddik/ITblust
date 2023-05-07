@@ -339,10 +339,6 @@ table {
   margin-bottom: 30px;
   width: 100%;
 }
-table caption {
-  background-color: #eaedff;
-  text-align: center;
-}
 table th,
 table td {
   background-color: transparent;
@@ -1786,6 +1782,7 @@ a.meanmenu-reveal {
   /* Widget Title */
   /* Social Widget */
   /* Select Option  */
+  /* Login Widget */
   /* Search Widget */
   /* Tagcloud Widget */
   /* Default Widget */
@@ -1817,10 +1814,45 @@ a.meanmenu-reveal {
   max-width: 100%;
   height: 50px;
   width: 100%;
-  border: 1px solid #eaedff;
+  border: 1px solid #D2D6E4;
   padding: 0 10px;
   border-radius: 5px;
   color: #777777;
+}
+.widget .has-login-form .login-username input,
+.widget .has-login-form .login-password input {
+  max-width: 100%;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #D2D6E4;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: #777777;
+}
+.widget .has-login-form .login-remember label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.widget .has-login-form .login-submit {
+  margin-bottom: 0;
+}
+.widget .has-login-form .login-submit input.button-primary {
+  display: inline-flex;
+  background: #4770F7;
+  color: #fff;
+  padding: 12px 32px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  font-size: 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
 }
 .widget .wp-block-search {
   display: inline-block;

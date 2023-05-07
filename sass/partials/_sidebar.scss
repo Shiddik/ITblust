@@ -42,10 +42,56 @@
     max-width: 100%;
     height: 50px;
     width: 100%;
-    border: 1px solid #eaedff;
+    border: 1px solid $gray;
     padding: 0 10px;
     border-radius: 5px;
     color: $text-color;
+  }
+  /* Login Widget */
+  .has-login-form {
+    .login-username,
+    .login-password {
+      input {
+        max-width: 100%;
+        height: 50px;
+        width: 100%;
+        border: 1px solid $gray;
+        padding: 0 10px;
+        border-radius: 5px;
+        color: $text-color;
+      }
+    }
+    .login-remember {
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .login-submit {
+      margin-bottom: 0;
+
+      input.button-primary {
+        display: inline-flex;
+        background: $primary-color;
+        color: #fff;
+        padding: 12px 32px;
+        text-align: center;
+        font-weight: 500;
+        font-family: $body-font;
+        text-transform: capitalize;
+        position: relative;
+        z-index: 1;
+        transition: 0.3s;
+        font-size: 16px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 50px;
+
+
+      }
+    }
+
   }
   /* Search Widget */
   .wp-block-search {
