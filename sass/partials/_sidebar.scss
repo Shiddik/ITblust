@@ -42,7 +42,15 @@
 
     }
   }
-
+  /* Recent Comment List Block Widget & Latest Post Widget Block */
+  .wp-block-latest-comments,
+  .wp-block-latest-posts {
+    li {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   /* Social Widget */
   .social-widget {
     justify-content: flex-start;

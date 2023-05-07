@@ -1781,6 +1781,7 @@ a.meanmenu-reveal {
   margin-bottom: 50px;
   /* Widget Title */
   /* Social Widget Block */
+  /* Recent Comment List Block Widget & Latest Post Widget Block */
   /* Social Widget */
   /* Select Option  */
   /* Login Widget */
@@ -1811,6 +1812,10 @@ a.meanmenu-reveal {
   padding: 0;
   display: flex;
   justify-content: center;
+}
+.widget .wp-block-latest-comments li:last-child,
+.widget .wp-block-latest-posts li:last-child {
+  margin-bottom: 0;
 }
 .widget .social-widget {
   justify-content: flex-start;
