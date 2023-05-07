@@ -1787,7 +1787,8 @@ a.meanmenu-reveal {
   /* Tagcloud Widget */
   /* Default Widget */
 }
-.widget .wp-block-heading {
+.widget .wp-block-heading,
+.widget .widget-title {
   font-size: 24px;
   display: block;
   line-height: 28px;
@@ -1818,6 +1819,10 @@ a.meanmenu-reveal {
   padding: 0 10px;
   border-radius: 5px;
   color: #777777;
+}
+.widget .has-login-form .login-username label,
+.widget .has-login-form .login-password label {
+  margin-bottom: 10px;
 }
 .widget .has-login-form .login-username input,
 .widget .has-login-form .login-password input {
@@ -1859,7 +1864,8 @@ a.meanmenu-reveal {
   width: 100%;
   overflow: hidden;
 }
-.widget .wp-block-search .wp-block-search__inside-wrapper {
+.widget .wp-block-search .wp-block-search__inside-wrapper,
+.widget .wp-block-search .search-form {
   display: flex;
 }
 .widget .wp-block-search label {
@@ -1907,12 +1913,15 @@ a.meanmenu-reveal {
   width: 15px;
   height: 15px;
 }
-.widget .tagcloud {
+.widget .tagcloud,
+.widget .wp-block-tag-cloud {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
 }
-.widget .tagcloud a {
+.widget .tagcloud a,
+.widget .wp-block-tag-cloud a {
   background: #F3F4F8;
   color: #4770F7;
   display: inline-block;
@@ -1922,7 +1931,8 @@ a.meanmenu-reveal {
   border-radius: 8px;
   transition: all 0.5s ease-out;
 }
-.widget .tagcloud a:hover {
+.widget .tagcloud a:hover,
+.widget .wp-block-tag-cloud a:hover {
   color: #FFFFFF;
   background: #4770F7;
   transition: all 0.5s ease-out;
@@ -1990,39 +2000,18 @@ a.meanmenu-reveal {
   display: none;
 }
 
-.widget-title-sec {
+.widget-title-box {
   position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.widget-title-sec .widget-title {
+.widget-title-box .widget-title {
   font-size: 21px;
   margin-bottom: 0px;
 }
-.widget-title-sec .widget-title .rss-widget-feed img {
+.widget-title-box .widget-title .rss-widget-feed img {
   margin-top: -4px;
-}
-.widget-title-sec .animate-line-bar {
-  position: relative;
-  display: inline-block;
-  background: #4770F7;
-  width: 25px;
-  height: 4px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.widget-title-sec .animate-line-bar:after {
-  position: absolute;
-  content: "";
-  width: 35px;
-  height: 4px;
-  left: 0;
-  top: 0;
-  border-left: 10px solid #ffffff;
-  border-right: 10px solid #ffffff;
-  -webkit-animation: animatelinebar 2s linear infinite;
-  animation: animatelinebar 2s linear infinite;
 }
 
 /* About Info Widget*/
