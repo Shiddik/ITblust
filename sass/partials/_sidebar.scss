@@ -144,6 +144,13 @@
       flex-shrink: 0;
     }
   }
+  .wp-block-search__no-button {
+    &.wp-block-search {
+      input {
+        border-radius: 10px;
+      }
+    }
+  }
   .wp-block-search,
   .search-form
   {

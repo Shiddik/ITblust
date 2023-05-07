@@ -1892,6 +1892,9 @@ a.meanmenu-reveal {
   width: 62px;
   flex-shrink: 0;
 }
+.widget .wp-block-search__no-button.wp-block-search input {
+  border-radius: 10px;
+}
 .widget .wp-block-search,
 .widget .search-form {
   display: inline-block;
