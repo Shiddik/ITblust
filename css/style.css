@@ -1877,7 +1877,7 @@ a.meanmenu-reveal {
   border-radius: 50px;
 }
 .widget .search-form {
-  display: flex;
+  display: flex !important;
 }
 .widget .wp-block-search,
 .widget .search-form {
@@ -1921,9 +1921,9 @@ a.meanmenu-reveal {
   height: auto;
   width: 62px;
   border-radius: 0 10px 10px 0;
-  font-size: 0;
   line-height: 0;
   border: 0;
+  margin-left: 0 !important;
 }
 .widget .wp-block-search button:before,
 .widget .search-form button:before {
@@ -1944,6 +1944,7 @@ a.meanmenu-reveal {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  margin-bottom: 0;
 }
 .widget .tagcloud a,
 .widget .wp-block-tag-cloud a {
