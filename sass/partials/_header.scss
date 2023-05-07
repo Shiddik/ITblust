@@ -92,20 +92,45 @@
         position: relative;
         > a {
           color:$primary-color;
+
+          &:before {
+            position: absolute;
+            content: "";
+            height: 5px;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            background-color: $primary-color;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+      &.dropdown {
+        position: relative;
+
+        &:before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          border: solid black;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin: auto;
+          top: 45%;
+          right: -1px;
         }
       }
       a {
         display: block;
-        padding: 36px 0;
+        padding: 36px 14px;
         text-decoration: none;
         text-transform: capitalize;
-        transition: all 0.4s ease 0s;
+        @include transition;
         position: relative;
         color: $secondary-color;
         font-family: $body-font;
         font-size: 16px;
-        margin-left: 28px;
-
       }
       &:first-child {
         a {
