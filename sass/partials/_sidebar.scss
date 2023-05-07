@@ -48,6 +48,12 @@
     li {
       &:last-child {
         margin-bottom: 0;
+
+        .wp-block-latest-comments__comment-excerpt {
+          p {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
