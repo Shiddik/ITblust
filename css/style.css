@@ -960,6 +960,7 @@ html {
 }
 .main-menu ul li.dropdown {
   position: relative;
+  padding-right: 15px;
 }
 .main-menu ul li.dropdown:before {
   position: absolute;
@@ -971,11 +972,14 @@ html {
   padding: 3px;
   margin: auto;
   top: 45%;
-  right: -1px;
+  right: 15px;
+}
+.main-menu ul li.dropdown ul.submenu {
+  padding-left: 0 !important;
 }
 .main-menu ul li a {
   display: block;
-  padding: 36px 14px;
+  padding: 36px 15px;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.5s ease-out;

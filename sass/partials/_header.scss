@@ -107,6 +107,7 @@
       }
       &.dropdown {
         position: relative;
+        padding-right: 15px;
 
         &:before {
           position: absolute;
@@ -118,12 +119,18 @@
           padding: 3px;
           margin: auto;
           top: 45%;
-          right: -1px;
+          right: 15px;
+        }
+
+        ul {
+          &.submenu {
+            padding-left: 0 !important;
+          }
         }
       }
       a {
         display: block;
-        padding: 36px 14px;
+        padding: 36px 15px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
