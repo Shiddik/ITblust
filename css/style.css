@@ -1780,6 +1780,7 @@ a.meanmenu-reveal {
   border-radius: 14px;
   margin-bottom: 50px;
   /* Widget Title */
+  /* Social Widget Block */
   /* Social Widget */
   /* Select Option  */
   /* Login Widget */
@@ -1794,6 +1795,18 @@ a.meanmenu-reveal {
   line-height: 28px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+.widget .wp-block-social-links .wp-social-link {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+.widget .wp-block-social-links .wp-social-link a {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 .widget .social-widget {
   justify-content: flex-start;
@@ -1998,20 +2011,6 @@ a.meanmenu-reveal {
 }
 .widget ul.wp-tag-cloud li a:before {
   display: none;
-}
-
-.widget-title-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.widget-title-box .widget-title {
-  font-size: 21px;
-  margin-bottom: 0px;
-}
-.widget-title-box .widget-title .rss-widget-feed img {
-  margin-top: -4px;
 }
 
 /* About Info Widget*/
