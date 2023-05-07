@@ -124,6 +124,11 @@
   /* Search Widget */
   .search-form {
     display: flex !important;
+
+    button {
+      width: 62px;
+      flex-shrink: 0;
+    }
   }
   .wp-block-search,
   .search-form
@@ -162,7 +167,6 @@
       background: $primary-color;
       top: 0;
       height: auto;
-      width: 62px;
       border-radius: 0 10px 10px 0;
       line-height: 0;
       border: 0;

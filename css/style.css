@@ -1879,6 +1879,10 @@ a.meanmenu-reveal {
 .widget .search-form {
   display: flex !important;
 }
+.widget .search-form button {
+  width: 62px;
+  flex-shrink: 0;
+}
 .widget .wp-block-search,
 .widget .search-form {
   display: inline-block;
@@ -1919,7 +1923,6 @@ a.meanmenu-reveal {
   background: #4770F7;
   top: 0;
   height: auto;
-  width: 62px;
   border-radius: 0 10px 10px 0;
   line-height: 0;
   border: 0;
