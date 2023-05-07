@@ -10,6 +10,11 @@
   border-radius: 14px;
   margin-bottom: 50px;
 
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+
   /* Widget Title */
   .wp-block-heading,
   .widget-title {

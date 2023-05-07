@@ -1788,6 +1788,10 @@ a.meanmenu-reveal {
   /* Tagcloud Widget */
   /* Default Widget */
 }
+.widget ol,
+.widget ul {
+  margin-bottom: 0;
+}
 .widget .wp-block-heading,
 .widget .widget-title {
   font-size: 24px;
