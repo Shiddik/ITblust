@@ -1,3 +1,4 @@
+/* variable */
 /* Hero slider CSS */
 .hero-slider .single-slider {
   width: 100%;
@@ -245,6 +246,93 @@
   font-size: 14px;
   line-height: 25px;
   color: #6a6c73;
+}
+
+/* Why choose us CSS(modern tecnology) */
+.about-us {
+  background: #ffffff;
+  padding: 100px 0;
+}
+.about-us .text-box .title-desc {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #4566d4;
+}
+.about-us .text-box h1 {
+  margin-top: 8px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #04144e;
+}
+.about-us .text-box p {
+  margin-top: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #6a6c73;
+}
+.about-us .text-box .achievement {
+  margin-top: 30px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-us .text-box .achievement .bottom-achieve {
+  margin-top: 20px;
+}
+.about-us .text-box .achievement .achieve-double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-us .text-box .achievement .achieve-double .achieve-single {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.about-us .text-box .achievement .achieve-double .achieve-single .check-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: rgba(69, 102, 212, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us .text-box .achievement .achieve-double .achieve-single .achieve-single-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #04144e;
+}
+.about-us .text-box .about-btn {
+  padding: 15px 30px;
+  background: #4566d4;
+  border-radius: 50px;
+  margin-top: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=rakib.css.map */

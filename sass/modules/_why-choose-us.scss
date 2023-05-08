@@ -36,7 +36,7 @@
       line-height: 28px;
       text-align: center;
       text-transform: capitalize;
-      color: #6a6c73;
+      color: $text-gray-light;
     }
   }
   .card-section {
@@ -72,7 +72,7 @@
           font-weight: 400;
           font-size: 14px;
           line-height: 25px;
-          color: #6a6c73;
+          color: $text-gray-light;
         }
       }
     }

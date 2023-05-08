@@ -30,37 +30,38 @@ Footer Section
 
 ===========================*/
 
-  /* Theme Default CSS */
-  @import 'variables';
-  @import 'mixin';
-  @import "partials/theme-default";
-  @import "unittest";
-  @import "keyframes";
+/* Theme Default CSS */
+@import "variables";
+@import "custom_font";
+@import "mixin";
+@import "partials/theme-default";
+@import "unittest";
+@import "keyframes";
 
-  /* 1.Preloader */
-  @import "modules/preeloader";
-  
- /* 2.Scrollup */
-  @import "partials/scrollup";
+/* 1.Preloader */
+@import "modules/preeloader";
 
-  /* 3.Nav Menu CSS */
-  @import "partials/header";
-  @import 'modules/meanmenu';
+/* 2.Scrollup */
+@import "partials/scrollup";
 
- /* 8.Title Section */
-  @import "modules/title-section";
+/* 3.Nav Menu CSS */
+@import "partials/header";
+@import "modules/meanmenu";
 
- /* 15.Page Breadcrumb Section */
- @import "modules/breadcrumb";
+/* 8.Title Section */
+@import "modules/title-section";
 
-  /* 16.Blog Section */
-  @import "modules/post-card";
-  @import "modules/paginations";
+/* 15.Page Breadcrumb Section */
+@import "modules/breadcrumb";
 
-  /* 17.Sidebar */
-  @import "partials/sidebar";
-  @import "modules/comment-list";
-  @import "modules/comment-form";
+/* 16.Blog Section */
+@import "modules/post-card";
+@import "modules/paginations";
 
-  /* Footer Section */
-  @import "partials/footer";
+/* 17.Sidebar */
+@import "partials/sidebar";
+@import "modules/comment-list";
+@import "modules/comment-form";
+
+/* Footer Section */
+@import "partials/footer";
