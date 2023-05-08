@@ -17,6 +17,7 @@
       display: flex;
       justify-content: end;
       .slider-text {
+        padding-right: 68px;
         .slider-short-title {
           font-family: $body-font;
           font-weight: 700;
@@ -104,6 +105,28 @@
   .hero-right {
     padding: 0;
     background-image: url("/images/home-hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    object-fit: cover;
+    img {
+      width: 100%;
+    }
+  }
+  .hero-right-second {
+    padding: 0;
+    background-image: url("/images/home-hero-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    object-fit: cover;
+    img {
+      width: 100%;
+    }
+  }
+  .hero-right-third {
+    padding: 0;
+    background-image: url("/images/home-hero-3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
