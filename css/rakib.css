@@ -253,6 +253,40 @@
   background: #ffffff;
   padding: 100px 0;
 }
+.about-us .image-wrapper {
+  position: relative;
+  height: 433px;
+  width: 480px;
+}
+.about-us .image-wrapper .main-img {
+  height: 433px;
+  width: 480px;
+  background-image: url("../../images/about-us-1.png");
+  object-fit: cover;
+}
+.about-us .image-wrapper .topper-img {
+  position: absolute;
+  bottom: -60px;
+  right: -70px;
+  z-index: 1;
+}
+.about-us .image-wrapper .about-video-btn {
+  position: absolute;
+  bottom: 175px;
+  left: 151px;
+  padding: 25px 30px;
+  background: #4566d4;
+  z-index: 2;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.about-us .image-wrapper .about-video-btn i {
+  font-size: 20px;
+  color: #ffffff;
+}
 .about-us .text-box .title-desc {
   font-family: "DM Sans", sans-serif;
   font-style: normal;

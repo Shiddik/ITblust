@@ -1,6 +1,40 @@
 .about-us {
   background: $white;
   padding: 100px 0;
+  .image-wrapper {
+    position: relative;
+    height: 433px;
+    width: 480px;
+    .main-img {
+      height: 433px;
+      width: 480px;
+      background-image: url("../../images/about-us-1.png");
+      object-fit: cover;
+    }
+    .topper-img {
+      position: absolute;
+      bottom: -60px;
+      right: -70px;
+      z-index: 1;
+    }
+    .about-video-btn {
+      position: absolute;
+      bottom: 175px;
+      left: 151px;
+      padding: 25px 30px;
+      background: $text-primary;
+      z-index: 2;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      i {
+        font-size: 20px;
+        color: $white;
+      }
+    }
+  }
   .text-box {
     .title-desc {
       font-family: $body-font;
