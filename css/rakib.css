@@ -226,6 +226,12 @@
   height: 80px;
   border-radius: 100%;
   background: #ecf0fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-choose-us .card-section .single-card .icon i {
+  font-size: 35px;
 }
 .why-choose-us .card-section .single-card .card-text {
   margin-top: 25px;
