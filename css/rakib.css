@@ -552,24 +552,74 @@
   color: #04144e;
   margin-top: 8px;
 }
-.process-sec .process-wave-wrappen {
-  display: flex;
-  justify-content: center;
+.process-sec .process-wave-wrapper {
   margin-top: 50px;
+  margin-bottom: 30px;
   position: relative;
 }
-.process-sec .process-wave-wrappen .process-wave {
-  width: 1020px;
-  position: absolute;
+.process-sec .process-wave-wrapper .wave-img-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.process-sec .process-wave-wrappen .process-wave .single-process {
+.process-sec .process-wave-wrapper .main-wrapper {
+  margin-top: 30px;
+}
+.process-sec .process-wave-wrapper .main-wrapper .single-process {
   width: 120px;
   height: 120px;
   border-radius: 100%;
   border: 2px dashed #f7cf47;
   background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 115px;
+  display: flex;
+  flex-direction: column;
+}
+.process-sec .process-wave-wrapper .main-wrapper .single-process .count {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #4566d4;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process-sec .process-wave-wrapper .main-wrapper .single-process .count span {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+.process-sec .process-wave-wrapper .main-wrapper .item-text-box {
+  padding-right: 100px;
+  padding-left: 20px;
+}
+.process-sec .process-wave-wrapper .main-wrapper .item-text-box .title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #04144e;
+}
+.process-sec .process-wave-wrapper .main-wrapper .item-text-box .desc {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #6a6c73;
+  margin: 0;
 }
 
 /*# sourceMappingURL=rakib.css.map */
