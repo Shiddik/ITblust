@@ -896,10 +896,6 @@ blockquote footer {
   padding-left: 0 !important;
 }
 
-.widget .wp-block-group__inner-container {
-  line-height: 0;
-}
-
 /*
  Media
 ============================*/
@@ -2168,6 +2164,9 @@ a.meanmenu-reveal {
 }
 .widget .wp-block-search__no-button.wp-block-search input {
   border-radius: 10px;
+}
+.widget .wp-block-search {
+  margin-bottom: -8px;
 }
 .widget .wp-block-search,
 .widget .search-form {
