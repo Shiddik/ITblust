@@ -600,6 +600,11 @@ table {
   margin-bottom: 30px;
   width: 100%;
 }
+table caption {
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-top: 0;
+}
 table th,
 table td {
   background-color: transparent;
@@ -2106,6 +2111,7 @@ a.meanmenu-reveal {
   padding: 0 10px;
   border-radius: 5px;
   color: #777777;
+  margin-bottom: 0;
 }
 .widget .has-login-form .login-username label,
 .widget .has-login-form .login-password label {
