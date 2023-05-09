@@ -2342,6 +2342,11 @@ a.meanmenu-reveal {
 }
 
 /* Latest Post Widget*/
+.wp-block-latest-posts .wp-block-latest-posts__post-title,
+.wp-block-rss .wp-block-latest-posts__post-title {
+  display: inline-block;
+  width: 100%;
+}
 .wp-block-latest-posts .wp-block-latest-posts__post-author,
 .wp-block-latest-posts .wp-block-rss__item-publish-date,
 .wp-block-rss .wp-block-latest-posts__post-author,
@@ -2360,6 +2365,7 @@ a.meanmenu-reveal {
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt,
 .wp-block-rss .wp-block-latest-posts__post-excerpt {
+  margin-top: 10px;
   margin-bottom: 0;
 }
 

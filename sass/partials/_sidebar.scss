@@ -377,6 +377,11 @@
 /* Latest Post Widget*/
 .wp-block-latest-posts,
 .wp-block-rss {
+  .wp-block-latest-posts__post-title,
+  {
+    display: inline-block;
+    width: 100%;
+  }
   .wp-block-latest-posts__post-author,
   .wp-block-rss__item-publish-date {
     margin-right: 10px;
@@ -388,6 +393,7 @@
     display: inline-block;
   }
   .wp-block-latest-posts__post-excerpt {
+    margin-top: 10px;
     margin-bottom: 0;
   }
 }
