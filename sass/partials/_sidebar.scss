@@ -375,6 +375,18 @@
   }
 }
 /* Latest Post Widget*/
+.wp-block-latest-posts {
+  .wp-block-latest-posts__post-author {
+    margin-right: 10px;
+  }
+  .wp-block-latest-posts__post-author,
+  .wp-block-latest-posts__post-date{
+    display: inline-block;
+  }
+  .wp-block-latest-posts__post-excerpt {
+    margin-bottom: 0;
+  }
+}
 .widget_latest_post {
   ul {
     li {
