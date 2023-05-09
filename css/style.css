@@ -53,9 +53,12 @@ Footer Section
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check_trans:before {
+  content: "\e900";
+}
+
 .icon-check:before {
   content: "\e929";
-  color: #4566d4;
 }
 
 .icon-dev1:before {
