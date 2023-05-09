@@ -2285,6 +2285,7 @@ a.meanmenu-reveal {
 .widget ul li a.rsswidget {
   padding-left: 0;
   font-weight: 600;
+  display: block;
 }
 .widget ul li a.rsswidget:before {
   display: none;
