@@ -55,18 +55,8 @@
           gap: 20px;
           align-items: center;
           .learn-btn {
-            font-family: $body-font;
-            padding: 15px 30px;
             background: transparent;
             border: 1px solid $white;
-            border-radius: 50px;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            text-align: center;
-            text-transform: capitalize;
-            color: $white;
           }
           .video-btn {
             a {
@@ -104,7 +94,7 @@
   }
   .hero-right {
     padding: 0;
-    background-image: url("/images/home-hero.jpg");
+    background-image: url("../images/home-hero.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
@@ -115,7 +105,7 @@
   }
   .hero-right-second {
     padding: 0;
-    background-image: url("/images/home-hero-2.jpg");
+    background-image: url("../images/home-hero-2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
@@ -126,7 +116,7 @@
   }
   .hero-right-third {
     padding: 0;
-    background-image: url("/images/home-hero-3.jpg");
+    background-image: url("../images/home-hero-3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;

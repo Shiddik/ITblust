@@ -1,5 +1,39 @@
 /* variable */
 /* Hero slider CSS */
+.sub-title {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #4566d4;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #04144e;
+}
+
+.title-desc {
+  margin-top: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #6a6c73;
+}
+
+/* Hero slider CSS */
 .hero-slider .single-slider {
   width: 100%;
   height: 100%;
@@ -58,18 +92,8 @@
   align-items: center;
 }
 .hero-slider .hero-left .slider-box .slider-text .learn-media-btn .learn-btn {
-  font-family: "DM Sans", sans-serif;
-  padding: 15px 30px;
   background: transparent;
   border: 1px solid #ffffff;
-  border-radius: 50px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
 }
 .hero-slider .hero-left .slider-box .slider-text .learn-media-btn .video-btn a {
   width: 70px;
@@ -99,7 +123,7 @@
 }
 .hero-slider .hero-right {
   padding: 0;
-  background-image: url("/images/home-hero.jpg");
+  background-image: url("../images/home-hero.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
@@ -110,7 +134,7 @@
 }
 .hero-slider .hero-right-second {
   padding: 0;
-  background-image: url("/images/home-hero-2.jpg");
+  background-image: url("../images/home-hero-2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
@@ -121,7 +145,7 @@
 }
 .hero-slider .hero-right-third {
   padding: 0;
-  background-image: url("/images/home-hero-3.jpg");
+  background-image: url("../images/home-hero-3.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
@@ -171,43 +195,9 @@
   background: #f3f4f8;
   padding: 100px 0;
 }
-.why-choose-us .explore-offer {
+.why-choose-us .section-title {
   text-align: center;
-  width: 856px;
-  margin: 0 auto;
   padding: 0 32px;
-}
-.why-choose-us .explore-offer span {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #4566d5;
-}
-.why-choose-us .explore-offer h1 {
-  margin-top: 8px;
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 54px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #04144e;
-}
-.why-choose-us .explore-offer p {
-  margin-top: 20px;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #6a6c73;
 }
 .why-choose-us .card-section {
   margin-top: 50px;
@@ -267,7 +257,7 @@
 .about-us .image-wrapper .main-img {
   height: 433px;
   width: 480px;
-  background-image: url("../../images/about-us-1.png");
+  background-image: url("../images/about-us-1.png");
   object-fit: cover;
 }
 .about-us .image-wrapper .topper-img {
@@ -293,57 +283,16 @@
   font-size: 20px;
   color: #ffffff;
 }
-.about-us .text-box .title-desc {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #4566d4;
+.about-us .section-title .list {
+  margin-top: 10px;
 }
-.about-us .text-box h1 {
-  margin-top: 8px;
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 54px;
-  text-transform: capitalize;
-  color: #04144e;
-}
-.about-us .text-box p {
-  margin-top: 20px;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #6a6c73;
-}
-.about-us .text-box .achievement {
-  margin-top: 30px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.about-us .text-box .achievement .bottom-achieve {
-  margin-top: 20px;
-}
-.about-us .text-box .achievement .achieve-double {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.about-us .text-box .achievement .achieve-double .achieve-single {
+.about-us .section-title .list .item {
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-top: 20px;
 }
-.about-us .text-box .achievement .achieve-double .achieve-single .check-icon {
+.about-us .section-title .list .item .icon {
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -352,27 +301,13 @@
   align-items: center;
   justify-content: center;
 }
-.about-us .text-box .achievement .achieve-double .achieve-single .achieve-single-text {
+.about-us .section-title .list .item .item-text {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #04144e;
-}
-.about-us .text-box .about-btn {
-  padding: 15px 30px;
-  background: #4566d4;
-  border-radius: 50px;
-  margin-top: 50px;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
 }
 
 /* Service CSS */
@@ -419,39 +354,11 @@
 .service .counter .single-count:last-child {
   border-right: none;
 }
-.service .text-box-wrapper {
+.service .section-title {
   margin-top: 148px;
 }
-.service .text-box-wrapper .text-box {
-  width: 856px;
-  margin: 0 auto;
-}
-.service .text-box-wrapper .text-box .title-header {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #4566d4;
-}
-.service .text-box-wrapper .text-box .title {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 54px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #04144e;
-}
 .service .card-wrapper {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  margin-top: 25px;
 }
 .service .card-wrapper .single-card {
   width: 416px;
@@ -461,12 +368,19 @@
   gap: 25px;
   border-radius: 14px;
   background: #ffffff;
+  margin-top: 24px;
 }
 .service .card-wrapper .single-card .icon-wrapper {
   min-width: 70px;
   height: 70px;
   background: rgba(69, 102, 212, 0.1);
   border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .card-wrapper .single-card .icon-wrapper i {
+  font-size: 34px;
 }
 .service .card-wrapper .single-card .single-card-text-box h3 {
   font-family: "Playfair Display", serif;
@@ -487,11 +401,11 @@
   line-height: 28px;
   color: #6a6c73;
 }
-.service .card-wrapper .single-card .single-card-text-box .more-button {
+.service .card-wrapper .single-card .single-card-text-box .read-more {
   margin-top: 20px;
   display: flex;
 }
-.service .card-wrapper .single-card .single-card-text-box .more-button a {
+.service .card-wrapper .single-card .single-card-text-box .read-more a {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -502,7 +416,7 @@
   color: #04144e;
   margin-right: 12px;
 }
-.service .card-wrapper .single-card .single-card-text-box .more-button a i {
+.service .card-wrapper .single-card .single-card-text-box .read-more a i {
   font-size: 17px;
   margin-left: 12px;
 }
@@ -510,19 +424,6 @@
   margin-top: 30px;
   display: flex;
   justify-content: center;
-}
-.service .view-all-button button {
-  background: #4566d4;
-  border-radius: 50px;
-  padding: 15px 30px;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
 }
 
 /* Service CSS */
