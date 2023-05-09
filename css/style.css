@@ -611,6 +611,11 @@ table {
   margin-bottom: 30px;
   width: 100%;
 }
+table caption {
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-top: 0;
+}
 table th,
 table td {
   background-color: transparent;
@@ -863,6 +868,9 @@ blockquote footer {
 .post-content p.has-large-font-size {
   font-size: 36px;
   line-height: 1.2;
+}
+.post-content .wp-block-search {
+  margin-bottom: 15px;
 }
 
 .has-very-light-gray-color.has-very-light-gray-color {
@@ -2092,6 +2100,7 @@ a.meanmenu-reveal {
   padding: 0 10px;
   border-radius: 5px;
   color: #777777;
+  margin-bottom: 0;
 }
 .widget .has-login-form .login-username label,
 .widget .has-login-form .login-password label {
@@ -2141,6 +2150,9 @@ a.meanmenu-reveal {
 }
 .widget .wp-block-search__no-button.wp-block-search input {
   border-radius: 10px;
+}
+.widget .wp-block-search {
+  margin-bottom: -8px;
 }
 .widget .wp-block-search,
 .widget .search-form {
@@ -2238,6 +2250,7 @@ a.meanmenu-reveal {
 }
 .widget ul li.recentcomments a {
   padding-left: 0;
+  display: inline;
 }
 .widget ul li.recentcomments a:before {
   display: none;
@@ -2258,13 +2271,14 @@ a.meanmenu-reveal {
 .widget ul li a.rsswidget {
   padding-left: 0;
   font-weight: 600;
+  display: block;
 }
 .widget ul li a.rsswidget:before {
   display: none;
 }
 .widget ul li ul {
   padding-left: 25px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .widget ul.wp-tag-cloud li {
   display: inline-block;
@@ -2322,6 +2336,33 @@ a.meanmenu-reveal {
 }
 
 /* Latest Post Widget*/
+.wp-block-latest-posts .wp-block-latest-posts__post-title,
+.wp-block-rss .wp-block-latest-posts__post-title {
+  display: inline-block;
+  width: 100%;
+}
+.wp-block-latest-posts .wp-block-latest-posts__post-author,
+.wp-block-latest-posts .wp-block-rss__item-publish-date,
+.wp-block-rss .wp-block-latest-posts__post-author,
+.wp-block-rss .wp-block-rss__item-publish-date {
+  margin-right: 10px;
+}
+.wp-block-latest-posts .wp-block-latest-posts__post-author,
+.wp-block-latest-posts .wp-block-latest-posts__post-date,
+.wp-block-latest-posts .wp-block-rss__item-publish-date,
+.wp-block-latest-posts .wp-block-rss__item-author,
+.wp-block-rss .wp-block-latest-posts__post-author,
+.wp-block-rss .wp-block-latest-posts__post-date,
+.wp-block-rss .wp-block-rss__item-publish-date,
+.wp-block-rss .wp-block-rss__item-author {
+  display: inline-block;
+}
+.wp-block-latest-posts .wp-block-latest-posts__post-excerpt,
+.wp-block-rss .wp-block-latest-posts__post-excerpt {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 .widget_latest_post ul li {
   display: flex;
   gap: 15px;
@@ -2724,6 +2765,9 @@ ul.children {
   margin-bottom: 26px;
 }
 
+.footer-widget ul {
+  padding-left: 0;
+}
 .footer-widget .footer-widget-info p {
   color: #a5aabb;
   padding-right: 68px;

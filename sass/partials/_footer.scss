@@ -18,7 +18,9 @@
   margin-bottom: 26px;
 }
 .footer-widget {
-
+  ul {
+    padding-left: 0;
+  }
   // Footer Info Widget
   .footer-widget-info {
     p {
