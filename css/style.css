@@ -2264,6 +2264,7 @@ a.meanmenu-reveal {
 }
 .widget ul li.recentcomments a {
   padding-left: 0;
+  display: inline;
 }
 .widget ul li.recentcomments a:before {
   display: none;
