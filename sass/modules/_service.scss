@@ -91,6 +91,11 @@
         .read-more {
           margin-top: 20px;
           display: flex;
+          :hover {
+            margin-left: 10px;
+            transition-property: all;
+            transition-duration: 0.7s;
+          }
           a {
             font-family: $body-font;
             font-style: normal;

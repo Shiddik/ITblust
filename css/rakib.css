@@ -408,6 +408,11 @@
   margin-top: 20px;
   display: flex;
 }
+.service .card-wrapper .single-card .single-card-text-box .read-more :hover {
+  margin-left: 10px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
 .service .card-wrapper .single-card .single-card-text-box .read-more a {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
