@@ -564,19 +564,22 @@
 .process-sec .process-wave-wrapper .main-wrapper {
   margin-top: 30px;
 }
-.process-sec .process-wave-wrapper .main-wrapper .single-process {
+.process-sec .process-wave-wrapper .main-wrapper .single-main {
+  position: relative;
+}
+.process-sec .process-wave-wrapper .main-wrapper .single-main .single-process {
   width: 120px;
   height: 120px;
   border-radius: 100%;
   border: 2px dashed #f7cf47;
   background: #ffffff;
   position: absolute;
-  top: 0;
-  left: 115px;
+  top: -146px;
+  left: 122px;
   display: flex;
   flex-direction: column;
 }
-.process-sec .process-wave-wrapper .main-wrapper .single-process .count {
+.process-sec .process-wave-wrapper .main-wrapper .single-main .single-process .count {
   width: 35px;
   height: 35px;
   position: absolute;
@@ -588,7 +591,7 @@
   justify-content: center;
   align-items: center;
 }
-.process-sec .process-wave-wrapper .main-wrapper .single-process .count span {
+.process-sec .process-wave-wrapper .main-wrapper .single-main .single-process .count span {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -597,11 +600,11 @@
   text-align: center;
   color: #ffffff;
 }
-.process-sec .process-wave-wrapper .main-wrapper .item-text-box {
-  padding-right: 100px;
-  padding-left: 20px;
+.process-sec .process-wave-wrapper .main-wrapper .single-main .item-text-box {
+  padding-right: 96px;
+  padding-left: 28px;
 }
-.process-sec .process-wave-wrapper .main-wrapper .item-text-box .title {
+.process-sec .process-wave-wrapper .main-wrapper .single-main .item-text-box .title {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -611,7 +614,7 @@
   text-transform: capitalize;
   color: #04144e;
 }
-.process-sec .process-wave-wrapper .main-wrapper .item-text-box .desc {
+.process-sec .process-wave-wrapper .main-wrapper .single-main .item-text-box .desc {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
