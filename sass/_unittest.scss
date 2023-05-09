@@ -303,9 +303,14 @@ blockquote {
   width: calc(100% + 20px);
   max-width: calc(100% + 20px);
 }
-.post-content p.has-large-font-size {
-  font-size: 36px;
-  line-height: 1.2;
+.post-content {
+  p.has-large-font-size {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .wp-block-search {
+    margin-bottom: 15px;
+  }
 }
 
 .has-very-light-gray-color.has-very-light-gray-color {
@@ -336,6 +341,11 @@ blockquote {
 }
 .wp-block-rss {
   padding-left: 0 !important;
+}
+.widget {
+  .wp-block-group__inner-container {
+    line-height: 0;
+  }
 }
 /*
  Media

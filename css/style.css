@@ -858,6 +858,9 @@ blockquote footer {
   font-size: 36px;
   line-height: 1.2;
 }
+.post-content .wp-block-search {
+  margin-bottom: 15px;
+}
 
 .has-very-light-gray-color.has-very-light-gray-color {
   color: #fff;
@@ -891,6 +894,10 @@ blockquote footer {
 
 .wp-block-rss {
   padding-left: 0 !important;
+}
+
+.widget .wp-block-group__inner-container {
+  line-height: 0;
 }
 
 /*
@@ -2771,6 +2778,9 @@ ul.children {
   margin-bottom: 26px;
 }
 
+.footer-widget ul {
+  padding-left: 0;
+}
 .footer-widget .footer-widget-info p {
   color: #a5aabb;
   padding-right: 68px;
