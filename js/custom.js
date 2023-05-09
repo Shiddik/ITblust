@@ -74,8 +74,8 @@
       animation: "fade",
     });
     /*
-		   Counter Js
-		   ============================*/
+	ounter Js
+	============================*/
     $(".counter").counterUp({
       delay: 10,
       time: 1000,
