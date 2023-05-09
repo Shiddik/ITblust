@@ -519,4 +519,57 @@
   color: #ffffff;
 }
 
+/* Service CSS */
+.process-sec {
+  background: #ffffff;
+  padding: 100px 0;
+}
+.process-sec .text-box {
+  width: 856px;
+  margin: 0 auto;
+  padding: 0 145px;
+}
+.process-sec .text-box p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #4566d4;
+  margin: 0;
+}
+.process-sec .text-box h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #04144e;
+  margin-top: 8px;
+}
+.process-sec .process-wave-wrappen {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+.process-sec .process-wave-wrappen .process-wave {
+  width: 1020px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.process-sec .process-wave-wrappen .process-wave .single-process {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 2px dashed #f7cf47;
+  background: #ffffff;
+}
+
 /*# sourceMappingURL=rakib.css.map */
