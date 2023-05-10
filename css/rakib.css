@@ -1,14 +1,59 @@
 /* variable */
-.mt-12 {
-  margin-top: 12px;
-}
-
 .mt-8 {
   margin-top: 8px;
 }
 
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
 .background-light-blue {
   background: #ecf0fb;
+}
+
+.info-card {
+  background: #ffffff;
+  height: 275px;
+  width: 306px;
+  border-radius: 14px;
+  padding: 30px 22px;
+}
+.info-card .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #ecf0fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card .icon i {
+  font-size: 35px;
+}
+.info-card .title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #04144e;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.info-card .text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #6a6c73;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /* Hero slider CSS */
@@ -252,45 +297,6 @@ button.post-gallery-btn:hover i {
   margin-top: 50px;
   display: flex;
   gap: 24px;
-}
-.why-choose-us .card-section .single-card {
-  background: #ffffff;
-  height: 275px;
-  width: 306px;
-  border-radius: 14px;
-  padding: 30px 22px;
-}
-.why-choose-us .card-section .single-card .icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  background: #ecf0fb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.why-choose-us .card-section .single-card .icon i {
-  font-size: 35px;
-}
-.why-choose-us .card-section .single-card .card-text {
-  margin-top: 25px;
-}
-.why-choose-us .card-section .single-card .card-text h3 {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #04144e;
-}
-.why-choose-us .card-section .single-card .card-text p {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  color: #6a6c73;
 }
 
 /* About-us CSS */

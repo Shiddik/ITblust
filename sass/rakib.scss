@@ -2,18 +2,23 @@
 $text-primary: #4566d4;
 $text-gray-light: #6a6c73;
 
-.mt-12 {
-  margin-top: 12px;
-}
 .mt-8 {
   margin-top: 8px;
 }
+.mt-12 {
+  margin-top: 12px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+
 .background-light-blue {
   background: #ecf0fb;
 }
 
 @import "variables";
 
+@import "modules/info-card-one";
 /* Hero slider CSS */
 @import "modules/title-section";
 /* Hero slider CSS */
