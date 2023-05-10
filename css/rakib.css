@@ -3,6 +3,10 @@
   margin-top: 12px;
 }
 
+.mt-8 {
+  margin-top: 8px;
+}
+
 .background-light-blue {
   background: #ecf0fb;
 }
@@ -458,16 +462,17 @@ button.post-gallery-btn:hover i {
   line-height: 28px;
   color: #6a6c73;
 }
-.service .card-wrapper .single-card .single-card-text-box .read-more {
+
+.read-more {
   margin-top: 20px;
   display: flex;
 }
-.service .card-wrapper .single-card .single-card-text-box .read-more :hover {
+.read-more :hover {
   margin-left: 10px;
   transition-property: all;
   transition-duration: 0.7s;
 }
-.service .card-wrapper .single-card .single-card-text-box .read-more a {
+.read-more a {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -478,7 +483,7 @@ button.post-gallery-btn:hover i {
   color: #04144e;
   margin-right: 12px;
 }
-.service .card-wrapper .single-card .single-card-text-box .read-more a i {
+.read-more a i {
   font-size: 17px;
   margin-left: 12px;
 }
@@ -487,32 +492,6 @@ button.post-gallery-btn:hover i {
 .process-sec {
   background: #ffffff;
   padding: 100px 0;
-}
-.process-sec .text-box {
-  margin: 0 auto;
-}
-.process-sec .text-box p {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #4566d4;
-  margin: 0;
-}
-.process-sec .text-box h1 {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 54px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #04144e;
-  margin-top: 8px;
 }
 .process-sec .main-wrapper {
   margin-top: 50px;
@@ -726,7 +705,10 @@ button.post-gallery-btn:hover i {
   border-bottom: 2px solid rgba(4, 20, 78, 0.1);
 }
 
-/* Gallery CSS */
+/* Portfolio CSS */
+.portfolio-showcase {
+  margin-top: 50px;
+}
 .portfolio-showcase .post-gallery-btn {
   bottom: 0;
   top: 100%;
@@ -767,6 +749,7 @@ button.post-gallery-btn:hover i {
 .portfolio-showcase .single-portfolio {
   background: #ffffff;
   border-radius: 14px;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.08);
 }
 .portfolio-showcase .single-portfolio .item-image {
   margin: 0;
@@ -782,6 +765,13 @@ button.post-gallery-btn:hover i {
   align-items: center;
   justify-content: space-between;
 }
+.portfolio-showcase .single-portfolio .item-text .title-img span {
+  font-size: 13px;
+  line-height: 23px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #4566d4;
+}
 .portfolio-showcase .single-portfolio .item-text .item-desc {
   margin-top: 10px;
   margin-bottom: 0;
@@ -794,6 +784,49 @@ button.post-gallery-btn:hover i {
   margin-left: 10px;
   transition-property: all;
   transition-duration: 0.7s;
+}
+
+/* Articles CSS */
+.single-article {
+  background: #ffffff;
+  border-radius: 14px;
+}
+.single-article .article-image {
+  position: relative;
+}
+.single-article .article-image .article-btn {
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #f7cf47;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #04144e;
+}
+.single-article .article-text {
+  padding: 30px 25px;
+}
+.single-article .article-text .article-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.single-article .article-text .article-user .name {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #04144e;
+}
+.single-article .article-text .article-user .date {
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #4566d4;
 }
 
 /*# sourceMappingURL=rakib.css.map */

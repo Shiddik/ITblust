@@ -5,6 +5,9 @@ $text-gray-light: #6a6c73;
 .mt-12 {
   margin-top: 12px;
 }
+.mt-8 {
+  margin-top: 8px;
+}
 .background-light-blue {
   background: #ecf0fb;
 }
@@ -31,5 +34,8 @@ $text-gray-light: #6a6c73;
 /* Pricing CSS */
 @import "modules/pricing";
 
-/* Gallery CSS */
+/* Portfolio CSS */
 @import "modules/portfolio";
+
+/* Articles CSS */
+@import "modules/articles";

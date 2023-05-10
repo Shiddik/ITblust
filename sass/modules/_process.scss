@@ -1,32 +1,6 @@
 .process-sec {
   background: $white;
   padding: 100px 0;
-  .text-box {
-    margin: 0 auto;
-    p {
-      font-family: $body-font;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 28px;
-      text-align: center;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: $text-primary;
-      margin: 0;
-    }
-    h1 {
-      font-family: $heading-font;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 45px;
-      line-height: 54px;
-      text-align: center;
-      text-transform: capitalize;
-      color: $secondary-color;
-      margin-top: 8px;
-    }
-  }
   .main-wrapper {
     margin-top: 50px;
     position: relative;
