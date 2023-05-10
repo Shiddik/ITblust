@@ -2,7 +2,7 @@
   padding: 100px 0;
   background: $gray-100;
   position: relative;
-  .counter {
+  .counterd {
     position: absolute;
     top: -148px;
     height: 300px;
@@ -25,6 +25,9 @@
         line-height: 84px;
         text-align: center;
         color: $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .single-count-desc {
         margin-top: 8px;

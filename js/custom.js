@@ -69,15 +69,21 @@
       nextArrow:
         "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
     });
-
-    /*
-		   Parallax JS
-		   ============================*/
-    jarallax(
-      document.querySelectorAll(
-        ".single-slide, .count-up-sec, .call-to-action-sec, .pagehding-sec"
-      )
-    );
+    $(".slider-wrapper").slick({
+      slidesToShow: 1,
+      infinite: false,
+      autoplay: false,
+      draggable: true,
+      arrows: true,
+      slidesToScroll: 1,
+      loop: true,
+      dots: false,
+      speed: 300,
+      prevArrow:
+        "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+    });
 
     /*
 		   scrollUp
