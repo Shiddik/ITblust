@@ -3014,4 +3014,83 @@ ul.children {
   color: #ffffff;
 }
 
+.portfolio-style-two {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.portfolio-style-two:hover .image .content-wrapper {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.portfolio-style-two:hover .image img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+.portfolio-style-two .image {
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-style-two .image img {
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+.portfolio-style-two .content-wrapper {
+  background-color: rgba(69, 102, 212, 0.8);
+  padding: 25px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.portfolio-style-two .content-wrapper .content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.portfolio-style-two .content-wrapper .content .content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.portfolio-style-two .content-wrapper .content .title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.portfolio-style-two .content-wrapper .content .text {
+  color: #ffffff;
+}
+.portfolio-style-two .content-wrapper .content .btn {
+  flex-shrink: 0;
+  padding: 0;
+}
+.portfolio-style-two .content-wrapper .content .btn a {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  background-color: #f7cf47;
+  border-radius: 50px;
+  color: #04144e;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+}
+.portfolio-style-two .content-wrapper .content .btn a:hover {
+  transition: all 0.5s ease-out;
+  background-color: #4770f7;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */

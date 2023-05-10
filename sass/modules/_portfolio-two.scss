@@ -1,0 +1,87 @@
+.portfolio-style-two {
+  background-color: $white;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &:hover {
+    .image {
+      .content-wrapper {
+        visibility: visible;
+        opacity: 1;
+        @include transition;
+      }
+      img {
+        transform: scale(1.1);
+        @include transition;
+      }
+    }
+  }
+  .image {
+    overflow: hidden;
+    position: relative;
+
+    img {
+      transform: scale(1);
+      @include transition;
+    }
+  }
+  .content-wrapper {
+    background-color: rgba(69, 102, 212, 0.8);
+    padding: 25px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    @include transition;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      gap: 10px;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .content-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 0;
+        color: $white;
+      }
+      .text {
+        color: $white;
+      }
+      .btn {
+        flex-shrink: 0;
+        padding: 0;
+        a {
+          display: inline-flex;
+          width: 60px;
+          height: 60px;
+          background-color: $orange-color;
+          border-radius: 50px;
+          color: $secondary-color;
+          align-items: center;
+          justify-content: center;
+          @include transition;
+
+          &:hover {
+            @include transition;
+            background-color: $primary-color;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
