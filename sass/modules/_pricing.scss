@@ -1,6 +1,9 @@
 .pricing {
   padding: 100px 0;
   background-image: url("/images/price-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   &:after {
     content: "";

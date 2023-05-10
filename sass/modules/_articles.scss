@@ -1,0 +1,41 @@
+.single-article {
+  background: $white;
+  border-radius: 14px;
+  .article-image {
+    position: relative;
+    .article-btn {
+      z-index: 2;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: $orange-color;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: $secondary-color;
+    }
+  }
+  .article-text {
+    padding: 30px 25px;
+    .article-user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .name {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: $secondary-color;
+      }
+      .date {
+        font-size: 14px;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: $text-primary;
+      }
+    }
+  }
+}

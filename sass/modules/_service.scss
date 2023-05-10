@@ -2,7 +2,7 @@
   padding: 100px 0;
   background: $gray-100;
   position: relative;
-  .counter {
+  .counterd {
     position: absolute;
     top: -148px;
     height: 300px;
@@ -25,6 +25,9 @@
         line-height: 84px;
         text-align: center;
         color: $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .single-count-desc {
         margin-top: 8px;
@@ -96,31 +99,31 @@
           line-height: 28px;
           color: $text-gray-light;
         }
-        .read-more {
-          margin-top: 20px;
-          display: flex;
-          :hover {
-            margin-left: 10px;
-            transition-property: all;
-            transition-duration: 0.7s;
-          }
-          a {
-            font-family: $body-font;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 22px;
-            text-align: center;
-            text-transform: capitalize;
-            color: $secondary-color;
-            margin-right: 12px;
-            i {
-              font-size: 17px;
-              margin-left: 12px;
-            }
-          }
-        }
       }
+    }
+  }
+}
+.read-more {
+  margin-top: 20px;
+  display: flex;
+  :hover {
+    margin-left: 10px;
+    transition-property: all;
+    transition-duration: 0.7s;
+  }
+  a {
+    font-family: $body-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $secondary-color;
+    margin-right: 12px;
+    i {
+      font-size: 17px;
+      margin-left: 12px;
     }
   }
 }
