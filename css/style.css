@@ -1603,6 +1603,7 @@ a.meanmenu-reveal {
 }
 .breadcrumb-list ul {
   margin-bottom: 10px;
+  padding-left: 0;
 }
 .breadcrumb-list ul li {
   display: inline-block;
@@ -2949,6 +2950,66 @@ ul.children {
 }
 .social-widget a:hover {
   transition: all 0.5s ease-out;
+  background-color: #4770f7;
+  color: #ffffff;
+}
+
+/* Team Member */
+.team-member {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.team-member:hover .image img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+.team-member .image {
+  height: 236px;
+  overflow: hidden;
+  position: relative;
+}
+.team-member .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+.team-member .content-wrapper {
+  background-color: #f3f4f8;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.team-member .content-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2px;
+}
+.team-member .content-wrapper .content .name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.team-member .content-wrapper .content .designation {
+  color: #4770f7;
+}
+.team-member .content-wrapper .social-widget {
+  justify-content: center;
+}
+.team-member .content-wrapper .social-widget a {
+  color: #04144e;
+  background-color: #ffffff;
+}
+.team-member .content-wrapper .social-widget a:hover {
   background-color: #4770f7;
   color: #ffffff;
 }

@@ -1,0 +1,69 @@
+.team-member {
+  background-color: $white;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &:hover {
+    .image {
+      img {
+        transform: scale(1.1);
+        @include transition;
+      }
+    }
+  }
+  .image {
+    height: 236px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      transform: scale(1);
+      @include transition;
+    }
+  }
+  .content-wrapper {
+    background-color: $gray-100;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 2px;
+
+      .name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 0;
+      }
+      .designation {
+        color: $primary-color;
+      }
+    }
+    .social-widget {
+      justify-content: center;
+
+      a {
+        color: $secondary-color;
+        background-color: $white;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}
