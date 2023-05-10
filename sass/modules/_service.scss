@@ -41,6 +41,12 @@
       border-right: none;
     }
   }
+  .service-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
   .section-title {
     margin-top: 148px;
   }
@@ -55,6 +61,8 @@
       border-radius: 14px;
       background: $white;
       margin-top: 24px;
+      z-index: 1;
+      position: relative;
       .icon-wrapper {
         width: 70px;
         height: 70px;

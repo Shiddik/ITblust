@@ -1,4 +1,12 @@
 /* variable */
+.mt-12 {
+  margin-top: 12px;
+}
+
+.background-light-blue {
+  background: #ecf0fb;
+}
+
 /* Hero slider CSS */
 .sub-title {
   font-family: "DM Sans", sans-serif;
@@ -356,6 +364,12 @@
 .service .counter .single-count:last-child {
   border-right: none;
 }
+.service .service-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
 .service .section-title {
   margin-top: 148px;
 }
@@ -371,6 +385,8 @@
   border-radius: 14px;
   background: #ffffff;
   margin-top: 24px;
+  z-index: 1;
+  position: relative;
 }
 .service .card-wrapper .single-card .icon-wrapper {
   width: 70px;
@@ -572,7 +588,6 @@
 }
 .pricing .price-card {
   width: 416px;
-  height: 530px;
   padding: 30px;
   background: white;
   z-index: 2;
@@ -621,19 +636,22 @@
 }
 .pricing .price-card .card-desc {
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   text-transform: capitalize;
   color: #6a6c73;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .pricing .price-card .list {
-  margin: 30px 0;
+  margin: 28px 0;
   padding: 30px 0;
   border-top: 2px solid #f3f4f8;
   border-bottom: 2px solid #f3f4f8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .pricing .price-card .list .list-item {
   display: flex;
@@ -645,12 +663,25 @@
 }
 .pricing .price-card .list .list-item .text {
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   color: #04144e;
   margin: 0;
+}
+.pricing .price-card .card-btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background: #ecf0fb;
+  color: #4566d4;
+}
+.pricing .professional {
+  background: #f7cf47;
+}
+.pricing .professional .list-border {
+  border-top: 2px solid rgba(4, 20, 78, 0.1);
+  border-bottom: 2px solid rgba(4, 20, 78, 0.1);
 }
 
 /*# sourceMappingURL=rakib.css.map */
