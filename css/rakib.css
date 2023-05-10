@@ -569,6 +569,49 @@ button.post-gallery-btn:hover i {
 }
 
 /* Portfolio CSS */
+.portfolio-style-one {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.08);
+}
+.portfolio-style-one .image {
+  margin: 0;
+}
+.portfolio-style-one .image img {
+  width: 100%;
+}
+.portfolio-style-one .content-wrapper {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.portfolio-style-one .content-wrapper .title-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-style-one .content-wrapper .title-img span {
+  font-size: 13px;
+  line-height: 23px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #4566d4;
+}
+.portfolio-style-one .content-wrapper .desc {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.portfolio-style-one .content-wrapper .read-more {
+  margin-top: 20px;
+  display: flex;
+}
+.portfolio-style-one .content-wrapper .read-more :hover {
+  margin-left: 10px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+
 .portfolio-showcase {
   margin-top: 50px;
 }
@@ -609,55 +652,16 @@ button.post-gallery-btn:hover i {
   width: 30%;
   height: 5px;
 }
-.portfolio-showcase .single-portfolio {
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.08);
-}
-.portfolio-showcase .single-portfolio .item-image {
-  margin: 0;
-}
-.portfolio-showcase .single-portfolio .item-image img {
-  width: 100%;
-}
-.portfolio-showcase .single-portfolio .item-text {
-  padding: 30px 25px;
-}
-.portfolio-showcase .single-portfolio .item-text .title-img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.portfolio-showcase .single-portfolio .item-text .title-img span {
-  font-size: 13px;
-  line-height: 23px;
-  text-align: right;
-  text-transform: uppercase;
-  color: #4566d4;
-}
-.portfolio-showcase .single-portfolio .item-text .item-desc {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.portfolio-showcase .single-portfolio .item-text .read-more {
-  margin-top: 20px;
-  display: flex;
-}
-.portfolio-showcase .single-portfolio .item-text .read-more :hover {
-  margin-left: 10px;
-  transition-property: all;
-  transition-duration: 0.7s;
-}
 
 /* Articles CSS */
-.single-article {
+.post-card-item-style-one {
   background: #ffffff;
   border-radius: 14px;
 }
-.single-article .article-image {
+.post-card-item-style-one .image {
   position: relative;
 }
-.single-article .article-image .article-btn {
+.post-card-item-style-one .image .article-btn {
   z-index: 2;
   position: absolute;
   bottom: 20px;
@@ -670,22 +674,24 @@ button.post-gallery-btn:hover i {
   text-transform: uppercase;
   color: #04144e;
 }
-.single-article .article-text {
+.post-card-item-style-one .content-wrapper {
   padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
 }
-.single-article .article-text .article-user {
+.post-card-item-style-one .content-wrapper .post-author-meta {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.single-article .article-text .article-user .name {
+.post-card-item-style-one .content-wrapper .post-author-meta h5 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   color: #04144e;
 }
-.single-article .article-text .article-user .date {
+.post-card-item-style-one .content-wrapper .post-author-meta p {
   font-size: 14px;
   line-height: 25px;
   text-transform: capitalize;
