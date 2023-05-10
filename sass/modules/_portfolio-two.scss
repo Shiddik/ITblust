@@ -24,6 +24,7 @@
     img {
       transform: scale(1);
       @include transition;
+      width: 100%;
     }
   }
   .content-wrapper {
