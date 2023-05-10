@@ -685,31 +685,27 @@
 }
 
 /* Gallery CSS */
-.gallery {
-  padding: 100px 0;
-}
-.gallery .item-card {
-  width: 416px;
+.portfolio-showcase .single-portfolio {
   background: #ffffff;
   border-radius: 14px;
 }
-.gallery .item-card .item-text {
+.portfolio-showcase .single-portfolio .item-text {
   padding: 30px 25px;
 }
-.gallery .item-card .item-text .title-img {
+.portfolio-showcase .single-portfolio .item-text .title-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.gallery .item-card .item-text .item-desc {
+.portfolio-showcase .single-portfolio .item-text .item-desc {
   margin-top: 10px;
   margin-bottom: 0;
 }
-.gallery .item-card .item-text .read-more {
+.portfolio-showcase .single-portfolio .item-text .read-more {
   margin-top: 20px;
   display: flex;
 }
-.gallery .item-card .item-text .read-more :hover {
+.portfolio-showcase .single-portfolio .item-text .read-more :hover {
   margin-left: 10px;
   transition-property: all;
   transition-duration: 0.7s;
