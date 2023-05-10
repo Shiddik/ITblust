@@ -1,7 +1,7 @@
-.single-article {
+.post-card-item-style-one {
   background: $white;
   border-radius: 14px;
-  .article-image {
+  .image {
     position: relative;
     .article-btn {
       z-index: 2;
@@ -17,20 +17,22 @@
       color: $secondary-color;
     }
   }
-  .article-text {
+  .content-wrapper {
     padding: 30px 25px;
-    .article-user {
+    display: flex;
+    flex-direction: column;
+    .post-author-meta {
       display: flex;
       align-items: center;
       gap: 12px;
-      .name {
+      h5 {
         font-family: $heading-font;
         font-weight: 600;
         font-size: 15px;
         line-height: 18px;
         color: $secondary-color;
       }
-      .date {
+      p {
         font-size: 14px;
         line-height: 25px;
         text-transform: capitalize;
