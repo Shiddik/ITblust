@@ -684,4 +684,35 @@
   border-bottom: 2px solid rgba(4, 20, 78, 0.1);
 }
 
+/* Gallery CSS */
+.gallery {
+  padding: 100px 0;
+}
+.gallery .item-card {
+  width: 416px;
+  background: #ffffff;
+  border-radius: 14px;
+}
+.gallery .item-card .item-text {
+  padding: 30px 25px;
+}
+.gallery .item-card .item-text .title-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery .item-card .item-text .item-desc {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.gallery .item-card .item-text .read-more {
+  margin-top: 20px;
+  display: flex;
+}
+.gallery .item-card .item-text .read-more :hover {
+  margin-left: 10px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+
 /*# sourceMappingURL=rakib.css.map */

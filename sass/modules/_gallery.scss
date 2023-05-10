@@ -1,0 +1,29 @@
+.gallery {
+  padding: 100px 0;
+  .item-card {
+    width: 416px;
+    background: $white;
+    border-radius: 14px;
+    .item-text {
+      padding: 30px 25px;
+      .title-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .item-desc {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      .read-more {
+        margin-top: 20px;
+        display: flex;
+        :hover {
+          margin-left: 10px;
+          transition-property: all;
+          transition-duration: 0.7s;
+        }
+      }
+    }
+  }
+}
