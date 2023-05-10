@@ -727,9 +727,52 @@ button.post-gallery-btn:hover i {
 }
 
 /* Gallery CSS */
+.portfolio-showcase .post-gallery-btn {
+  bottom: 0;
+  top: 100%;
+  background: #ffffff !important;
+  border: 1px solid #d3d3d3 !important;
+}
+.portfolio-showcase .post-gallery-btn i {
+  color: #04144e;
+}
+.portfolio-showcase .slick-slide {
+  margin: 0 12px;
+}
+.portfolio-showcase .slick-list {
+  margin: 0 -12px;
+}
+.portfolio-showcase .slick-dots {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100% !important;
+}
+.portfolio-showcase .slick-dots li {
+  width: 30%;
+}
+.portfolio-showcase .slick-dots li button {
+  display: none;
+}
+.portfolio-showcase .slick-dots ::marker {
+  display: none !important;
+}
+.portfolio-showcase .slick-dots .slick-active {
+  background: black;
+  color: black;
+  width: 30%;
+  height: 5px;
+}
 .portfolio-showcase .single-portfolio {
   background: #ffffff;
   border-radius: 14px;
+}
+.portfolio-showcase .single-portfolio .item-image {
+  margin: 0;
+}
+.portfolio-showcase .single-portfolio .item-image img {
+  width: 100%;
 }
 .portfolio-showcase .single-portfolio .item-text {
   padding: 30px 25px;

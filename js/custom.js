@@ -36,7 +36,7 @@
       }
     });
 
-    $(".protfolio-showcase").slick({
+    $(".portfolio-showcase").slick({
       slidesToShow: 3,
       infinite: false,
       autoplay: false,
@@ -46,6 +46,7 @@
       loop: true,
       dots: true,
       speed: 300,
+      gap: 24,
       prevArrow:
         "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
       nextArrow:
