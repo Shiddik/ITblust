@@ -8,7 +8,7 @@
     .main-img {
       height: 433px;
       width: 480px;
-      background-image: url("../../images/about-us-1.png");
+      background-image: url("../images/about-us-1.png");
       object-fit: cover;
     }
     .topper-img {
@@ -35,87 +35,32 @@
       }
     }
   }
-  .text-box {
-    .title-desc {
-      font-family: $body-font;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 28px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: $text-primary;
-    }
-    h1 {
-      margin-top: 8px;
-      font-family: $heading-font;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 45px;
-      line-height: 54px;
-      text-transform: capitalize;
-      color: $secondary-color;
-    }
-    p {
-      margin-top: 20px;
-      font-family: $body-font;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-      text-transform: capitalize;
-      color: #6a6c73;
-    }
-    .achievement {
-      margin-top: 30px;
-      width: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .bottom-achieve {
-        margin-top: 20px;
-      }
-      .achieve-double {
+  .section-title {
+    .list {
+      margin-top: 10px;
+      .item {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .achieve-single {
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+        .icon {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          background: rgba(69, 102, 212, 0.1);
           display: flex;
-          gap: 10px;
           align-items: center;
-          .check-icon {
-            width: 30px;
-            height: 30px;
-            border-radius: 100%;
-            background: rgba(69, 102, 212, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .achieve-single-text {
-            font-family: $body-font;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 22px;
-            color: $secondary-color;
-          }
+          justify-content: center;
+        }
+        .item-text {
+          font-family: $body-font;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: $secondary-color;
         }
       }
-    }
-    .about-btn {
-      padding: 15px 30px;
-      background: $text-primary;
-      border-radius: 50px;
-      margin-top: 50px;
-      font-family: $body-font;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-      text-transform: capitalize;
-      color: $white;
     }
   }
 }

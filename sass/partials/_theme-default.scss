@@ -9,8 +9,8 @@ body {
   height: 100%;
   font-size: 16px;
   font-weight: 400;
-  font-family:$body-font;
-  color:$text-color;
+  font-family: $body-font;
+  color: $text-color;
   vertical-align: baseline;
   line-height: 28px;
   background-color: $white-100;
@@ -18,7 +18,9 @@ body {
 p {
   margin: 0 0 15px;
 }
-.container { max-width: 1296px;}
+.container {
+  max-width: 1296px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -89,7 +91,7 @@ a:focus,
   text-decoration: none;
   outline: none;
 }
-a:focus{
+a:focus {
   color: $primary-color;
   text-decoration: none;
   @include transition;
@@ -104,7 +106,9 @@ button:focus,
 input:focus,
 input:focus,
 textarea,
-textarea:focus{outline: 0}
+textarea:focus {
+  outline: 0;
+}
 ul {
   list-style: outside none none;
   margin: 0;
@@ -114,26 +118,26 @@ ul {
 ::-moz-selection {
   background: $black;
   text-shadow: none;
-  color: #fff
+  color: #fff;
 }
 ::selection {
   background: $black;
   text-shadow: none;
-  color: #fff
+  color: #fff;
 }
 textarea:focus,
-input:focus{
+input:focus {
   outline: none;
 }
 
-.bg-black{
-  background-color:$black;
+.bg-black {
+  background-color: $black;
 }
-.bg-gray{
-  background-color:$gray-100;
+.bg-gray {
+  background-color: $gray-100;
 }
-.page-bg{
-  background-color:$black;
+.page-bg {
+  background-color: $black;
 }
 
 .page-area {
@@ -151,6 +155,9 @@ input:focus{
 // Padding Right
 .pr-25 {
   padding-right: 25px;
+}
+.pr-70 {
+  padding-right: 70px;
 }
 // Padding Top
 .pt-25 {
@@ -184,6 +191,9 @@ input:focus{
 }
 
 // Margin Top
+.mt-30 {
+  margin-top: 30px;
+}
 .mt-50 {
   margin-top: 50px;
 }

@@ -2,6 +2,17 @@
 $text-primary: #4566d4;
 $text-gray-light: #6a6c73;
 
+.mt-12 {
+  margin-top: 12px;
+}
+.background-light-blue {
+  background: #ecf0fb;
+}
+
+@import "variables";
+
+/* Hero slider CSS */
+@import "modules/title-section";
 /* Hero slider CSS */
 @import "modules/slider-style-one";
 
@@ -14,7 +25,8 @@ $text-gray-light: #6a6c73;
 /* Service CSS */
 @import "modules/service";
 
-/* Service CSS */
+/* Process CSS */
 @import "modules/process";
 
-@import "variables";
+/* Pricing CSS */
+@import "modules/pricing";
