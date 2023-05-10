@@ -1,4 +1,6 @@
 /* variable */
+@import "variables";
+
 $text-primary: #4566d4;
 $text-gray-light: #6a6c73;
 
@@ -16,9 +18,32 @@ $text-gray-light: #6a6c73;
   background: #ecf0fb;
 }
 
-@import "variables";
+/* Read-more button CSS */
+.read-more {
+  margin-top: 20px;
+  display: flex;
+  :hover {
+    margin-left: 10px;
+    transition-property: all;
+    transition-duration: 0.7s;
+  }
+  a {
+    font-family: $body-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $secondary-color;
+    margin-right: 12px;
+    i {
+      font-size: 17px;
+      margin-left: 12px;
+    }
+  }
+}
 
-@import "modules/info-card-one";
 /* Hero slider CSS */
 @import "modules/title-section";
 /* Hero slider CSS */
@@ -44,3 +69,9 @@ $text-gray-light: #6a6c73;
 
 /* Articles CSS */
 @import "modules/articles";
+
+/* Info card-style-one CSS */
+@import "modules/info-card-one";
+
+/* Info card-style-two CSS */
+@import "modules/info-card-two";

@@ -15,45 +15,30 @@
   background: #ecf0fb;
 }
 
-.info-card {
-  background: #ffffff;
-  height: 275px;
-  width: 306px;
-  border-radius: 14px;
-  padding: 30px 22px;
-}
-.info-card .icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  background: #ecf0fb;
+/* Read-more button CSS */
+.read-more {
+  margin-top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.info-card .icon i {
-  font-size: 35px;
+.read-more :hover {
+  margin-left: 10px;
+  transition-property: all;
+  transition-duration: 0.7s;
 }
-.info-card .title {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #04144e;
-  margin-top: 25px;
-  margin-bottom: 0;
-}
-.info-card .text {
+.read-more a {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  color: #6a6c73;
-  margin-top: 10px;
-  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #04144e;
+  margin-right: 12px;
+}
+.read-more a i {
+  font-size: 17px;
+  margin-left: 12px;
 }
 
 /* Hero slider CSS */
@@ -424,75 +409,6 @@ button.post-gallery-btn:hover i {
 .service .card-wrapper {
   margin-top: 25px;
 }
-.service .card-wrapper .single-card {
-  width: 416px;
-  height: 224px;
-  padding: 30px;
-  display: flex;
-  gap: 25px;
-  border-radius: 14px;
-  background: #ffffff;
-  margin-top: 24px;
-  z-index: 1;
-  position: relative;
-}
-.service .card-wrapper .single-card .icon-wrapper {
-  width: 70px;
-  height: 70px;
-  background: rgba(69, 102, 212, 0.1);
-  border-radius: 100%;
-  padding: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.service .card-wrapper .single-card .icon-wrapper i {
-  font-size: 34px;
-}
-.service .card-wrapper .single-card .single-card-text-box h3 {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #04144e;
-}
-.service .card-wrapper .single-card .single-card-text-box p {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #6a6c73;
-}
-
-.read-more {
-  margin-top: 20px;
-  display: flex;
-}
-.read-more :hover {
-  margin-left: 10px;
-  transition-property: all;
-  transition-duration: 0.7s;
-}
-.read-more a {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #04144e;
-  margin-right: 12px;
-}
-.read-more a i {
-  font-size: 17px;
-  margin-left: 12px;
-}
 
 /* Process CSS */
 .process-sec {
@@ -833,6 +749,92 @@ button.post-gallery-btn:hover i {
   line-height: 25px;
   text-transform: capitalize;
   color: #4566d4;
+}
+
+/* Info card-style-one CSS */
+.info-card {
+  background: #ffffff;
+  height: 275px;
+  width: 306px;
+  border-radius: 14px;
+  padding: 30px 22px;
+}
+.info-card .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #ecf0fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card .icon i {
+  font-size: 35px;
+}
+.info-card .title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #04144e;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.info-card .text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #6a6c73;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Info card-style-two CSS */
+.info-card-two {
+  padding: 30px;
+  display: flex;
+  gap: 25px;
+  border-radius: 14px;
+  background: #ffffff;
+  margin-top: 24px;
+  z-index: 1;
+  position: relative;
+}
+.info-card-two .icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(69, 102, 212, 0.1);
+  border-radius: 100%;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card-two .icon i {
+  font-size: 34px;
+}
+.info-card-two .title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #04144e;
+}
+.info-card-two .text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6a6c73;
 }
 
 /*# sourceMappingURL=rakib.css.map */
