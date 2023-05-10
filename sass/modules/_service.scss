@@ -5,17 +5,18 @@
   .counter-wrapper {
     position: absolute;
     width: 100%;
+    left: 0;
     top: -148px;
+  }
+  .counter-main {
     padding: 30px 0;
     background: $white;
     border-radius: 14px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
-    display: flex;
 
     .counter-item {
-      width: 348px;
       border-right: 1px solid $gray;
-      padding: 50px 0;
+      padding: 10px 0;
       .number {
         font-family: $body-font;
         font-style: normal;
@@ -38,19 +39,26 @@
         text-align: center;
         color: $secondary-color;
       }
-    }
-    .counter-item:last-child {
-      border-right: none;
+      @media screen and (min-width: "1200px") {
+        padding: 50px 0;
+      }
     }
   }
   .service-bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
+    display: none;
+    @media screen and (min-width: "1200px") {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      display: block;
+    }
   }
   .section-title {
-    margin-top: 148px;
+    margin-top: 200px;
+    @media screen and (min-width: "1200px") {
+      margin-top: 148px;
+    }
   }
   .card-wrapper {
     margin-top: 25px;
