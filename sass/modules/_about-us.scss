@@ -16,22 +16,23 @@
       bottom: -60px;
       right: -70px;
       z-index: 1;
-    }
-    .about-video-btn {
-      position: absolute;
-      bottom: 175px;
-      left: 151px;
-      padding: 25px 30px;
-      background: $text-primary;
-      z-index: 2;
-      border-radius: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      i {
-        font-size: 20px;
-        color: $white;
+      .video-btn {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: -25px;
+        left: -25px;
+        background: $text-primary;
+        z-index: 2;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i {
+          font-size: 20px;
+          color: $white;
+        }
       }
     }
   }

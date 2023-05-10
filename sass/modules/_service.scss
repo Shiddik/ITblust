@@ -2,7 +2,7 @@
   padding: 100px 0;
   background: $gray-100;
   position: relative;
-  .counterd {
+  .counter-wrapper {
     position: absolute;
     top: -148px;
     height: 300px;
@@ -13,11 +13,11 @@
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
     display: flex;
 
-    .single-count {
+    .counter-item {
       width: 348px;
       border-right: 1px solid $gray;
       padding: 50px 0;
-      .single-count-title {
+      .number {
         font-family: $body-font;
         font-style: normal;
         font-weight: 700;
@@ -29,7 +29,7 @@
         align-items: center;
         justify-content: center;
       }
-      .single-count-desc {
+      .title {
         margin-top: 8px;
         font-family: $body-font;
         font-style: normal;
@@ -40,7 +40,7 @@
         color: $secondary-color;
       }
     }
-    .single-count:last-child {
+    .counter-item:last-child {
       border-right: none;
     }
   }

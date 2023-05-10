@@ -135,19 +135,19 @@
   color: #ffffff;
   margin-top: 20px;
 }
-.single-slider .slider-text .learn-media-btn {
+.single-slider .slider-text .btn-wrapper {
   margin-top: 54px;
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.single-slider .slider-text .learn-media-btn .learn-btn {
+.single-slider .slider-text .btn-wrapper .learn-btn {
   font-family: "DM Sans", sans-serif;
   padding: 15px 30px;
   background: transparent;
   border: 1px solid #ffffff;
 }
-.single-slider .slider-text .learn-media-btn .video-btn a {
+.single-slider .slider-text .btn-wrapper .video-btn a {
   width: 70px;
   height: 70px;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
@@ -163,11 +163,11 @@
   align-items: center;
   justify-content: center;
 }
-.single-slider .slider-text .learn-media-btn .video-btn a i {
+.single-slider .slider-text .btn-wrapper .video-btn a i {
   color: #020a27;
   font-size: 18px;
 }
-.single-slider .slider-text .learn-media-btn .video-btn a:hover {
+.single-slider .slider-text .btn-wrapper .video-btn a:hover {
   -webkit-animation: none;
   -moz-animation: none;
   -ms-animation: none;
@@ -247,11 +247,12 @@ button.post-gallery-btn:hover i {
   right: -70px;
   z-index: 1;
 }
-.about-us .image-wrapper .about-video-btn {
+.about-us .image-wrapper .topper-img .video-btn {
   position: absolute;
-  bottom: 175px;
-  left: 151px;
-  padding: 25px 30px;
+  width: 70px;
+  height: 70px;
+  top: -25px;
+  left: -25px;
   background: #4566d4;
   z-index: 2;
   border-radius: 100%;
@@ -260,7 +261,7 @@ button.post-gallery-btn:hover i {
   justify-content: center;
   cursor: pointer;
 }
-.about-us .image-wrapper .about-video-btn i {
+.about-us .image-wrapper .topper-img .video-btn i {
   font-size: 20px;
   color: #ffffff;
 }
@@ -297,7 +298,7 @@ button.post-gallery-btn:hover i {
   background: #f3f4f8;
   position: relative;
 }
-.service .counterd {
+.service .counter-wrapper {
   position: absolute;
   top: -148px;
   height: 300px;
@@ -308,12 +309,12 @@ button.post-gallery-btn:hover i {
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
   display: flex;
 }
-.service .counterd .single-count {
+.service .counter-wrapper .counter-item {
   width: 348px;
   border-right: 1px solid #d2d6e4;
   padding: 50px 0;
 }
-.service .counterd .single-count .single-count-title {
+.service .counter-wrapper .counter-item .number {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -325,7 +326,7 @@ button.post-gallery-btn:hover i {
   align-items: center;
   justify-content: center;
 }
-.service .counterd .single-count .single-count-desc {
+.service .counter-wrapper .counter-item .title {
   margin-top: 8px;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
@@ -335,7 +336,7 @@ button.post-gallery-btn:hover i {
   text-align: center;
   color: #04144e;
 }
-.service .counterd .single-count:last-child {
+.service .counter-wrapper .counter-item:last-child {
   border-right: none;
 }
 .service .service-bg {
@@ -701,10 +702,16 @@ button.post-gallery-btn:hover i {
 /* Info card-style-one CSS */
 .info-card {
   background: #ffffff;
-  height: 275px;
-  width: 306px;
   border-radius: 14px;
   padding: 30px 22px;
+}
+.info-card.style-one {
+  padding: 30px;
+  display: flex;
+  gap: 25px;
+  margin-top: 24px;
+  z-index: 1;
+  position: relative;
 }
 .info-card .icon {
   width: 80px;
@@ -714,11 +721,18 @@ button.post-gallery-btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .info-card .icon i {
   font-size: 35px;
 }
-.info-card .title {
+.info-card .content {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-card .content .title {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -726,62 +740,16 @@ button.post-gallery-btn:hover i {
   line-height: 28px;
   text-transform: capitalize;
   color: #04144e;
-  margin-top: 25px;
   margin-bottom: 0;
 }
-.info-card .text {
+.info-card .content .text {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
   color: #6a6c73;
-  margin-top: 10px;
   margin-bottom: 0;
-}
-
-/* Info card-style-two CSS */
-.info-card-two {
-  padding: 30px;
-  display: flex;
-  gap: 25px;
-  border-radius: 14px;
-  background: #ffffff;
-  margin-top: 24px;
-  z-index: 1;
-  position: relative;
-}
-.info-card-two .icon {
-  width: 70px;
-  height: 70px;
-  background: rgba(69, 102, 212, 0.1);
-  border-radius: 100%;
-  padding: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.info-card-two .icon i {
-  font-size: 34px;
-}
-.info-card-two .title {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #04144e;
-}
-.info-card-two .text {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #6a6c73;
 }
 
 /*# sourceMappingURL=rakib.css.map */
