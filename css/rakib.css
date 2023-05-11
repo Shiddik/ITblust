@@ -741,7 +741,7 @@ button.post-gallery-btn:hover i {
 }
 
 /* Info card-style-two CSS */
-.info-card-two {
+.info-card {
   padding: 30px;
   display: flex;
   gap: 25px;
@@ -751,7 +751,7 @@ button.post-gallery-btn:hover i {
   z-index: 1;
   position: relative;
 }
-.info-card-two .icon {
+.info-card .icon {
   width: 70px;
   height: 70px;
   background: rgba(69, 102, 212, 0.1);
@@ -761,10 +761,10 @@ button.post-gallery-btn:hover i {
   align-items: center;
   justify-content: center;
 }
-.info-card-two .icon i {
+.info-card .icon i {
   font-size: 34px;
 }
-.info-card-two .title {
+.info-card .title {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -773,7 +773,7 @@ button.post-gallery-btn:hover i {
   text-transform: capitalize;
   color: #04144e;
 }
-.info-card-two .text {
+.info-card .text {
   margin-top: 10px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
