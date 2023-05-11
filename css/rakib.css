@@ -134,19 +134,22 @@
   }
 }
 .single-slider .banner-one {
-  background: url("/images/hero-slide-1.png");
+  background: url("../images/hero-slide-1.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .single-slider .banner-two {
-  background: url("/images/hero-slide-2.png");
+  background: url("../images/hero-slide-2.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .single-slider .banner-three {
-  background: url("/images/hero-slide-3.png");
+  background: url("../images/hero-slide-3.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .single-slider .slider-text-wrapper {
   width: 100%;
@@ -931,12 +934,12 @@ button.post-gallery-btn:hover i {
   transition: all 0.5s ease-out;
 }
 
-.single-item-wrapper {
+.single-testmonial {
   display: flex !important;
   justify-content: center;
 }
 
-.single-testmonial {
+.testmonial-inner {
   width: 856px;
   height: 413px;
   background: #ffffff;
@@ -946,16 +949,16 @@ button.post-gallery-btn:hover i {
   flex-direction: column;
   gap: 50px;
 }
-.single-testmonial .testmonial-content {
+.testmonial-inner .testmonial-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.single-testmonial .testmonial-content .testmonial-quote {
+.testmonial-inner .testmonial-content .testmonial-quote {
   display: flex;
   gap: 4px;
 }
-.single-testmonial .testmonial-content .testmonial-desc {
+.testmonial-inner .testmonial-content .testmonial-desc {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -963,25 +966,25 @@ button.post-gallery-btn:hover i {
   line-height: 34px;
   color: #04144e;
 }
-.single-testmonial .testmonial-content .testmonial-desc p {
+.testmonial-inner .testmonial-content .testmonial-desc p {
   margin: 0;
 }
-.single-testmonial .user-meta {
+.testmonial-inner .user-meta {
   display: flex;
   gap: 15px;
 }
-.single-testmonial .user-meta .user-info {
+.testmonial-inner .user-meta .user-info {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.single-testmonial .user-meta .user-info h3 {
+.testmonial-inner .user-meta .user-info h3 {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   color: #04144e;
 }
-.single-testmonial .user-meta .user-info h6 {
+.testmonial-inner .user-meta .user-info h6 {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -992,9 +995,15 @@ button.post-gallery-btn:hover i {
 }
 
 /* client widget CSS */
-.client-wrapper {
+.client-slider-wrapper {
   display: flex;
   justify-content: space-between;
+}
+.client-slider-wrapper button.client-slider-btn {
+  display: none !important;
+}
+.client-slider-wrapper .client-slider-wrapper {
+  padding: 300px;
 }
 
 /*# sourceMappingURL=rakib.css.map */

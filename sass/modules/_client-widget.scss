@@ -1,4 +1,10 @@
-.client-wrapper {
+.client-slider-wrapper {
   display: flex;
   justify-content: space-between;
+  button.client-slider-btn {
+    display: none !important;
+  }
+  .client-slider-wrapper {
+    padding: 300px;
+  }
 }

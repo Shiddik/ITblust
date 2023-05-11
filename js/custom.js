@@ -131,6 +131,37 @@
       ],
     });
 
+    // client-widget slider
+    $(".client-slider-wrapper").slick({
+      slidesToShow: 5,
+      infinite: false,
+      autoplay: true,
+      draggable: true,
+      arrows: true,
+      slidesToScroll: 1,
+      loop: true,
+      dots: false,
+      speed: 300,
+      prevArrow:
+        "<button type='button' class='client-slider-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='client-slider-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+      ],
+    });
+
     /*
 		   scrollUp
 		   ============================*/
