@@ -46,6 +46,9 @@
   .wp-block-latest-comments,
   .wp-block-latest-posts {
     li {
+      a {
+        color: $text-color;
+      }
       &:last-child {
         margin-bottom: 0;
 
