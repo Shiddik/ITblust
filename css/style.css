@@ -2088,6 +2088,10 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-posts li a {
   color: #777777;
 }
+.widget .wp-block-latest-comments li a:hover,
+.widget .wp-block-latest-posts li a:hover {
+  color: #4770f7;
+}
 .widget .wp-block-latest-comments li:last-child,
 .widget .wp-block-latest-posts li:last-child {
   margin-bottom: 0;
