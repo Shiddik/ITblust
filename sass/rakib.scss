@@ -14,6 +14,12 @@ $text-gray-light: #6a6c73;
 .mt-25 {
   margin-top: 25px;
 }
+.pb-180 {
+  padding-bottom: 180px;
+}
+.background-deep-blue {
+  background: $black;
+}
 
 .background-light-blue {
   background: #ecf0fb;
@@ -73,3 +79,9 @@ $text-gray-light: #6a6c73;
 
 /* Info card-style-one CSS */
 @import "modules/info-card-one";
+
+/* Testimonial card CSS */
+@import "modules/testmonial-card-one";
+
+/* client widget CSS */
+@import "modules/client-widget";
