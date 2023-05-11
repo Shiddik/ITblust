@@ -2675,7 +2675,6 @@ ul.children {
 }
 
 .comment-respond {
-  margin-top: 50px;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 14px;
@@ -2700,7 +2699,7 @@ ul.children {
   height: 55px;
   width: 100%;
   color: #777777;
-  border: 1px solid #D2D2D2;
+  border: 1px solid #d2d2d2;
   border-radius: 10px;
   font-size: 14px;
   font-weight: 400;
@@ -2738,7 +2737,7 @@ ul.children {
   padding: 20px;
   width: 100%;
   color: #777777;
-  border: 1px solid #D2D2D2;
+  border: 1px solid #d2d2d2;
   border-radius: 10px;
   font-size: 14px;
   background-color: #ffffff;
@@ -2772,7 +2771,8 @@ ul.children {
 .comment-respond p {
   margin-bottom: 20px;
 }
-.comment-respond input:focus, .comment-respond textarea:focus {
+.comment-respond input:focus,
+.comment-respond textarea:focus {
   outline: none !important;
   border-color: #4770f7;
   transition: all 0.4s ease 0s;
