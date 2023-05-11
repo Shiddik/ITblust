@@ -107,6 +107,30 @@
       ],
     });
 
+    $(".testimonial-slider").slick({
+      slidesToShow: 1,
+      infinite: false,
+      autoplay: false,
+      draggable: true,
+      arrows: true,
+      slidesToScroll: 1,
+      loop: true,
+      dots: false,
+      speed: 300,
+      prevArrow:
+        "<button type='button' class='testimonial-slider-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='testimonial-slider-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            autoplay: true,
+          },
+        },
+      ],
+    });
+
     /*
 		   scrollUp
 		   ============================*/
