@@ -46,6 +46,16 @@
   .wp-block-latest-comments,
   .wp-block-latest-posts {
     li {
+      .wp-block-latest-comments__comment-meta {
+        line-height: 28px;
+      }
+      a {
+        color: $text-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
       &:last-child {
         margin-bottom: 0;
 
@@ -152,9 +162,9 @@
       }
     }
   }
+
   .wp-block-search {
     margin-bottom: -8px;
-
   }
   .wp-block-search,
   .search-form
@@ -242,10 +252,11 @@
 
 
   /* Default Widget */
+  //ol {
+  //  padding-left: 0;
+  //}
+  ul,
   ol {
-    padding-left: 0;
-  }
-  ul {
     margin-bottom: 0;
     padding-left: 0;
 
@@ -295,7 +306,7 @@
         /* RSS Widget */
         &.rsswidget {
           padding-left: 0;
-          font-weight: 600;
+          font-weight: 500;
           display: block;
 
           &:before {
