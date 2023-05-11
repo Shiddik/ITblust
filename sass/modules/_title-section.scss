@@ -74,11 +74,16 @@
 .title {
   font-family: $heading-font;
   font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 54px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
   text-transform: capitalize;
   color: $secondary-color;
+  @media screen and (min-width: "767px") {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 54px;
+  }
 }
 .title-desc {
   margin-top: 20px;

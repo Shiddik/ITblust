@@ -50,6 +50,20 @@
         "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
       nextArrow:
         "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
     /*
        Stikey Js

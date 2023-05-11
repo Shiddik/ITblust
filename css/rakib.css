@@ -57,11 +57,18 @@
 .title {
   font-family: "Playfair Display", serif;
   font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 54px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
   text-transform: capitalize;
   color: #04144e;
+}
+@media screen and (min-width: 767px) {
+  .title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 54px;
+  }
 }
 
 .title-desc {
@@ -91,6 +98,7 @@
 .single-slider .slider-image {
   width: 100%;
   order: 1;
+  height: 100%;
 }
 .single-slider .slider-image img {
   width: 100%;
@@ -157,15 +165,22 @@
 }
 .single-slider .slider-text .slider-title {
   font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 72px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
   text-transform: capitalize;
   color: #ffffff;
   margin-top: 8px;
 }
 .single-slider .slider-text .slider-title span {
   color: #f7cf47;
+}
+@media screen and (min-width: 992px) {
+  .single-slider .slider-text .slider-title {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+  }
 }
 .single-slider .slider-text .slider-short-desc {
   font-family: "DM Sans", sans-serif;
@@ -225,7 +240,8 @@ button.post-gallery-btn {
   z-index: 99;
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  top: 50%;
+  top: 90%;
+  bottom: 70%;
   transform: translateY(-50%);
   overflow: hidden;
 }
@@ -250,6 +266,12 @@ button.post-gallery-btn:hover {
 button.post-gallery-btn:hover i {
   color: #ffffff;
   transition: all 0.5s ease-out;
+}
+@media screen and (min-width: 767px) {
+  button.post-gallery-btn {
+    top: 50%;
+    bottom: 50%;
+  }
 }
 
 /* Why choose us CSS(modern tecnology) */
