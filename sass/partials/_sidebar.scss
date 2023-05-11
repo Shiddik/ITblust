@@ -46,6 +46,9 @@
   .wp-block-latest-comments,
   .wp-block-latest-posts {
     li {
+      .wp-block-latest-comments__comment-meta {
+        line-height: 28px;
+      }
       a {
         color: $text-color;
 
@@ -158,10 +161,6 @@
         border-radius: 10px;
       }
     }
-  }
-  .wp-block-search {
-    margin-bottom: -8px;
-
   }
   .wp-block-search,
   .search-form
