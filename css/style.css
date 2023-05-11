@@ -1634,7 +1634,7 @@ a.meanmenu-reveal {
 .breadcrumb-list ul li a {
   font-size: 18px;
   text-align: center;
-  color: #f7cf47;
+  color: #ffffff;
   text-transform: uppercase;
   line-height: 28px;
   font-weight: 700;
@@ -1645,7 +1645,7 @@ a.meanmenu-reveal {
   color: #4770f7;
 }
 .breadcrumb-list ul li::before {
-  content: "\ea7c";
+  content: "-";
   position: absolute;
   right: -8px;
   font-size: 16px;

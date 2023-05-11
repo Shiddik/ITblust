@@ -854,7 +854,6 @@ button.post-gallery-btn:hover i {
   padding: 30px;
   display: flex;
   gap: 25px;
-  margin-top: 24px;
   z-index: 1;
   position: relative;
 }
@@ -1005,5 +1004,7 @@ button.post-gallery-btn:hover i {
 .client-slider-wrapper .client-slider-wrapper {
   padding: 300px;
 }
+
+/* Service-page CSS */
 
 /*# sourceMappingURL=rakib.css.map */

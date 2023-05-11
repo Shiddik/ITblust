@@ -50,7 +50,7 @@
       a {
         font-size: 18px;
         text-align: center;
-        color: $orange-color;
+        color: $white;
         text-transform: uppercase;
         line-height: 28px;
         font-weight: 700;
@@ -63,7 +63,7 @@
       }
 
       &::before {
-        content: "\ea7c";
+        content: "-";
         position: absolute;
         right: -8px;
         font-size: 16px;
