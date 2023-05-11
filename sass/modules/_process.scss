@@ -5,12 +5,15 @@
     margin-top: 50px;
     position: relative;
     .wave-img-wrapper {
-      position: absolute;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      left: 0;
-      right: 0;
+      display: none;
+      @media screen and (min-width: "1200px") {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+      }
     }
     .process-step {
       display: flex;
