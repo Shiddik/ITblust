@@ -97,6 +97,14 @@
         "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
       nextArrow:
         "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            autoplay: true,
+          },
+        },
+      ],
     });
 
     /*
