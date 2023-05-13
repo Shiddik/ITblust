@@ -54,6 +54,8 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
+  z-index: 2;
+  position: relative;
 }
 
 .sub-title {
@@ -318,25 +320,16 @@ button.post-gallery-btn:hover i {
 }
 
 /* Why choose us CSS(modern tecnology) */
-.why-choose-us {
-  background: #f3f4f8;
-  padding: 100px 0;
-}
-.why-choose-us .section-title {
-  text-align: center;
-  padding: 0 32px;
-}
-.why-choose-us .card-section {
-  margin-top: 50px;
-  display: flex;
-  gap: 24px;
-}
-
 /* About-us CSS */
 .about-us {
   background: #ffffff;
-  padding: 100px 0 248px 0;
   position: relative;
+  padding: 100px 0;
+}
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding: 100px 0 248px 0;
+  }
 }
 
 .image-wrapper {
@@ -416,10 +409,17 @@ button.post-gallery-btn:hover i {
 }
 
 .counter-wrapper {
-  position: absolute;
+  position: relative;
   width: 100%;
-  left: 0;
-  bottom: -148px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .counter-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: -148px;
+    margin-top: 0;
+  }
 }
 
 .counter-main {
@@ -440,7 +440,8 @@ button.post-gallery-btn:hover i {
   align-items: center;
   flex-direction: column;
   position: relative;
-  width: 50%;
+  width: 100%;
+  padding: 49px 0;
 }
 .counter-main .counter-item .number {
   font-family: "DM Sans", sans-serif;
@@ -465,42 +466,61 @@ button.post-gallery-btn:hover i {
   text-align: center;
   color: #04144e;
 }
+.counter-main .counter-item:after {
+  content: "";
+  border-bottom: 1px solid #d2d6e4;
+  border-right: none;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+}
+.counter-main .counter-item:after:last-child {
+  display: none;
+}
+.counter-main .counter-item:last-child::after {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .counter-main .counter-item {
+    margin-top: 40px;
+    width: 50%;
+  }
+  .counter-main .counter-item:after {
+    border-right: 1px solid #d2d6e4;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .counter-main .counter-item {
+    margin-top: 0;
+    width: 100%;
+  }
+  .counter-main .counter-item:after {
+    border-right: 1px solid #d2d6e4;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .counter-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .counter-main {
     flex-direction: row;
-    height: 220px;
     width: 100%;
-  }
-}
-
-.border:after {
-  border-right: 1px solid #d2d6e4;
-  content: "";
-  position: absolute;
-  right: -50%;
-  height: 220px;
-  width: 50%;
-}
-.border:after:last-child {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .border:after {
-    width: 100%;
+    flex-wrap: nowrap;
   }
 }
 
 /* Service CSS */
-.service {
-  padding: 100px 0;
-  background: #f3f4f8;
-  position: relative;
-}
-.service .service-bg {
+.service-bg {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .service .service-bg {
+  .service-bg {
     position: absolute;
     right: 0;
     top: 0;
@@ -508,15 +528,17 @@ button.post-gallery-btn:hover i {
     display: block;
   }
 }
-.service .section-title {
-  margin-top: 200px;
+
+.section-title {
+  margin-top: 0;
 }
 @media screen and (min-width: 1200px) {
-  .service .section-title {
+  .section-title .style-two {
     margin-top: 148px;
   }
 }
-.service .card-wrapper {
+
+.card-wrapper {
   margin-top: 25px;
 }
 
@@ -640,10 +662,6 @@ button.post-gallery-btn:hover i {
   width: 100%;
   height: 100%;
   opacity: 0.8;
-}
-.pricing .section-title {
-  z-index: 2;
-  position: relative;
 }
 .pricing .section-title .price-sub-title {
   color: #f7cf47;
