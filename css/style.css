@@ -2287,8 +2287,6 @@ a.meanmenu-reveal {
 .widget ol li:last-child {
   padding-bottom: 0;
   border-bottom: 0;
-  margin-top: 15px;
-  line-height: 0;
 }
 .widget ul li.recentcomments .comment-author-link a:before,
 .widget ol li.recentcomments .comment-author-link a:before {
