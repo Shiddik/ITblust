@@ -63,6 +63,8 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
+  z-index: 2;
+  position: relative;
 }
 .sub-title {
   font-family: $body-font;
