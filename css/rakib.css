@@ -755,12 +755,17 @@ button.post-gallery-btn:hover i {
   transition-duration: 0.7s;
 }
 
+.custom-container {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
 .portfolio-showcase {
   margin-top: 50px;
 }
 .portfolio-showcase .post-gallery-btn {
-  bottom: 0;
-  top: 100%;
+  bottom: 30px;
+  top: 98%;
   background: #ffffff !important;
   border: 1px solid #d3d3d3 !important;
 }
@@ -772,6 +777,11 @@ button.post-gallery-btn:hover i {
 }
 .portfolio-showcase .slick-list {
   margin: 0 -12px;
+  display: flex;
+  overflow: visible;
+}
+.portfolio-showcase .slick-list .slick-track {
+  display: flex;
 }
 .portfolio-showcase .slick-dots {
   display: flex !important;
@@ -779,6 +789,7 @@ button.post-gallery-btn:hover i {
   justify-content: center;
   margin-top: 50px;
   width: 100% !important;
+  padding: 0 55px;
 }
 .portfolio-showcase .slick-dots li {
   width: 30%;
