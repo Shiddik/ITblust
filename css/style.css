@@ -907,6 +907,11 @@ blockquote footer {
   padding-left: 0 !important;
 }
 
+.wp-block-archives-dropdown,
+.wp-block-categories-dropdown {
+  margin-bottom: 6px;
+}
+
 /*
  Media
 ============================*/
@@ -2191,9 +2196,7 @@ a.meanmenu-reveal {
 .widget .wp-block-search__no-button.wp-block-search input {
   border-radius: 10px;
 }
-.widget .wp-block-search,
-.widget .wp-block-archives-dropdown,
-.widget .wp-block-categories-dropdown {
+.widget .wp-block-search {
   margin-bottom: -2px;
 }
 .widget .wp-block-search,
