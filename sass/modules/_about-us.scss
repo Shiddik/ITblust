@@ -1,7 +1,11 @@
 .about-us {
   background: $white;
-  padding: 100px 0 248px 0;
   position: relative;
+  padding: 100px 0;
+
+  @media screen and (min-width: "1200px") {
+    padding: 100px 0 248px 0;
+  }
 }
 .image-wrapper {
   position: relative;
@@ -76,10 +80,15 @@
   }
 }
 .counter-wrapper {
-  position: absolute;
+  position: relative;
   width: 100%;
-  left: 0;
-  bottom: -148px;
+  margin-top: 50px;
+  @media screen and (min-width: "1200px") {
+    position: absolute;
+    left: 0;
+    bottom: -148px;
+    margin-top: 0;
+  }
 }
 .counter-main {
   padding: 40px;
@@ -98,7 +107,8 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 50%;
+    width: 100%;
+    padding: 49px 0;
     .number {
       font-family: $body-font;
       font-style: normal;
@@ -122,26 +132,46 @@
       text-align: center;
       color: $secondary-color;
     }
+    &:after {
+      content: "";
+      border-bottom: 1px solid $gray;
+      border-right: none;
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      width: 100%;
+      &:last-child {
+        display: none;
+      }
+    }
+    &:last-child::after {
+      display: none;
+    }
+    @media screen and (min-width: "767px") {
+      margin-top: 40px;
+      width: 50%;
+      &:after {
+        border-right: 1px solid $gray;
+        border-bottom: none;
+      }
+    }
+    @media screen and (min-width: "1200px") {
+      margin-top: 0;
+      width: 100%;
+      &:after {
+        border-right: 1px solid $gray;
+        border-bottom: none;
+      }
+    }
+  }
+  @media screen and (min-width: "767px") {
+    flex-direction: row;
+    // width: 0%;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: "1200px") {
     flex-direction: row;
-    height: 220px;
     width: 100%;
-  }
-}
-.border {
-  &:after {
-    border-right: 1px solid $gray;
-    content: "";
-    position: absolute;
-    right: -50%;
-    height: 220px;
-    width: 50%;
-    &:last-child {
-      display: none;
-    }
-    @media screen and (min-width: "1200px") {
-      width: 100%;
-    }
+    flex-wrap: nowrap;
   }
 }
