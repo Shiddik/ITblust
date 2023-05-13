@@ -46,12 +46,19 @@
   .wp-block-latest-comments,
   .wp-block-latest-posts {
     li {
+      &.wp-block-latest-comments__comment {
+        margin-bottom: 0;
+      }
       .wp-block-latest-comments__comment-meta {
         line-height: 28px;
       }
       a {
         color: $text-color;
 
+        &.wp-block-latest-comments__comment-author,
+        &.wp-block-latest-comments__comment-link {
+          display: inline !important;
+        }
         &:hover {
           color: $primary-color;
         }

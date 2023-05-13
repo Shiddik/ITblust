@@ -2087,6 +2087,10 @@ a.meanmenu-reveal {
   display: flex;
   justify-content: center;
 }
+.widget .wp-block-latest-comments li.wp-block-latest-comments__comment,
+.widget .wp-block-latest-posts li.wp-block-latest-comments__comment {
+  margin-bottom: 0;
+}
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta,
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta {
   line-height: 28px;
@@ -2094,6 +2098,11 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-comments li a,
 .widget .wp-block-latest-posts li a {
   color: #777777;
+}
+.widget .wp-block-latest-comments li a.wp-block-latest-comments__comment-author, .widget .wp-block-latest-comments li a.wp-block-latest-comments__comment-link,
+.widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-author,
+.widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-link {
+  display: inline !important;
 }
 .widget .wp-block-latest-comments li a:hover,
 .widget .wp-block-latest-posts li a:hover {
