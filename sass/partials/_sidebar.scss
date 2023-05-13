@@ -43,6 +43,13 @@
     }
   }
   /* Recent Comment List Block Widget & Latest Post Widget Block */
+  .has-avatars.has-dates.has-excerpts.wp-block-latest-comments {
+      li {
+        .wp-block-latest-comments__comment-meta {
+          font-weight: 500;
+        }
+      }
+  }
   .wp-block-latest-comments,
   .wp-block-latest-posts {
     li {
@@ -51,7 +58,6 @@
       }
       .wp-block-latest-comments__comment-meta {
         line-height: 28px;
-        font-weight: 500;
       }
       a {
         color: $text-color;
