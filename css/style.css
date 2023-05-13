@@ -1538,56 +1538,6 @@ a.meanmenu-reveal {
 }
 
 /* 8.Title Section */
-.section-title {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  z-index: 2;
-  position: relative;
-}
-
-.sub-title {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #4566d4;
-  margin: 0;
-}
-
-.title {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 44px;
-  text-transform: capitalize;
-  color: #04144e;
-  margin-bottom: 0;
-}
-@media screen and (min-width: 767px) {
-  .title {
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 54px;
-  }
-}
-
-.title-desc {
-  margin: 0;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  text-transform: capitalize;
-  color: #6a6c73;
-}
-
 /* 15.Page Breadcrumb Section */
 .page-breadcrumb-sec {
   padding: 88px 0;

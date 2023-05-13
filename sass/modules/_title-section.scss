@@ -77,6 +77,9 @@
   text-transform: uppercase;
   color: #4566d4;
   margin: 0;
+  &.sub-title-style-two {
+    text-align: left;
+  }
 }
 .title {
   font-family: $heading-font;
