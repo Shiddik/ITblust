@@ -423,14 +423,24 @@ button.post-gallery-btn:hover i {
 }
 
 .counter-main {
-  padding: 30px 0;
+  padding: 40px;
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .counter-main .counter-item {
-  border-right: 1px solid #d2d6e4;
-  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
 }
 .counter-main .counter-item .number {
   font-family: "DM Sans", sans-serif;
@@ -443,9 +453,10 @@ button.post-gallery-btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 .counter-main .counter-item .title {
-  margin-top: 8px;
+  margin: 0;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -455,8 +466,27 @@ button.post-gallery-btn:hover i {
   color: #04144e;
 }
 @media screen and (min-width: 1200px) {
-  .counter-main .counter-item {
-    padding: 50px 0;
+  .counter-main {
+    flex-direction: row;
+    height: 220px;
+    width: 100%;
+  }
+}
+
+.border:after {
+  border-right: 1px solid #d2d6e4;
+  content: "";
+  position: absolute;
+  right: -50%;
+  height: 220px;
+  width: 50%;
+}
+.border:after:last-child {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .border:after {
+    width: 100%;
   }
 }
 
@@ -464,6 +494,7 @@ button.post-gallery-btn:hover i {
 .service {
   padding: 100px 0;
   background: #f3f4f8;
+  position: relative;
 }
 .service .service-bg {
   display: none;
