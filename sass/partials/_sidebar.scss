@@ -170,7 +170,9 @@
     }
   }
 
-  .wp-block-search {
+  .wp-block-search,
+  .wp-block-archives-dropdown,
+  .wp-block-categories-dropdown {
     margin-bottom: -2px;
   }
   .wp-block-search,
@@ -278,6 +280,11 @@
       &:last-child {
         padding-bottom: 0;
         border-bottom: 0;
+
+        a {
+          line-height: 0;
+          background-color: red;
+        }
       }
       /* Recent Comment Widget */
       &.recentcomments {
