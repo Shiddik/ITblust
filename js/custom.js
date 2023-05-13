@@ -134,8 +134,8 @@
     // client-widget slider
     $(".client-slider-wrapper").slick({
       slidesToShow: 5,
-      infinite: false,
-      autoplay: true,
+      infinite: true,
+      autoplay: false,
       draggable: true,
       arrows: true,
       slidesToScroll: 1,

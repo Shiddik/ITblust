@@ -1,6 +1,13 @@
 .client-slider-wrapper {
   display: flex;
   justify-content: space-between;
+  .slick-slide {
+    margin: 0 70px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -70px;
+  }
   button.client-slider-btn {
     display: none !important;
   }
