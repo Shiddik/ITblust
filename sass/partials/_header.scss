@@ -129,17 +129,23 @@
             &.dropdown {
               &.active {
                 a {
+                  position: relative;
+                  z-index: 1;
+                  color: $white;
+
                   &:after {
                     height: 100%;
                     top: 0;
                     left: 0;
                     border-radius: 0;
+                    z-index: -1;
                   }
                 }
               }
               a {
                 &:before {
                   display: block;
+                  border-color: $white;
                 }
               }
             }
