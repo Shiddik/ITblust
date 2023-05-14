@@ -2044,9 +2044,6 @@ a.meanmenu-reveal {
   display: flex;
   justify-content: center;
 }
-.widget .has-avatars.has-dates.has-excerpts.wp-block-latest-comments li .wp-block-latest-comments__comment-meta {
-  font-weight: 500;
-}
 .widget .wp-block-latest-comments li.wp-block-latest-comments__comment,
 .widget .wp-block-latest-posts li.wp-block-latest-comments__comment {
   margin-bottom: 0;
@@ -2054,6 +2051,7 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta,
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta {
   line-height: 28px;
+  font-weight: 500;
 }
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date,
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
@@ -2068,6 +2066,7 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-author,
 .widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-link {
   display: inline !important;
+  text-transform: capitalize;
 }
 .widget .wp-block-latest-comments li a:hover,
 .widget .wp-block-latest-posts li a:hover {
@@ -2221,7 +2220,7 @@ a.meanmenu-reveal {
 .widget .tagcloud a,
 .widget .wp-block-tag-cloud a {
   background: #f3f4f8;
-  color: #4770f7;
+  color: #777777;
   display: inline-block;
   font-size: 14px;
   line-height: 1;
