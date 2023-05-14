@@ -1279,6 +1279,7 @@ html {
 .main-menu ul li.dropdown ul.submenu li.dropdown.active a {
   position: relative;
   z-index: 2;
+  color: #ffffff;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown.active a:after {
   height: 100%;
@@ -1290,6 +1291,7 @@ html {
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
   display: block;
   right: 15px;
+  border-color: #ffffff;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a:before {
   display: none;

@@ -135,6 +135,7 @@
                   a {
                     position: relative;
                     z-index: 2;
+                    color: $white;
 
                     &:after {
                       height: 100%;
@@ -149,6 +150,7 @@
                   &:before {
                     display: block;
                     right: 15px;
+                    border-color: $white;
                   }
                 }
                 ul.submenu {
