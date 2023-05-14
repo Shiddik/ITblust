@@ -149,12 +149,12 @@
                   }
                 }
               }
-              a {
-                color: $text-color;
+            }
+            a {
+              color: $text-color;
 
-                &:before {
-                  display: none;
-                }
+              &:before {
+                display: none;
               }
             }
           }

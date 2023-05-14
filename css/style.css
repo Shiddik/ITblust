@@ -1293,10 +1293,10 @@ html {
   border-radius: 0;
   z-index: -1;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown a {
+.main-menu ul li.dropdown ul.submenu li a {
   color: #777777;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown a:before {
+.main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
 }
 .main-menu ul li.dropdown-style-two {
