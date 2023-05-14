@@ -1279,7 +1279,7 @@ html {
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
   display: block;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown.submenu li a:before {
+.main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a:before {
   display: none;
 }
 .main-menu ul li a {
