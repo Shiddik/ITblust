@@ -128,7 +128,8 @@
           li {
             &.dropdown {
               &.active {
-                a {
+
+                > a {
                   position: relative;
                   z-index: 1;
                   color: $white;
@@ -143,7 +144,6 @@
                 }
               }
               a {
-                color: $text-color !important;
 
                 &:before {
                   display: block;

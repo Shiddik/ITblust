@@ -1276,20 +1276,17 @@ html {
 .main-menu ul li.dropdown ul.submenu {
   padding-left: 0 !important;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a {
+.main-menu ul li.dropdown ul.submenu li.dropdown.active > a {
   position: relative;
   z-index: 1;
   color: #ffffff;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a:after {
+.main-menu ul li.dropdown ul.submenu li.dropdown.active > a:after {
   height: 100%;
   top: 0;
   left: 0;
   border-radius: 0;
   z-index: -1;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown a {
-  color: #777777 !important;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
   display: block;
