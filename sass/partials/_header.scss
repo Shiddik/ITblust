@@ -143,14 +143,16 @@
                 }
               }
               a {
+                color: $text-color !important;
+
                 &:before {
                   display: block;
                   border-color: $white;
+                  right: 15px;
                 }
               }
             }
             a {
-              padding-right: 0 !important;
 
               &:before {
                 display: none;
@@ -185,11 +187,6 @@
         color: $secondary-color;
         font-family: $body-font;
         font-size: 16px;
-      }
-      &:first-child {
-        a {
-          margin-left: 0;
-        }
       }
       &:hover {
         > ul {

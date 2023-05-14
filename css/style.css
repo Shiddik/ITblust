@@ -1288,12 +1288,13 @@ html {
   border-radius: 0;
   z-index: -1;
 }
+.main-menu ul li.dropdown ul.submenu li.dropdown a {
+  color: #777777 !important;
+}
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
   display: block;
   border-color: #ffffff;
-}
-.main-menu ul li.dropdown ul.submenu li a {
-  padding-right: 0 !important;
+  right: 15px;
 }
 .main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
@@ -1324,9 +1325,6 @@ html {
   color: #04144e;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
-}
-.main-menu ul li:first-child a {
-  margin-left: 0;
 }
 .main-menu ul li:hover > ul {
   visibility: visible;
