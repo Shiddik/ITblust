@@ -53,14 +53,11 @@
       .wp-block-latest-comments__comment-meta {
         line-height: 28px;
         font-weight: 600;
-        color: $secondary-color;
-        font-family: $heading-font;
 
         .wp-block-latest-comments__comment-date {
           font-size: 14px !important;
           margin-bottom: 10px;
           position: relative;
-          color: $primary-color;
 
           &:before {
             //position: absolute;
@@ -73,7 +70,7 @@
         }
       }
       a {
-        color: $secondary-color;
+        color: $text-color;
 
         &.wp-block-latest-comments__comment-author,
         &.wp-block-latest-comments__comment-link {
@@ -81,8 +78,6 @@
           text-transform: capitalize;
           line-height: 28px;
           font-weight: 600;
-          color: $secondary-color;
-          font-family: $heading-font;
 
         }
         &:hover {
