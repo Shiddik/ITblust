@@ -793,6 +793,14 @@ button.post-gallery-btn:hover i {
   justify-content: center;
   margin-top: 50px;
 }
+.process-sec .main-wrapper.style-two {
+  margin-top: 70px;
+}
+.process-sec.style-two {
+  box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.08);
+  margin-top: -320px;
+  border-radius: 14px;
+}
 
 /* Pricing CSS */
 .pricing,
@@ -1236,6 +1244,10 @@ button.post-gallery-btn:hover i {
 }
 .client-slider-wrapper .slick-list {
   margin: 0 -70px;
+}
+.client-slider-wrapper .slick-list .slick-track {
+  display: flex;
+  align-items: center;
 }
 .client-slider-wrapper button.client-slider-btn {
   display: none !important;

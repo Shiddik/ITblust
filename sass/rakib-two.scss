@@ -29,5 +29,21 @@
   margin-bottom: 100px;
   z-index: 0;
 }
+.portfolio_slider {
+  padding-bottom: 420px;
+}
 
+.subscribe-form-widget-two {
+  border-radius: 4px !important;
+  margin-bottom: 0 !important;
+  .custom-input-two {
+    input {
+      border-radius: 4px !important;
+      padding: 0 20px;
+    }
+  }
+  .submit-btn-two {
+    border-radius: 4px !important;
+  }
+}
 @import "modules/comment-form";
