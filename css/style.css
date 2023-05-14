@@ -1276,16 +1276,10 @@ html {
 .main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown a {
-  color: #777777;
-}
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
   display: block;
   right: 15px;
   border-color: #ffffff;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a {
-  color: #777777;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a:before {
   display: none;

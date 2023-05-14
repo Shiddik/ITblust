@@ -132,7 +132,6 @@
               }
               &.dropdown {
                 a {
-                  color: $text-color;
                   &:before {
                     display: block;
                     right: 15px;
@@ -142,7 +141,6 @@
                 ul.submenu {
                   li {
                     a {
-                      color: $text-color;
 
                       &:before {
                         display: none;
