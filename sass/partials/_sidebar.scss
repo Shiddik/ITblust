@@ -60,11 +60,13 @@
           font-size: 14px !important;
           margin-bottom: 10px;
           position: relative;
+          color: $primary-color;
 
           &:before {
             //position: absolute;
             content: "\f274";
             font-family: "Font Awesome 6 Pro";
+            padding-right: 8px;
             //left: 0;
             //top: 50%;
           }

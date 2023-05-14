@@ -2060,11 +2060,13 @@ a.meanmenu-reveal {
   font-size: 14px !important;
   margin-bottom: 10px;
   position: relative;
+  color: #4770f7;
 }
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before,
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before {
   content: "\f274";
   font-family: "Font Awesome 6 Pro";
+  padding-right: 8px;
 }
 .widget .wp-block-latest-comments li a,
 .widget .wp-block-latest-posts li a {
