@@ -18,6 +18,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    &.info-rounded-style {
+      border-radius: 14px 0px 0px 14px;
+    }
   }
 
   .icon {

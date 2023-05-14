@@ -948,6 +948,9 @@ button.post-gallery-btn:hover i {
   justify-content: center;
   text-align: center;
 }
+.info-card.style-three.info-rounded-style {
+  border-radius: 14px 0px 0px 14px;
+}
 .info-card .icon {
   width: 80px;
   height: 80px;
