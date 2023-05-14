@@ -7,6 +7,10 @@
   /* the parent */
   .slick-list {
     margin: 0 -70px;
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
   }
   button.client-slider-btn {
     display: none !important;

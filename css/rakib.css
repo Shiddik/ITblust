@@ -343,6 +343,69 @@ button.post-gallery-btn:hover i {
   }
 }
 
+/* custom slider CSS */
+.custom-container {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.custom-slider-wrapper {
+  margin-top: 50px;
+  width: calc(100% + 30px);
+  padding: 20px 15px;
+  margin-left: -15px;
+  position: relative;
+}
+.custom-slider-wrapper .post-gallery-btn {
+  bottom: 5%;
+  top: 95%;
+  background: #ffffff !important;
+  border: 1px solid #d3d3d3 !important;
+}
+.custom-slider-wrapper .post-gallery-btn i {
+  color: #04144e;
+}
+.custom-slider-wrapper .slick-slide .drop-shadow {
+  box-shadow: none;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.custom-slider-wrapper .slick-slide.slick-active .drop-shadow {
+  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
+}
+.custom-slider-wrapper .slick-list {
+  display: flex;
+  overflow: visible;
+}
+.custom-slider-wrapper .slick-list .slick-track {
+  display: flex;
+  gap: 30px;
+}
+.custom-slider-wrapper .slick-dots {
+  display: flex !important;
+  align-items: center;
+  margin: 80px 70px 9px 90px;
+  width: 80% !important;
+  list-style: none;
+  background: #d2d6e4;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+.custom-slider-wrapper .slick-dots li {
+  width: 35%;
+}
+.custom-slider-wrapper .slick-dots li button {
+  display: none;
+}
+.custom-slider-wrapper .slick-dots ::marker {
+  display: none !important;
+}
+.custom-slider-wrapper .slick-dots .slick-active {
+  background: #4566d4;
+  width: 35%;
+  height: 5px;
+}
+
 /* Why choose us CSS(modern tecnology) */
 /* About-us CSS */
 .about-us {
@@ -730,6 +793,14 @@ button.post-gallery-btn:hover i {
   justify-content: center;
   margin-top: 50px;
 }
+.process-sec .main-wrapper.style-two {
+  margin-top: 70px;
+}
+.process-sec.style-two {
+  box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.08);
+  margin-top: -320px;
+  border-radius: 14px;
+}
 
 /* Pricing CSS */
 .pricing,
@@ -912,76 +983,15 @@ button.post-gallery-btn:hover i {
   transition-duration: 0.7s;
 }
 
-.custom-container {
-  overflow: hidden;
-}
-
-.portfolio-showcase {
-  margin-top: 50px;
-  width: calc(100% + 30px);
-  padding: 20px 15px;
-  margin-left: -15px;
-  position: relative;
-}
-.portfolio-showcase .post-gallery-btn {
-  bottom: 5%;
-  top: 95%;
-  background: #ffffff !important;
-  border: 1px solid #d3d3d3 !important;
-}
-.portfolio-showcase .post-gallery-btn i {
-  color: #04144e;
-}
-.portfolio-showcase .slick-slide .drop-shadow {
-  box-shadow: none;
-  transition: box-shadow 0.1s ease-in-out;
-}
-.portfolio-showcase .slick-slide.slick-active .drop-shadow {
-  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
-}
-.portfolio-showcase .slick-list {
-  display: flex;
-  overflow: visible;
-}
-.portfolio-showcase .slick-list .slick-track {
-  display: flex;
-  gap: 30px;
-}
-.portfolio-showcase .slick-dots {
-  display: flex !important;
-  align-items: center;
-  margin: 78px 70px 10px 90px;
-  width: 80% !important;
-  list-style: none;
-  background: #d2d6e4;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 0;
-}
-.portfolio-showcase .slick-dots li {
-  width: 35%;
-}
-.portfolio-showcase .slick-dots li button {
-  display: none;
-}
-.portfolio-showcase .slick-dots ::marker {
-  display: none !important;
-}
-.portfolio-showcase .slick-dots .slick-active {
-  background: #4566d4;
-  width: 35%;
-  height: 5px;
-}
-
 /* Articles CSS */
-.post-card-item-style-one {
+.post-card-item {
   background: #ffffff;
   border-radius: 14px;
 }
-.post-card-item-style-one .image {
+.post-card-item .image {
   position: relative;
 }
-.post-card-item-style-one .image .article-btn {
+.post-card-item .image .article-btn {
   z-index: 2;
   position: absolute;
   bottom: 20px;
@@ -994,28 +1004,47 @@ button.post-gallery-btn:hover i {
   text-transform: uppercase;
   color: #04144e;
 }
-.post-card-item-style-one .content-wrapper {
+.post-card-item .image .article-btn.style-two {
+  top: 20px;
+  left: 20px;
+  bottom: auto;
+}
+.post-card-item .content-wrapper {
   padding: 30px 25px;
   display: flex;
   flex-direction: column;
 }
-.post-card-item-style-one .content-wrapper .post-author-meta {
+.post-card-item .content-wrapper .post-author-meta {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.post-card-item-style-one .content-wrapper .post-author-meta h5 {
+.post-card-item .content-wrapper .post-author-meta h5 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   color: #04144e;
 }
-.post-card-item-style-one .content-wrapper .post-author-meta p {
+.post-card-item .content-wrapper .post-author-meta p {
   font-size: 14px;
   line-height: 25px;
   text-transform: capitalize;
   color: #4566d4;
+}
+.post-card-item .content-wrapper .post-author-meta.style-two {
+  margin-bottom: 25px;
+}
+.post-card-item .content-wrapper.style-two {
+  margin: -50px 20px 20px 20px;
+  background: white;
+  position: relative;
+  z-index: 1;
+  border-radius: 14px;
+}
+.post-card-item.style-two {
+  background: transparent;
+  border-radius: 14px 14px 0px 0px;
 }
 
 /* Info card-style-one CSS */
@@ -1234,6 +1263,10 @@ button.post-gallery-btn:hover i {
 }
 .client-slider-wrapper .slick-list {
   margin: 0 -70px;
+}
+.client-slider-wrapper .slick-list .slick-track {
+  display: flex;
+  align-items: center;
 }
 .client-slider-wrapper button.client-slider-btn {
   display: none !important;

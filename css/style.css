@@ -3138,6 +3138,9 @@ ul.children {
   background-color: #4770f7;
   color: #ffffff;
 }
+.team-member.style-two {
+  margin-bottom: 0;
+}
 
 .portfolio-style-two {
   background-color: #ffffff;

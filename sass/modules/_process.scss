@@ -91,5 +91,13 @@
       justify-content: center;
       margin-top: 50px;
     }
+    &.style-two {
+      margin-top: 70px;
+    }
+  }
+  &.style-two {
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.08);
+    margin-top: -320px;
+    border-radius: 14px;
   }
 }
