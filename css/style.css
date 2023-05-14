@@ -2390,7 +2390,7 @@ a.meanmenu-reveal {
 .wp-block-rss .wp-block-rss__item-author {
   display: inline-block;
   font-size: 14px !important;
-  margin-bottom: 10px;
+  font-weight: 500;
   position: relative;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-author:before,
