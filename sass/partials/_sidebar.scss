@@ -48,8 +48,7 @@
   {
     li {
       &.wp-block-latest-comments__comment {
-        .wp-block-latest-comments__comment-meta,
-        .wp-block-latest-posts__post-title {
+        .wp-block-latest-comments__comment-meta {
           font-weight: 500;
 
           .wp-block-latest-comments__comment-author,
@@ -66,8 +65,7 @@
       &.wp-block-latest-comments__comment {
         margin-bottom: 0;
       }
-      .wp-block-latest-comments__comment-meta,
-      .wp-block-latest-posts__post-title {
+      .wp-block-latest-comments__comment-meta {
         line-height: 28px;
         font-weight: 400;
 
