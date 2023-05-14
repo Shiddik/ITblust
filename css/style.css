@@ -2246,7 +2246,6 @@ a.meanmenu-reveal {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  margin-bottom: 0;
 }
 .widget .tagcloud a,
 .widget .wp-block-tag-cloud a {
