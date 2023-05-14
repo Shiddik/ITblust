@@ -1297,7 +1297,7 @@ html {
   color: #777777;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
-  display: none;
+  display: none !important;
 }
 .main-menu ul li.dropdown-style-two {
   position: relative !important;

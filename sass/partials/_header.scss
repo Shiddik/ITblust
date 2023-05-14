@@ -153,7 +153,7 @@
                 color: $text-color;
 
                 &:before {
-                  display: none;
+                  display: none !important;
                 }
               }
             }
