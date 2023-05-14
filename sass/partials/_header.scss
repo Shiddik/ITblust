@@ -153,18 +153,10 @@
                 color: $text-color;
 
                 &:before {
-                  display: none !important;
+                  display: none;
                 }
               }
             }
-            //a {
-            //
-            //  &:before {
-            //    display: none;
-            //  }
-            //}
-
-
           }
         }
 
@@ -245,9 +237,6 @@
           border-bottom: 1px solid $gray-200;
           margin-left: 0;
 
-          &:before {
-            display: none;
-          }
           &:hover {
             background-color: $primary-color;
             color: $white;
@@ -264,13 +253,6 @@
         border-top: 0px;
         border-top: 2px solid $primary-color;
 
-        li {
-          a {
-            &:before {
-              display: none;
-            }
-          }
-        }
       }
     }
   }
