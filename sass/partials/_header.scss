@@ -128,8 +128,7 @@
           li {
             &.dropdown {
               &.active {
-
-                > a {
+                a {
                   position: relative;
                   z-index: 1;
                   color: $white;
@@ -152,12 +151,14 @@
                 }
               }
             }
-            a {
+            //a {
+            //
+            //  &:before {
+            //    display: none;
+            //  }
+            //}
 
-              &:before {
-                display: none;
-              }
-            }
+
           }
         }
       }
@@ -237,11 +238,12 @@
           border-bottom: 1px solid $gray-200;
           margin-left: 0;
 
+          &:before {
+            display: none;
+          }
           &:hover {
             background-color: $primary-color;
             color: $white;
-
-
           }
         }
         &:last-child a {
@@ -254,6 +256,14 @@
         opacity: 0;
         border-top: 0px;
         border-top: 2px solid $primary-color;
+
+        li {
+          a {
+            &:before {
+              display: none;
+            }
+          }
+        }
       }
     }
   }
