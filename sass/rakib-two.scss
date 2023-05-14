@@ -1,0 +1,33 @@
+/* variable */
+@import "variables";
+@import "_mixin.scss";
+
+.nav-bottom {
+  background: rgba(4, 20, 78, 0.5) !important;
+  backdrop-filter: blur(2px) !important;
+  position: relative;
+  z-index: 99999999999;
+  // background: white;
+}
+.hero-section {
+  position: relative;
+  padding-bottom: 125px;
+  z-index: 0;
+  .page-overlay {
+    background: rgba(2, 10, 39, 0.5);
+  }
+  .hero-title {
+    padding: 115px 0;
+    .hero-btn-two {
+      border-radius: 5px;
+    }
+  }
+}
+.info-card-section-two {
+  position: relative;
+  margin-top: -240px;
+  margin-bottom: 100px;
+  z-index: 0;
+}
+
+@import "modules/comment-form";

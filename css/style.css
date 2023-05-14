@@ -1276,6 +1276,22 @@ html {
 .main-menu ul li.dropdown ul.submenu {
   padding-left: 0 !important;
 }
+.main-menu ul li.dropdown-style-two {
+  position: relative !important;
+  padding-right: 15px;
+}
+.main-menu ul li.dropdown-style-two ::before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: auto;
+  top: 45%;
+  right: 15px;
+}
 .main-menu ul li a {
   display: block;
   padding: 36px 15px;
@@ -1342,6 +1358,12 @@ html {
   opacity: 0;
   border-top: 0px;
   border-top: 2px solid #4770f7;
+}
+.main-menu.style-two ul li ul {
+  background-color: #071c34;
+}
+.main-menu.style-two ul li a {
+  color: #ffffff;
 }
 
 .animation {
@@ -2841,6 +2863,11 @@ ul.children {
   outline: none !important;
   border-color: #4770f7;
   transition: all 0.4s ease 0s;
+}
+.comment-respond.style-two {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
 }
 
 /* Footer Section */
