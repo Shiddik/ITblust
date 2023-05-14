@@ -1,3 +1,4 @@
+/* variable */
 .nav-bottom {
   background: rgba(4, 20, 78, 0.5) !important;
   backdrop-filter: blur(2px) !important;
@@ -15,6 +16,17 @@
 }
 .hero-section .hero-title {
   padding: 115px 0;
+}
+
+.info-card-section-two {
+  position: absolute;
+  top: -125px;
+  z-index: 10;
+  border-radius: 14px;
+  background: #ffffff;
+}
+.info-card-section-two .info-card-wrapper-inner {
+  border-radius: 14px;
 }
 
 /*# sourceMappingURL=rakib-two.css.map */

@@ -1,3 +1,7 @@
+/* variable */
+@import "variables";
+@import "_mixin.scss";
+
 .nav-bottom {
   background: rgba(4, 20, 78, 0.5) !important;
   backdrop-filter: blur(2px) !important;
@@ -13,5 +17,15 @@
   }
   .hero-title {
     padding: 115px 0;
+  }
+}
+.info-card-section-two {
+  position: absolute;
+  top: -125px;
+  z-index: 10;
+  border-radius: 14px;
+  background: $white;
+  .info-card-wrapper-inner {
+    border-radius: 14px;
   }
 }

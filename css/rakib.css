@@ -23,6 +23,10 @@
   background: #ecf0fb;
 }
 
+.background-ocean {
+  background: rgba(69, 102, 212, 0.1) !important;
+}
+
 /* Read-more button CSS */
 .read-more {
   margin-top: 20px;
@@ -936,6 +940,13 @@ button.post-gallery-btn:hover i {
   gap: 25px;
   z-index: 1;
   position: relative;
+}
+.info-card.style-three {
+  padding: 42px;
+  border-radius: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .info-card .icon {
   width: 80px;

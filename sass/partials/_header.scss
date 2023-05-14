@@ -126,6 +126,22 @@
           }
         }
       }
+      &.dropdown-style-two {
+        position: relative !important;
+        padding-right: 15px;
+        ::before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          border: solid white;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin: auto;
+          top: 45%;
+          right: 15px;
+        }
+      }
       a {
         display: block;
         padding: 36px 15px;
@@ -217,9 +233,6 @@
         }
         a {
           color: $white;
-        }
-        &.dropdown-style-two {
-          background: #071c34;
         }
       }
     }
