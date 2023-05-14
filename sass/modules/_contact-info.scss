@@ -4,5 +4,9 @@
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
+  &.style-two {
+    position: relative;
+    z-index: 1;
+  }
 }

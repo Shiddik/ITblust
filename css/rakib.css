@@ -27,6 +27,10 @@
   background: rgba(69, 102, 212, 0.1) !important;
 }
 
+.background-orange {
+  background: #f7cf47;
+}
+
 .info-rounded-style-two {
   border-radius: 0px 14px 14px 0px !important;
 }
@@ -718,7 +722,8 @@ button.post-gallery-btn:hover i {
 }
 
 /* Pricing CSS */
-.pricing {
+.pricing,
+.contact-section {
   padding: 100px 0;
   background-image: url("/images/price-bg.png");
   background-repeat: no-repeat;
@@ -726,7 +731,8 @@ button.post-gallery-btn:hover i {
   background-size: cover;
   position: relative;
 }
-.pricing:after {
+.pricing:after,
+.contact-section:after {
   content: "";
   background: rgba(2, 10, 39, 0.7);
   position: absolute;
@@ -737,18 +743,21 @@ button.post-gallery-btn:hover i {
   height: 100%;
   opacity: 0.8;
 }
-.pricing .section-title .price-sub-title {
+.pricing .section-title .price-sub-title,
+.contact-section .section-title .price-sub-title {
   color: #f7cf47;
   z-index: 10;
 }
-.pricing .price-card {
+.pricing .price-card,
+.contact-section .price-card {
   padding: 30px;
   background: white;
   z-index: 2;
   position: relative;
   border-radius: 14px;
 }
-.pricing .price-card .card-sub-title {
+.pricing .price-card .card-sub-title,
+.contact-section .price-card .card-sub-title {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -758,7 +767,8 @@ button.post-gallery-btn:hover i {
   color: #04144e;
   margin: 0;
 }
-.pricing .price-card .card-title {
+.pricing .price-card .card-title,
+.contact-section .price-card .card-title {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -769,7 +779,8 @@ button.post-gallery-btn:hover i {
   align-items: center;
   gap: 2px;
 }
-.pricing .price-card .card-title label {
+.pricing .price-card .card-title label,
+.contact-section .price-card .card-title label {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -778,7 +789,8 @@ button.post-gallery-btn:hover i {
   color: #04144e;
   text-align: start;
 }
-.pricing .price-card .card-title span {
+.pricing .price-card .card-title span,
+.contact-section .price-card .card-title span {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -788,7 +800,8 @@ button.post-gallery-btn:hover i {
   color: #04144e;
   align-self: end;
 }
-.pricing .price-card .card-desc {
+.pricing .price-card .card-desc,
+.contact-section .price-card .card-desc {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -798,7 +811,8 @@ button.post-gallery-btn:hover i {
   margin-top: 20px;
   margin-bottom: 0;
 }
-.pricing .price-card .list {
+.pricing .price-card .list,
+.contact-section .price-card .list {
   margin: 28px 0;
   padding: 30px 0;
   border-top: 2px solid #f3f4f8;
@@ -807,15 +821,18 @@ button.post-gallery-btn:hover i {
   flex-direction: column;
   gap: 12px;
 }
-.pricing .price-card .list .list-item {
+.pricing .price-card .list .list-item,
+.contact-section .price-card .list .list-item {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.pricing .price-card .list .list-item i {
+.pricing .price-card .list .list-item i,
+.contact-section .price-card .list .list-item i {
   color: #04144e;
 }
-.pricing .price-card .list .list-item .text {
+.pricing .price-card .list .list-item .text,
+.contact-section .price-card .list .list-item .text {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -823,17 +840,20 @@ button.post-gallery-btn:hover i {
   color: #04144e;
   margin: 0;
 }
-.pricing .price-card .card-btn {
+.pricing .price-card .card-btn,
+.contact-section .price-card .card-btn {
   width: 100%;
   text-align: center;
   justify-content: center;
   background: #ecf0fb;
   color: #4566d4;
 }
-.pricing .professional {
+.pricing .professional,
+.contact-section .professional {
   background: #f7cf47;
 }
-.pricing .professional .list-border {
+.pricing .professional .list-border,
+.contact-section .professional .list-border {
   border-top: 2px solid rgba(4, 20, 78, 0.1);
   border-bottom: 2px solid rgba(4, 20, 78, 0.1);
 }
@@ -1220,7 +1240,11 @@ button.post-gallery-btn:hover i {
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
+}
+.contact-info.style-two {
+  position: relative;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=rakib.css.map */
