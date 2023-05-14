@@ -123,46 +123,43 @@
 
         }
         ul {
-          &.submenu {
-            li {
+          li {
+            a {
+              &:before {
+                display: none;
+              }
+            }
+            &.dropdown {
               a {
                 &:before {
-                  display: none;
+                  display: block;
+                  right: 15px;
+                  border-color: $white;
                 }
               }
-              &.dropdown {
-                a {
-                  &:before {
-                    display: block;
-                    right: 15px;
-                    border-color: $white;
-                  }
-                }
-                ul.submenu {
-                  li {
-                    a {
-
-                      &:before {
-                        display: none;
-                      }
+              ul {
+                li {
+                  a {
+                    &:before {
+                      display: none;
                     }
-
                   }
+
                 }
               }
-              &.active {
-                a {
-                  position: relative;
-                  z-index: 2;
-                  color: $white;
+            }
+            &.active {
+              a {
+                position: relative;
+                z-index: 2;
+                color: $white;
 
-                  &:after {
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    border-radius: 0;
-                    z-index: -1;
-                  }
+                &:after {
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border-radius: 0;
+                  z-index: -1;
                 }
               }
             }

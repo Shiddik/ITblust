@@ -1273,23 +1273,23 @@ html {
   top: 45%;
   right: 0;
 }
-.main-menu ul li.dropdown ul.submenu li a:before {
+.main-menu ul li.dropdown ul li a:before {
   display: none;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown a:before {
+.main-menu ul li.dropdown ul li.dropdown a:before {
   display: block;
   right: 15px;
   border-color: #ffffff;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a:before {
+.main-menu ul li.dropdown ul li.dropdown ul li a:before {
   display: none;
 }
-.main-menu ul li.dropdown ul.submenu li.active a {
+.main-menu ul li.dropdown ul li.active a {
   position: relative;
   z-index: 2;
   color: #ffffff;
 }
-.main-menu ul li.dropdown ul.submenu li.active a:after {
+.main-menu ul li.dropdown ul li.active a:after {
   height: 100%;
   top: 0;
   left: 0;
