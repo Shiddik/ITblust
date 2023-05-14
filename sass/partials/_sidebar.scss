@@ -43,12 +43,21 @@
     }
   }
   /* Recent Comment List Block Widget & Latest Post Widget Block */
-  ol.wp-block-latest-comments {
-      li {
+  .has-avatars.has-dates.has-excerpts.wp-block-latest-comments,
+  .has-dates.has-excerpts.wp-block-latest-comments
+  {
+    li {
+      &.wp-block-latest-comments__comment {
         .wp-block-latest-comments__comment-meta {
-          font-weight: 400;
+          font-weight: 500;
+
+          .wp-block-latest-comments__comment-author,
+          .wp-block-latest-comments__comment-link {
+            font-weight: 500;
+          }
         }
       }
+    }
   }
   .wp-block-latest-comments,
   .wp-block-latest-posts {
@@ -56,31 +65,32 @@
       &.wp-block-latest-comments__comment {
         margin-bottom: 0;
       }
-      .wp-block-latest-comments__comment-meta {
+      .wp-block-latest-comments__comment-meta,
+      .wp-block-latest-posts__post-title {
         line-height: 28px;
-        font-weight: 500;
+        font-weight: 400;
+
         .wp-block-latest-comments__comment-date {
-          font-size: inherit !important;
+          font-size: 14px !important;
           margin-bottom: 10px;
+          position: relative;
+
+          &:before {
+            content: "\f274";
+            font-family: "Font Awesome 6 Pro";
+            padding-right: 8px;
+          }
         }
       }
       a {
-        color: $secondary-color;
+        color: $text-color;
 
         &.wp-block-latest-comments__comment-author,
         &.wp-block-latest-comments__comment-link {
           display: inline !important;
           text-transform: capitalize;
-          position: relative;
-          color: $primary-color;
-
-          &:before {
-            //position: absolute;
-            content: "\f274";
-            font-family: "Font Awesome 6 Pro";
-            //left: 0;
-            //top: 50%;
-          }
+          line-height: 28px;
+          font-weight: 400;
         }
         &:hover {
           color: $primary-color;
@@ -91,15 +101,6 @@
           font-size: 16px;
           line-height: 28px;
           margin: 0;
-        }
-      }
-      &:last-child {
-        margin-bottom: 0;
-
-        .wp-block-latest-comments__comment-excerpt {
-          p {
-            margin-bottom: 0;
-          }
         }
       }
     }
@@ -212,6 +213,7 @@
 
     .wp-block-search__inside-wrapper {
       display: flex;
+      padding: 0 !important;
     }
     label {
       font-size: 24px;
@@ -244,20 +246,6 @@
       line-height: 0;
       border: 0;
       margin-left: 0 !important;
-
-      //&:before {
-      //  position: absolute;
-      //  content: "";
-      //  left: 50%;
-      //  top: 50%;
-      //  transform: translate(-50%, -50%);
-      //  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.281 14.2179L13.1585 12.1029C14.3091 10.6814 14.8704 8.8726 14.7267 7.04943C14.5829 5.22626 13.745 3.52776 12.3858 2.30417C11.0266 1.08058 9.24969 0.425196 7.42149 0.473162C5.59329 0.521127 3.85319 1.26878 2.56001 2.56196C1.26683 3.85514 0.519174 5.59524 0.471209 7.42344C0.423243 9.25165 1.07863 11.0286 2.30222 12.3878C3.52581 13.747 5.22431 14.5848 7.04748 14.7286C8.87065 14.8724 10.6795 14.3111 12.101 13.1604L14.216 15.2829C14.2857 15.3532 14.3687 15.409 14.4601 15.4471C14.5514 15.4852 14.6495 15.5048 14.7485 15.5048C14.8475 15.5048 14.9455 15.4852 15.0369 15.4471C15.1283 15.409 15.2113 15.3532 15.281 15.2829C15.3513 15.2132 15.4071 15.1303 15.4452 15.0389C15.4832 14.9475 15.5028 14.8494 15.5028 14.7504C15.5028 14.6514 15.4832 14.5534 15.4452 14.462C15.4071 14.3706 15.3513 14.2877 15.281 14.2179ZM1.99848 7.62544C1.99848 6.51292 2.32838 5.42538 2.94647 4.50035C3.56455 3.57533 4.44305 2.85435 5.47089 2.42861C6.49872 2.00287 7.62972 1.89148 8.72087 2.10852C9.81201 2.32556 10.8143 2.86129 11.601 3.64796C12.3876 4.43463 12.9234 5.43691 13.1404 6.52805C13.3574 7.6192 13.246 8.7502 12.8203 9.77803C12.3946 10.8059 11.6736 11.6844 10.7486 12.3025C9.82354 12.9205 8.736 13.2504 7.62348 13.2504C6.13164 13.2504 4.7009 12.6578 3.64601 11.6029C2.59111 10.548 1.99848 9.11728 1.99848 7.62544Z' fill='white'/%3E%3C/svg%3E%0A");
-      //  background-repeat: no-repeat;
-      //  background-position: center center;
-      //  width: 15px;
-      //  height: 15px;
-      //}
-
     }
   }
   /* Tagcloud Widget */
@@ -267,7 +255,6 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    margin-bottom: 0;
 
     a {
       background: $gray-100;
@@ -430,12 +417,20 @@
   }
 }
 /* Latest Post Widget*/
-.wp-block-latest-posts,
-.wp-block-rss {
-  .wp-block-latest-posts__post-title,
-  {
+.has-dates.has-author.wp-block-latest-posts {
+  .wp-block-latest-posts__post-title {
     display: inline-block;
     width: 100%;
+    font-weight: 500;
+  }
+}
+.wp-block-latest-posts,
+.wp-block-rss,
+.widget_rss {
+  .wp-block-rss__item-title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
   }
   .wp-block-latest-posts__post-author,
   .wp-block-rss__item-publish-date {
@@ -444,10 +439,37 @@
   .wp-block-latest-posts__post-author,
   .wp-block-latest-posts__post-date,
   .wp-block-rss__item-publish-date,
-  .wp-block-rss__item-author {
+  .wp-block-rss__item-author,
+  .rss-date {
     display: inline-block;
+    font-size: 14px !important;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+
   }
-  .wp-block-latest-posts__post-excerpt {
+
+  .wp-block-latest-posts__post-date,
+  .wp-block-rss__item-publish-date,
+  .rss-date {
+    &:before {
+      content: "\f274";
+      font-family: "Font Awesome 6 Pro";
+      padding-right: 8px;
+    }
+  }
+
+  .wp-block-latest-posts__post-author,
+  .wp-block-rss__item-author {
+    &:before {
+      content: "\f007";
+      font-family: "Font Awesome 6 Pro";
+      padding-right: 8px;
+    }
+  }
+  .wp-block-latest-posts__post-excerpt,
+  .wp-block-rss__item-excerpt,
+  .rssSummary {
     margin-top: 10px;
     margin-bottom: 0;
   }
@@ -514,38 +536,6 @@
   }
 }
 
-// Widget Calendar
-//.widget_calendar {
-//  .wp-calendar-table {
-//    width: 100%;
-//
-//    caption {
-//      background-color: #eaedff;
-//      text-align: center;
-//    }
-//    tbody {
-//      tr {
-//        td {
-//          background: #FFFFFF;
-//          border: 1px solid #eaedff;
-//          text-align: center;
-//          padding: 8px;
-//          transition: .3s;
-//
-//          &#today {
-//            background: $primary-color;
-//            color: $white;
-//            border-radius: 5px;
-//
-//            a {
-//              color: $white;
-//            }
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
 
 // Widget Promotion
 .widget_promotion {
