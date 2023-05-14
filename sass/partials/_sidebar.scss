@@ -448,8 +448,22 @@
     text-transform: capitalize;
     position: relative;
 
+  }
+
+  .wp-block-latest-posts__post-date,
+  .wp-block-rss__item-publish-date,
+  .rss-date {
     &:before {
       content: "\f274";
+      font-family: "Font Awesome 6 Pro";
+      padding-right: 8px;
+    }
+  }
+
+  .wp-block-latest-posts__post-author,
+  .wp-block-rss__item-author {
+    &:before {
+      content: "\f007";
       font-family: "Font Awesome 6 Pro";
       padding-right: 8px;
     }

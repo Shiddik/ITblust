@@ -2430,22 +2430,26 @@ a.meanmenu-reveal {
   text-transform: capitalize;
   position: relative;
 }
-.wp-block-latest-posts .wp-block-latest-posts__post-author:before,
 .wp-block-latest-posts .wp-block-latest-posts__post-date:before,
 .wp-block-latest-posts .wp-block-rss__item-publish-date:before,
-.wp-block-latest-posts .wp-block-rss__item-author:before,
 .wp-block-latest-posts .rss-date:before,
-.wp-block-rss .wp-block-latest-posts__post-author:before,
 .wp-block-rss .wp-block-latest-posts__post-date:before,
 .wp-block-rss .wp-block-rss__item-publish-date:before,
-.wp-block-rss .wp-block-rss__item-author:before,
 .wp-block-rss .rss-date:before,
-.widget_rss .wp-block-latest-posts__post-author:before,
 .widget_rss .wp-block-latest-posts__post-date:before,
 .widget_rss .wp-block-rss__item-publish-date:before,
-.widget_rss .wp-block-rss__item-author:before,
 .widget_rss .rss-date:before {
   content: "\f274";
+  font-family: "Font Awesome 6 Pro";
+  padding-right: 8px;
+}
+.wp-block-latest-posts .wp-block-latest-posts__post-author:before,
+.wp-block-latest-posts .wp-block-rss__item-author:before,
+.wp-block-rss .wp-block-latest-posts__post-author:before,
+.wp-block-rss .wp-block-rss__item-author:before,
+.widget_rss .wp-block-latest-posts__post-author:before,
+.widget_rss .wp-block-rss__item-author:before {
+  content: "\f007";
   font-family: "Font Awesome 6 Pro";
   padding-right: 8px;
 }
