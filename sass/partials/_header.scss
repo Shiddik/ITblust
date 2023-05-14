@@ -136,7 +136,7 @@
                     position: relative;
                     z-index: 2;
 
-                    &:before {
+                    &:after {
                       height: 100%;
                       top: 0;
                       left: 0;
@@ -311,18 +311,18 @@
       }
     }
   }
-  &.style-two {
-    ul {
-      li {
-        ul {
-          background-color: #071c34;
-        }
-        a {
-          color: $white;
-        }
-      }
-    }
-  }
+  //&.style-two {
+  //  ul {
+  //    li {
+  //      ul {
+  //        background-color: #071c34;
+  //      }
+  //      a {
+  //        color: $white;
+  //      }
+  //    }
+  //  }
+  //}
 }
 
 .animation {
