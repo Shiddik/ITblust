@@ -58,7 +58,10 @@
       }
       .wp-block-latest-comments__comment-meta {
         line-height: 28px;
-        font-weight: 500;
+        font-weight: 600;
+        color: $secondary-color;
+        font-font: $heading-font;
+
         .wp-block-latest-comments__comment-date {
           font-size: inherit !important;
           margin-bottom: 10px;
