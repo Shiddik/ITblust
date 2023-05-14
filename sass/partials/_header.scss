@@ -157,6 +157,18 @@
                 display: none;
               }
             }
+
+            ul.submenu {
+              li {
+                a {
+                  color: $text-color;
+
+                  &:before {
+                    display: none;
+                  }
+                }
+              }
+            }
           }
         }
 

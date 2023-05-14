@@ -1299,6 +1299,12 @@ html {
 .main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
 }
+.main-menu ul li.dropdown ul.submenu li ul.submenu li a {
+  color: #777777;
+}
+.main-menu ul li.dropdown ul.submenu li ul.submenu li a:before {
+  display: none;
+}
 .main-menu ul li.dropdown-style-two {
   position: relative !important;
   padding-right: 15px;
