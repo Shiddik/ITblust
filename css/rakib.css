@@ -343,6 +343,69 @@ button.post-gallery-btn:hover i {
   }
 }
 
+/* custom slider CSS */
+.custom-container {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.custom-slider-wrapper {
+  margin-top: 50px;
+  width: calc(100% + 30px);
+  padding: 20px 15px;
+  margin-left: -15px;
+  position: relative;
+}
+.custom-slider-wrapper .post-gallery-btn {
+  bottom: 5%;
+  top: 95%;
+  background: #ffffff !important;
+  border: 1px solid #d3d3d3 !important;
+}
+.custom-slider-wrapper .post-gallery-btn i {
+  color: #04144e;
+}
+.custom-slider-wrapper .slick-slide .drop-shadow {
+  box-shadow: none;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.custom-slider-wrapper .slick-slide.slick-active .drop-shadow {
+  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
+}
+.custom-slider-wrapper .slick-list {
+  display: flex;
+  overflow: visible;
+}
+.custom-slider-wrapper .slick-list .slick-track {
+  display: flex;
+  gap: 30px;
+}
+.custom-slider-wrapper .slick-dots {
+  display: flex !important;
+  align-items: center;
+  margin: 80px 70px 9px 90px;
+  width: 80% !important;
+  list-style: none;
+  background: #d2d6e4;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+.custom-slider-wrapper .slick-dots li {
+  width: 35%;
+}
+.custom-slider-wrapper .slick-dots li button {
+  display: none;
+}
+.custom-slider-wrapper .slick-dots ::marker {
+  display: none !important;
+}
+.custom-slider-wrapper .slick-dots .slick-active {
+  background: #4566d4;
+  width: 35%;
+  height: 5px;
+}
+
 /* Why choose us CSS(modern tecnology) */
 /* About-us CSS */
 .about-us {
@@ -910,67 +973,6 @@ button.post-gallery-btn:hover i {
   margin-left: 10px;
   transition-property: all;
   transition-duration: 0.7s;
-}
-
-.custom-container {
-  overflow: hidden;
-}
-
-.portfolio-showcase {
-  margin-top: 50px;
-  width: calc(100% + 30px);
-  padding: 20px 15px;
-  margin-left: -15px;
-  position: relative;
-}
-.portfolio-showcase .post-gallery-btn {
-  bottom: 5%;
-  top: 95%;
-  background: #ffffff !important;
-  border: 1px solid #d3d3d3 !important;
-}
-.portfolio-showcase .post-gallery-btn i {
-  color: #04144e;
-}
-.portfolio-showcase .slick-slide .drop-shadow {
-  box-shadow: none;
-  transition: box-shadow 0.1s ease-in-out;
-}
-.portfolio-showcase .slick-slide.slick-active .drop-shadow {
-  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
-}
-.portfolio-showcase .slick-list {
-  display: flex;
-  overflow: visible;
-}
-.portfolio-showcase .slick-list .slick-track {
-  display: flex;
-  gap: 30px;
-}
-.portfolio-showcase .slick-dots {
-  display: flex !important;
-  align-items: center;
-  margin: 78px 70px 10px 90px;
-  width: 80% !important;
-  list-style: none;
-  background: #d2d6e4;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 0;
-}
-.portfolio-showcase .slick-dots li {
-  width: 35%;
-}
-.portfolio-showcase .slick-dots li button {
-  display: none;
-}
-.portfolio-showcase .slick-dots ::marker {
-  display: none !important;
-}
-.portfolio-showcase .slick-dots .slick-active {
-  background: #4566d4;
-  width: 35%;
-  height: 5px;
 }
 
 /* Articles CSS */

@@ -1,0 +1,61 @@
+.custom-container {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.custom-slider-wrapper {
+  margin-top: 50px;
+  width: calc(100% + 30px);
+  padding: 20px 15px;
+  margin-left: -15px;
+  position: relative;
+  .post-gallery-btn {
+    bottom: 5%;
+    top: 95%;
+    background: $white !important;
+    border: 1px solid #d3d3d3 !important;
+    i {
+      color: $secondary-color;
+    }
+  }
+  .slick-slide .drop-shadow {
+    box-shadow: none;
+    transition: box-shadow 0.1s ease-in-out;
+  }
+  .slick-slide.slick-active .drop-shadow {
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.35);
+  }
+  .slick-list {
+    display: flex;
+    overflow: visible;
+    // padding: 0 36px;
+    .slick-track {
+      display: flex;
+      gap: 30px;
+    }
+  }
+  .slick-dots {
+    display: flex !important;
+    align-items: center;
+    margin: 80px 70px 9px 90px;
+    width: 80% !important;
+    list-style: none;
+    background: #d2d6e4;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    li {
+      width: 35%;
+      button {
+        display: none;
+      }
+    }
+    ::marker {
+      display: none !important;
+    }
+    .slick-active {
+      background: $text-primary;
+      width: 35%;
+      height: 5px;
+    }
+  }
+}

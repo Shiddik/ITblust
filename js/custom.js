@@ -36,7 +36,7 @@
       }
     });
 
-    $(".portfolio-showcase").slick({
+    $(".custom-slider-wrapper").slick({
       slidesToShow: 3,
       infinite: false,
       autoplay: false,
