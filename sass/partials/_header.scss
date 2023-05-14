@@ -147,6 +147,7 @@
                   }
                 }
                 a {
+                  color: $text-color;
                   &:before {
                     display: block;
                     right: 15px;
@@ -156,6 +157,7 @@
                 ul.submenu {
                   li {
                     a {
+
                       &:before {
                         display: none;
                       }
