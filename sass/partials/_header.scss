@@ -118,7 +118,7 @@
             padding: 3px;
             margin: auto;
             top: 45%;
-            right: 15px;
+            right: 0;
           }
 
         }
@@ -129,9 +129,10 @@
             &.dropdown {
               &.active {
                 a {
-                  &:before {
+                  &:after {
                     height: 100%;
                     top: 0;
+                    left: 0;
                     border-radius: 0;
                   }
                 }

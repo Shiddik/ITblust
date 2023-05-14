@@ -1271,14 +1271,15 @@ html {
   padding: 3px;
   margin: auto;
   top: 45%;
-  right: 15px;
+  right: 0;
 }
 .main-menu ul li.dropdown ul.submenu {
   padding-left: 0 !important;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a:before {
+.main-menu ul li.dropdown ul.submenu li.dropdown.active a:after {
   height: 100%;
   top: 0;
+  left: 0;
   border-radius: 0;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
