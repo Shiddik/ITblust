@@ -915,7 +915,7 @@ blockquote footer {
 .widget.widget_categories select,
 .widget.widget_text select,
 .widget.widget_search .search-form,
-.widget.widget_tag_cloud,
+.widget.widget_tag_cloud .tagcloud,
 .widget .wp-block-tag-cloud {
   margin-bottom: 6px;
 }
