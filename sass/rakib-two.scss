@@ -2,14 +2,6 @@
 @import "variables";
 @import "_mixin.scss";
 
-.info-rounded-style-two {
-  border-radius: 0px 14px 14px 0px !important;
-}
-.home-btn-two {
-  border-radius: 4px;
-  color: white !important;
-}
-
 .nav-bottom {
   background: rgba(4, 20, 78, 0.5) !important;
   backdrop-filter: blur(2px) !important;
