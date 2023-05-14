@@ -1276,8 +1276,20 @@ html {
 .main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
 }
+.main-menu ul li.dropdown ul.submenu li.dropdown.active a {
+  position: relative;
+  z-index: 2;
+}
+.main-menu ul li.dropdown ul.submenu li.dropdown.active a:before {
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  z-index: -1;
+}
 .main-menu ul li.dropdown ul.submenu li.dropdown a:before {
   display: block;
+  right: 15px;
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a:before {
   display: none;
