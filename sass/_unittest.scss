@@ -343,10 +343,13 @@ blockquote {
 .wp-block-rss {
   padding-left: 0 !important;
 }
-
-/*
- Media
-============================*/
+.wp-block-archives-dropdown,
+.wp-block-categories-dropdown {
+  margin-bottom: 6px;
+}
+  /*
+   Media
+  ============================*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
