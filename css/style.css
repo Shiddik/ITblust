@@ -2048,6 +2048,12 @@ a.meanmenu-reveal {
 .widget .has-dates.has-excerpts.wp-block-latest-comments.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
   font-weight: 400;
 }
+.widget .has-avatars.has-dates.has-excerpts.wp-block-latest-comments.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-author,
+.widget .has-avatars.has-dates.has-excerpts.wp-block-latest-comments.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-link,
+.widget .has-dates.has-excerpts.wp-block-latest-comments.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-author,
+.widget .has-dates.has-excerpts.wp-block-latest-comments.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-link {
+  font-weight: 400;
+}
 .widget .wp-block-latest-comments li.wp-block-latest-comments__comment,
 .widget .wp-block-latest-posts li.wp-block-latest-comments__comment {
   margin-bottom: 0;
