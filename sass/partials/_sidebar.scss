@@ -71,8 +71,10 @@
         }
       }
       .wp-block-latest-comments__comment-excerpt {
-        font-size: 16px;
-        line-height: 28px;
+        p {
+          font-size: 16px;
+          line-height: 28px;
+        }
       }
       &:last-child {
         margin-bottom: 0;
