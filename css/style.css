@@ -1273,38 +1273,6 @@ html {
   top: 45%;
   right: 0;
 }
-.main-menu ul li.dropdown ul.submenu {
-  padding-left: 0 !important;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a:before {
-  display: block;
-  border-color: #ffffff;
-  right: 15px;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a:after {
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 0;
-  z-index: -1;
-}
-.main-menu ul li.dropdown ul.submenu li a {
-  color: #777777;
-}
-.main-menu ul li.dropdown ul.submenu li a:before {
-  display: none;
-}
-.main-menu ul li.dropdown ul.submenu li ul.submenu li a {
-  color: #777777;
-}
-.main-menu ul li.dropdown ul.submenu li ul.submenu li a:before {
-  display: none;
-}
 .main-menu ul li.dropdown-style-two {
   position: relative !important;
   padding-right: 15px;

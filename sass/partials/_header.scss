@@ -122,55 +122,55 @@
           }
 
         }
-        ul.submenu {
-          padding-left: 0 !important;
-
-          li {
-            &.dropdown {
-              &.active {
-                a {
-                  position: relative;
-                  z-index: 1;
-                  color: $white;
-
-                  &:before {
-                    display: block;
-                    border-color: $white;
-                    right: 15px;
-                  }
-
-
-                  &:after {
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    border-radius: 0;
-                    z-index: -1;
-                  }
-                }
-              }
-            }
-            a {
-              color: $text-color;
-
-              &:before {
-                display: none;
-              }
-            }
-
-            ul.submenu {
-              li {
-                a {
-                  color: $text-color;
-
-                  &:before {
-                    display: none;
-                  }
-                }
-              }
-            }
-          }
-        }
+        //ul.submenu {
+        //  padding-left: 0 !important;
+        //
+        //  li {
+        //    &.dropdown {
+        //      &.active {
+        //        a {
+        //          position: relative;
+        //          z-index: 1;
+        //          color: $white;
+        //
+        //          &:before {
+        //            display: block;
+        //            border-color: $white;
+        //            right: 15px;
+        //          }
+        //
+        //
+        //          &:after {
+        //            height: 100%;
+        //            top: 0;
+        //            left: 0;
+        //            border-radius: 0;
+        //            z-index: -1;
+        //          }
+        //        }
+        //      }
+        //    }
+        //    a {
+        //      color: $text-color;
+        //
+        //      &:before {
+        //        display: none;
+        //      }
+        //    }
+        //
+        //    ul.submenu {
+        //      li {
+        //        a {
+        //          color: $text-color;
+        //
+        //          &:before {
+        //            display: none;
+        //          }
+        //        }
+        //      }
+        //    }
+        //  }
+        //}
 
       }
       &.dropdown-style-two {
