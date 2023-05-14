@@ -912,6 +912,11 @@ blockquote footer {
   margin-bottom: 6px;
 }
 
+nav.wp-calendar-nav {
+  justify-content: space-between;
+  display: flex;
+}
+
 /*
  Media
 ============================*/
