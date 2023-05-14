@@ -122,27 +122,33 @@
           }
 
         }
-        ul {
-          &.submenu {
-            padding-left: 0 !important;
+        ul.submenu {
+          padding-left: 0 !important;
 
-            li {
-              &.dropdown {
+          li {
+            &.dropdown {
+              &.active {
                 a {
                   &:before {
-                    display: block;
+                    height: 100%;
+                    top: 0;
+                    border-radius: 0;
                   }
                 }
               }
               a {
-                padding-right: 0 !important;
-
                 &:before {
-                  display: none;
+                  display: block;
                 }
               }
             }
+            a {
+              padding-right: 0 !important;
 
+              &:before {
+                display: none;
+              }
+            }
           }
         }
       }
