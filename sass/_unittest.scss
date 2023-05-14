@@ -356,6 +356,12 @@ blockquote {
 {
   margin-bottom: 6px;
 }
+.wp-block-latest-posts {
+  .wp-block-latest-posts__post-title {
+    display: inline-block;
+    width: 100%;
+  }
+}
 nav.wp-calendar-nav {
   justify-content: space-between;
   display: flex;
