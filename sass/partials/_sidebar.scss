@@ -65,7 +65,8 @@
       &.wp-block-latest-comments__comment {
         margin-bottom: 0;
       }
-      .wp-block-latest-comments__comment-meta {
+      .wp-block-latest-comments__comment-meta,
+      .wp-block-latest-posts__post-title {
         line-height: 28px;
         font-weight: 400;
 
@@ -417,10 +418,16 @@
   }
 }
 /* Latest Post Widget*/
+.has-dates .has-author .wp-block-latest-posts {
+  .wp-block-latest-posts__post-title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+  }
+}
 .wp-block-latest-posts,
 .wp-block-rss,
 .widget_rss {
-  .wp-block-latest-posts__post-title,
   .wp-block-rss__item-title {
     display: inline-block;
     width: 100%;

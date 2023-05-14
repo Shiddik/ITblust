@@ -2059,18 +2059,24 @@ a.meanmenu-reveal {
   margin-bottom: 0;
 }
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta,
-.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta {
+.widget .wp-block-latest-comments li .wp-block-latest-posts__post-title,
+.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta,
+.widget .wp-block-latest-posts li .wp-block-latest-posts__post-title {
   line-height: 28px;
   font-weight: 400;
 }
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date,
-.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
+.widget .wp-block-latest-comments li .wp-block-latest-posts__post-title .wp-block-latest-comments__comment-date,
+.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date,
+.widget .wp-block-latest-posts li .wp-block-latest-posts__post-title .wp-block-latest-comments__comment-date {
   font-size: 14px !important;
   margin-bottom: 10px;
   position: relative;
 }
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before,
-.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before {
+.widget .wp-block-latest-comments li .wp-block-latest-posts__post-title .wp-block-latest-comments__comment-date:before,
+.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before,
+.widget .wp-block-latest-posts li .wp-block-latest-posts__post-title .wp-block-latest-comments__comment-date:before {
   content: "\f274";
   font-family: "Font Awesome 6 Pro";
   padding-right: 8px;
@@ -2369,11 +2375,14 @@ a.meanmenu-reveal {
 }
 
 /* Latest Post Widget*/
-.wp-block-latest-posts .wp-block-latest-posts__post-title,
+.has-dates .has-author .wp-block-latest-posts .wp-block-latest-posts__post-title {
+  display: inline-block;
+  width: 100%;
+  font-weight: 500;
+}
+
 .wp-block-latest-posts .wp-block-rss__item-title,
-.wp-block-rss .wp-block-latest-posts__post-title,
 .wp-block-rss .wp-block-rss__item-title,
-.widget_rss .wp-block-latest-posts__post-title,
 .widget_rss .wp-block-rss__item-title {
   display: inline-block;
   width: 100%;
