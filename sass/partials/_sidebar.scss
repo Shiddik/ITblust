@@ -328,9 +328,6 @@
           font-weight: 500;
           display: block;
 
-          .rssSummary {
-            margin-top: 10px;
-          }
           &:before {
             display: none;
           }
@@ -443,7 +440,8 @@
     }
   }
   .wp-block-latest-posts__post-excerpt,
-  .wp-block-rss__item-excerpt {
+  .wp-block-rss__item-excerpt,
+  .rssSummary {
     margin-top: 10px;
     margin-bottom: 0;
   }

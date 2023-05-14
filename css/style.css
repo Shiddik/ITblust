@@ -2302,10 +2302,6 @@ a.meanmenu-reveal {
   font-weight: 500;
   display: block;
 }
-.widget ul li a.rsswidget .rssSummary,
-.widget ol li a.rsswidget .rssSummary {
-  margin-top: 10px;
-}
 .widget ul li a.rsswidget:before,
 .widget ol li a.rsswidget:before {
   display: none;
@@ -2429,10 +2425,13 @@ a.meanmenu-reveal {
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt,
 .wp-block-latest-posts .wp-block-rss__item-excerpt,
+.wp-block-latest-posts .rssSummary,
 .wp-block-rss .wp-block-latest-posts__post-excerpt,
 .wp-block-rss .wp-block-rss__item-excerpt,
+.wp-block-rss .rssSummary,
 .widget_rss .wp-block-latest-posts__post-excerpt,
-.widget_rss .wp-block-rss__item-excerpt {
+.widget_rss .wp-block-rss__item-excerpt,
+.widget_rss .rssSummary {
   margin-top: 10px;
   margin-bottom: 0;
 }
