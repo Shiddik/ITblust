@@ -351,6 +351,9 @@
           font-weight: 500;
           display: block;
 
+          .rssSummary {
+            margin-top: 10px;
+          }
           &:before {
             display: none;
           }
@@ -448,7 +451,8 @@
   .wp-block-latest-posts__post-author,
   .wp-block-latest-posts__post-date,
   .wp-block-rss__item-publish-date,
-  .wp-block-rss__item-author {
+  .wp-block-rss__item-author,
+  .rss-date {
     display: inline-block;
     font-size: 14px !important;
     font-weight: 500;
