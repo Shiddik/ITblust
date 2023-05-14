@@ -1276,18 +1276,6 @@ html {
 .main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
 }
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a {
-  position: relative;
-  z-index: 2;
-  color: #ffffff;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown.active a:after {
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 0;
-  z-index: -1;
-}
 .main-menu ul li.dropdown ul.submenu li.dropdown a {
   color: #777777;
 }
@@ -1301,6 +1289,18 @@ html {
 }
 .main-menu ul li.dropdown ul.submenu li.dropdown ul.submenu li a:before {
   display: none;
+}
+.main-menu ul li.dropdown ul.submenu li.active a {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.main-menu ul li.dropdown ul.submenu li.active a:after {
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  z-index: -1;
 }
 .main-menu ul li a {
   display: block;
