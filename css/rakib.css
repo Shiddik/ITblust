@@ -984,14 +984,14 @@ button.post-gallery-btn:hover i {
 }
 
 /* Articles CSS */
-.post-card-item-style-one {
+.post-card-item {
   background: #ffffff;
   border-radius: 14px;
 }
-.post-card-item-style-one .image {
+.post-card-item .image {
   position: relative;
 }
-.post-card-item-style-one .image .article-btn {
+.post-card-item .image .article-btn {
   z-index: 2;
   position: absolute;
   bottom: 20px;
@@ -1004,28 +1004,47 @@ button.post-gallery-btn:hover i {
   text-transform: uppercase;
   color: #04144e;
 }
-.post-card-item-style-one .content-wrapper {
+.post-card-item .image .article-btn.style-two {
+  top: 20px;
+  left: 20px;
+  bottom: auto;
+}
+.post-card-item .content-wrapper {
   padding: 30px 25px;
   display: flex;
   flex-direction: column;
 }
-.post-card-item-style-one .content-wrapper .post-author-meta {
+.post-card-item .content-wrapper .post-author-meta {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.post-card-item-style-one .content-wrapper .post-author-meta h5 {
+.post-card-item .content-wrapper .post-author-meta h5 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   color: #04144e;
 }
-.post-card-item-style-one .content-wrapper .post-author-meta p {
+.post-card-item .content-wrapper .post-author-meta p {
   font-size: 14px;
   line-height: 25px;
   text-transform: capitalize;
   color: #4566d4;
+}
+.post-card-item .content-wrapper .post-author-meta.style-two {
+  margin-bottom: 25px;
+}
+.post-card-item .content-wrapper.style-two {
+  margin: -50px 20px 20px 20px;
+  background: white;
+  position: relative;
+  z-index: 1;
+  border-radius: 14px;
+}
+.post-card-item.style-two {
+  background: transparent;
+  border-radius: 14px 14px 0px 0px;
 }
 
 /* Info card-style-one CSS */

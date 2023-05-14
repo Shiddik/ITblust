@@ -1,4 +1,4 @@
-.post-card-item-style-one {
+.post-card-item {
   background: $white;
   border-radius: 14px;
   .image {
@@ -15,6 +15,11 @@
       line-height: 21px;
       text-transform: uppercase;
       color: $secondary-color;
+      &.style-two {
+        top: 20px;
+        left: 20px;
+        bottom: auto;
+      }
     }
   }
   .content-wrapper {
@@ -38,6 +43,21 @@
         text-transform: capitalize;
         color: $text-primary;
       }
+      // author meta
+      &.style-two {
+        margin-bottom: 25px;
+      }
     }
+    &.style-two {
+      margin: -50px 20px 20px 20px;
+      background: white;
+      position: relative;
+      z-index: 1;
+      border-radius: 14px;
+    }
+  }
+  &.style-two {
+    background: transparent;
+    border-radius: 14px 14px 0px 0px;
   }
 }
