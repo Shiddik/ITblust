@@ -2055,6 +2055,11 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta {
   line-height: 28px;
 }
+.widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date,
+.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
+  font-size: inherit !important;
+  margin-bottom: 10px;
+}
 .widget .wp-block-latest-comments li a,
 .widget .wp-block-latest-posts li a {
   color: #777777;

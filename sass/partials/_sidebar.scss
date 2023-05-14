@@ -58,6 +58,11 @@
       }
       .wp-block-latest-comments__comment-meta {
         line-height: 28px;
+
+        .wp-block-latest-comments__comment-date {
+          font-size: inherit !important;
+          margin-bottom: 10px;
+        }
       }
       a {
         color: $text-color;
