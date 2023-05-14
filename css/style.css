@@ -1281,17 +1281,17 @@ html {
   z-index: 1;
   color: #ffffff;
 }
+.main-menu ul li.dropdown ul.submenu li.dropdown.active a:before {
+  display: block;
+  border-color: #ffffff;
+  right: 15px;
+}
 .main-menu ul li.dropdown ul.submenu li.dropdown.active a:after {
   height: 100%;
   top: 0;
   left: 0;
   border-radius: 0;
   z-index: -1;
-}
-.main-menu ul li.dropdown ul.submenu li.dropdown a:before {
-  display: block;
-  border-color: #ffffff;
-  right: 15px;
 }
 .main-menu ul li.dropdown-style-two {
   position: relative !important;

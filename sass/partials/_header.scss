@@ -133,6 +133,13 @@
                   z-index: 1;
                   color: $white;
 
+                  &:before {
+                    display: block;
+                    border-color: $white;
+                    right: 15px;
+                  }
+
+
                   &:after {
                     height: 100%;
                     top: 0;
@@ -140,14 +147,6 @@
                     border-radius: 0;
                     z-index: -1;
                   }
-                }
-              }
-              a {
-
-                &:before {
-                  display: block;
-                  border-color: $white;
-                  right: 15px;
                 }
               }
             }
