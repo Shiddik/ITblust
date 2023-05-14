@@ -2072,6 +2072,7 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-excerpt p {
   font-size: 16px;
   line-height: 28px;
+  margin: 0;
 }
 .widget .wp-block-latest-comments li:last-child,
 .widget .wp-block-latest-posts li:last-child {
