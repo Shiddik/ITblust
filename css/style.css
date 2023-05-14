@@ -1247,6 +1247,9 @@ html {
 .main-menu ul li.active > a {
   color: #4770f7;
 }
+.main-menu ul li.active > a:hover {
+  color: #4770f7;
+}
 .main-menu ul li.active > a:after {
   position: absolute;
   content: "";
