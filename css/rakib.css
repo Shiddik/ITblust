@@ -486,6 +486,7 @@ button.post-gallery-btn:hover i {
   flex-shrink: 0;
 }
 
+/* Service CSS */
 .counter-wrapper {
   position: relative;
   width: 100%;
@@ -498,6 +499,10 @@ button.post-gallery-btn:hover i {
     bottom: -148px;
     margin-top: 0;
   }
+}
+.counter-wrapper.style-two {
+  position: relative;
+  bottom: 0;
 }
 
 .counter-main {
@@ -591,6 +596,11 @@ button.post-gallery-btn:hover i {
     width: 100%;
     flex-wrap: nowrap;
   }
+}
+.counter-main.style-two {
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
 }
 
 /* Service CSS */
