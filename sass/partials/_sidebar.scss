@@ -78,19 +78,16 @@
           }
         }
       }
-      .wp-block-latest-comments__comment-author,
-      .wp-block-latest-comments__comment-link,
-      .wp-block-latest-posts__post-author,
-      .wp-block-latest-posts__post-date {
-        display: inline !important;
-        text-transform: capitalize;
-        line-height: 28px;
-        font-weight: 500;
-
-      }
       a {
         color: $text-color;
 
+        &.wp-block-latest-comments__comment-author,
+        &.wp-block-latest-comments__comment-link {
+          display: inline !important;
+          text-transform: capitalize;
+          line-height: 28px;
+          font-weight: 500;
+        }
         &:hover {
           color: $primary-color;
         }
@@ -440,30 +437,40 @@
   }
 }
 /* Latest Post Widget*/
-//.wp-block-latest-posts,
-//.wp-block-rss {
-//  .wp-block-latest-posts__post-title
-//  {
-//    display: inline-block;
-//    width: 100%;
-//  }
-//  .wp-block-latest-posts__post-author,
-//  .wp-block-rss__item-publish-date {
-//    margin-right: 10px;
-//  }
-//  .wp-block-latest-posts__post-author,
-//  .wp-block-latest-posts__post-date,
-//  .wp-block-rss__item-publish-date,
-//  .wp-block-rss__item-author {
-//    display: inline-block;
-//  }
-//  .wp-block-latest-posts__post-excerpt {
-//    margin-top: 10px;
-//    margin-bottom: 0;
-//  }
-//}
+.wp-block-latest-posts,
+.wp-block-rss {
+  .wp-block-latest-posts__post-title
+  {
+    display: inline-block;
+    width: 100%;
+  }
+  .wp-block-latest-posts__post-author,
+  .wp-block-rss__item-publish-date {
+    margin-right: 10px;
+  }
+  .wp-block-latest-posts__post-author,
+  .wp-block-latest-posts__post-date,
+  .wp-block-rss__item-publish-date,
+  .wp-block-rss__item-author {
+    display: inline-block;
+    font-size: 14px !important;
+    margin-bottom: 10px;
+    position: relative;
 
-
+    &:before {
+      //position: absolute;
+      content: "\f274";
+      font-family: "Font Awesome 6 Pro";
+      padding-right: 8px;
+      //left: 0;
+      //top: 50%;
+    }
+  }
+  .wp-block-latest-posts__post-excerpt {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
 .widget_latest_post {
   ul {
     li {
