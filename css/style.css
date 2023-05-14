@@ -2374,14 +2374,18 @@ a.meanmenu-reveal {
 
 /* Latest Post Widget*/
 .wp-block-latest-posts .wp-block-latest-posts__post-title,
-.wp-block-rss .wp-block-latest-posts__post-title {
+.wp-block-rss .wp-block-latest-posts__post-title,
+.widget_rss .wp-block-latest-posts__post-title {
   display: inline-block;
   width: 100%;
+  font-weight: 500;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-author,
 .wp-block-latest-posts .wp-block-rss__item-publish-date,
 .wp-block-rss .wp-block-latest-posts__post-author,
-.wp-block-rss .wp-block-rss__item-publish-date {
+.wp-block-rss .wp-block-rss__item-publish-date,
+.widget_rss .wp-block-latest-posts__post-author,
+.widget_rss .wp-block-rss__item-publish-date {
   margin-right: 10px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-author,
@@ -2393,7 +2397,12 @@ a.meanmenu-reveal {
 .wp-block-rss .wp-block-latest-posts__post-date,
 .wp-block-rss .wp-block-rss__item-publish-date,
 .wp-block-rss .wp-block-rss__item-author,
-.wp-block-rss .rss-date {
+.wp-block-rss .rss-date,
+.widget_rss .wp-block-latest-posts__post-author,
+.widget_rss .wp-block-latest-posts__post-date,
+.widget_rss .wp-block-rss__item-publish-date,
+.widget_rss .wp-block-rss__item-author,
+.widget_rss .rss-date {
   display: inline-block;
   font-size: 14px !important;
   font-weight: 500;
@@ -2408,13 +2417,22 @@ a.meanmenu-reveal {
 .wp-block-rss .wp-block-latest-posts__post-date:before,
 .wp-block-rss .wp-block-rss__item-publish-date:before,
 .wp-block-rss .wp-block-rss__item-author:before,
-.wp-block-rss .rss-date:before {
+.wp-block-rss .rss-date:before,
+.widget_rss .wp-block-latest-posts__post-author:before,
+.widget_rss .wp-block-latest-posts__post-date:before,
+.widget_rss .wp-block-rss__item-publish-date:before,
+.widget_rss .wp-block-rss__item-author:before,
+.widget_rss .rss-date:before {
   content: "\f274";
   font-family: "Font Awesome 6 Pro";
   padding-right: 8px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt,
-.wp-block-rss .wp-block-latest-posts__post-excerpt {
+.wp-block-latest-posts .wp-block-rss__item-excerpt,
+.wp-block-rss .wp-block-latest-posts__post-excerpt,
+.wp-block-rss .wp-block-rss__item-excerpt,
+.widget_rss .wp-block-latest-posts__post-excerpt,
+.widget_rss .wp-block-rss__item-excerpt {
   margin-top: 10px;
   margin-bottom: 0;
 }
