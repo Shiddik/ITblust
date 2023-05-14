@@ -63,6 +63,9 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+.hero-title .slider-short-title.short-title-style-two {
+  color: #f7cf47;
+}
 .hero-title .slider-title {
   font-family: "Playfair Display", serif;
   font-size: 40px;

@@ -9,6 +9,9 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: $white;
+    &.short-title-style-two {
+      color: $orange-color;
+    }
   }
   .slider-title {
     font-family: $heading-font;

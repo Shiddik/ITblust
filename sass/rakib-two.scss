@@ -1,11 +1,17 @@
 .nav-bottom {
   background: rgba(4, 20, 78, 0.5) !important;
   backdrop-filter: blur(2px) !important;
+  position: relative;
+  z-index: 2;
 }
 .hero-section {
   position: relative;
-  .hero-title {
-    padding: 160px 0;
+  padding-bottom: 125px;
+  z-index: 10;
+  .page-overlay {
     background: rgba(2, 10, 39, 0.5);
+  }
+  .hero-title {
+    padding: 115px 0;
   }
 }

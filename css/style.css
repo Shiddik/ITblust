@@ -1320,6 +1320,15 @@ html {
   border-top: 0px;
   border-top: 2px solid #4770f7;
 }
+.main-menu.style-two ul li ul {
+  background-color: #071c34;
+}
+.main-menu.style-two ul li a {
+  color: #ffffff;
+}
+.main-menu.style-two ul li.dropdown-style-two {
+  background: #071c34;
+}
 
 .animation {
   -webkit-animation-duration: 0.3s;
@@ -1545,6 +1554,9 @@ a.meanmenu-reveal {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffffff;
+}
+.hero-title .slider-short-title.short-title-style-two {
+  color: #f7cf47;
 }
 .hero-title .slider-title {
   font-family: "Playfair Display", serif;
