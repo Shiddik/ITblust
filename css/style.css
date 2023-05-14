@@ -1275,6 +1275,8 @@ html {
 }
 .main-menu ul li.dropdown ul.submenu {
   padding-left: 0 !important;
+}
+.main-menu ul li.dropdown ul.submenu li {
   padding-right: 0 !important;
 }
 .main-menu ul li.dropdown-style-two {

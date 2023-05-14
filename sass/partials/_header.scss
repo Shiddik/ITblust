@@ -123,7 +123,9 @@
         ul {
           &.submenu {
             padding-left: 0 !important;
-            padding-right: 0 !important;
+            li {
+              padding-right: 0 !important;
+            }
           }
         }
       }
