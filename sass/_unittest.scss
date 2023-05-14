@@ -343,14 +343,23 @@ blockquote {
 .wp-block-rss {
   padding-left: 0 !important;
 }
-.wp-block-archives-dropdown,
-.wp-block-categories-dropdown {
+.widget .wp-block-archives-dropdown,
+.widget .wp-block-categories-dropdown,
+.widget .wp-block-loginout,
+.widget .wp-block-social-links,
+.widget.widget_archive select,
+.widget.widget_categories select,
+.widget.widget_text select,
+.widget.widget_search .search-form,
+{
   margin-bottom: 6px;
 }
 nav.wp-calendar-nav {
   justify-content: space-between;
   display: flex;
 }
+
+
   /*
    Media
   ============================*/
@@ -368,3 +377,4 @@ iframe,
 object {
   max-width: 100%;
 }
+
