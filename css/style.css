@@ -1276,14 +1276,14 @@ html {
 .main-menu ul li.dropdown ul.submenu {
   padding-left: 0 !important;
 }
+.main-menu ul li.dropdown ul.submenu li.dropdown a:before {
+  display: block;
+}
 .main-menu ul li.dropdown ul.submenu li a {
   padding-right: 0 !important;
 }
 .main-menu ul li.dropdown ul.submenu li a:before {
   display: none;
-}
-.main-menu ul li.dropdown ul.submenu li a.dropdown-menu-item:before {
-  display: block;
 }
 .main-menu ul li.dropdown-style-two {
   position: relative !important;

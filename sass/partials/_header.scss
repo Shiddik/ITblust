@@ -127,16 +127,18 @@
             padding-left: 0 !important;
 
             li {
+              &.dropdown {
+                a {
+                  &:before {
+                    display: block;
+                  }
+                }
+              }
               a {
                 padding-right: 0 !important;
 
                 &:before {
                   display: none;
-                }
-                &.dropdown-menu-item {
-                  &:before {
-                    display: block;
-                  }
                 }
               }
             }
