@@ -1247,7 +1247,7 @@ html {
 .main-menu ul li.active > a {
   color: #4770f7;
 }
-.main-menu ul li.active > a:before {
+.main-menu ul li.active > a:after {
   position: absolute;
   content: "";
   height: 5px;
@@ -1278,6 +1278,12 @@ html {
 }
 .main-menu ul li.dropdown ul.submenu li a {
   padding-right: 0 !important;
+}
+.main-menu ul li.dropdown ul.submenu li a:before {
+  display: none;
+}
+.main-menu ul li.dropdown ul.submenu li a.dropdown-menu-item:before {
+  display: block;
 }
 .main-menu ul li.dropdown-style-two {
   position: relative !important;

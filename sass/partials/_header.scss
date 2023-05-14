@@ -91,7 +91,7 @@
         > a {
           color: $primary-color;
 
-          &:before {
+          &:after {
             position: absolute;
             content: "";
             height: 5px;
@@ -125,11 +125,22 @@
         ul {
           &.submenu {
             padding-left: 0 !important;
+
             li {
               a {
                 padding-right: 0 !important;
+
+                &:before {
+                  display: none;
+                }
+                &.dropdown-menu-item {
+                  &:before {
+                    display: block;
+                  }
+                }
               }
             }
+
           }
         }
       }
