@@ -43,13 +43,7 @@
     }
   }
   /* Recent Comment List Block Widget & Latest Post Widget Block */
-  ol.wp-block-latest-comments {
-      li {
-        .wp-block-latest-comments__comment-meta {
-          font-weight: 400;
-        }
-      }
-  }
+
   .wp-block-latest-comments,
   .wp-block-latest-posts {
     li {
@@ -63,8 +57,17 @@
         font-font: $heading-font;
 
         .wp-block-latest-comments__comment-date {
-          font-size: inherit !important;
+          font-size: 14px !important;
           margin-bottom: 10px;
+          position: relative;
+
+          &:before {
+            //position: absolute;
+            content: "\f274";
+            font-family: "Font Awesome 6 Pro";
+            //left: 0;
+            //top: 50%;
+          }
         }
       }
       a {
@@ -74,16 +77,11 @@
         &.wp-block-latest-comments__comment-link {
           display: inline !important;
           text-transform: capitalize;
-          position: relative;
-          color: $primary-color;
+          line-height: 28px;
+          font-weight: 600;
+          color: $secondary-color;
+          font-font: $heading-font;
 
-          &:before {
-            //position: absolute;
-            content: "\f274";
-            font-family: "Font Awesome 6 Pro";
-            //left: 0;
-            //top: 50%;
-          }
         }
         &:hover {
           color: $primary-color;
@@ -96,15 +94,15 @@
           margin: 0;
         }
       }
-      &:last-child {
-        margin-bottom: 0;
-
-        .wp-block-latest-comments__comment-excerpt {
-          p {
-            margin-bottom: 0;
-          }
-        }
-      }
+      //&:last-child {
+      //  margin-bottom: 0;
+      //
+      //  .wp-block-latest-comments__comment-excerpt {
+      //    p {
+      //      margin-bottom: 0;
+      //    }
+      //  }
+      //}
     }
   }
   /* Social Widget */

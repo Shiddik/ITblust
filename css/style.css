@@ -2044,9 +2044,6 @@ a.meanmenu-reveal {
   display: flex;
   justify-content: center;
 }
-.widget ol.wp-block-latest-comments li .wp-block-latest-comments__comment-meta {
-  font-weight: 400;
-}
 .widget .wp-block-latest-comments li.wp-block-latest-comments__comment,
 .widget .wp-block-latest-posts li.wp-block-latest-comments__comment {
   margin-bottom: 0;
@@ -2060,8 +2057,14 @@ a.meanmenu-reveal {
 }
 .widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date,
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
-  font-size: inherit !important;
+  font-size: 14px !important;
   margin-bottom: 10px;
+  position: relative;
+}
+.widget .wp-block-latest-comments li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before,
+.widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before {
+  content: "\f274";
+  font-family: "Font Awesome 6 Pro";
 }
 .widget .wp-block-latest-comments li a,
 .widget .wp-block-latest-posts li a {
@@ -2072,14 +2075,10 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-link {
   display: inline !important;
   text-transform: capitalize;
-  position: relative;
-  color: #4770f7;
-}
-.widget .wp-block-latest-comments li a.wp-block-latest-comments__comment-author:before, .widget .wp-block-latest-comments li a.wp-block-latest-comments__comment-link:before,
-.widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-author:before,
-.widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-link:before {
-  content: "\f274";
-  font-family: "Font Awesome 6 Pro";
+  line-height: 28px;
+  font-weight: 600;
+  color: #04144e;
+  font-font: "Playfair Display", serif;
 }
 .widget .wp-block-latest-comments li a:hover,
 .widget .wp-block-latest-posts li a:hover {
@@ -2090,14 +2089,6 @@ a.meanmenu-reveal {
   font-size: 16px;
   line-height: 28px;
   margin: 0;
-}
-.widget .wp-block-latest-comments li:last-child,
-.widget .wp-block-latest-posts li:last-child {
-  margin-bottom: 0;
-}
-.widget .wp-block-latest-comments li:last-child .wp-block-latest-comments__comment-excerpt p,
-.widget .wp-block-latest-posts li:last-child .wp-block-latest-comments__comment-excerpt p {
-  margin-bottom: 0;
 }
 .widget .social-widget {
   justify-content: flex-start;
