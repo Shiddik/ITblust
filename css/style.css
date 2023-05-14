@@ -1293,6 +1293,12 @@ html {
   border-radius: 0;
   z-index: -1;
 }
+.main-menu ul li.dropdown ul.submenu li.dropdown a {
+  color: #777777;
+}
+.main-menu ul li.dropdown ul.submenu li.dropdown a:before {
+  display: none;
+}
 .main-menu ul li.dropdown-style-two {
   position: relative !important;
   padding-right: 15px;

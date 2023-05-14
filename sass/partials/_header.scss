@@ -149,6 +149,13 @@
                   }
                 }
               }
+              a {
+                color: $text-color;
+
+                &:before {
+                  display: none;
+                }
+              }
             }
             //a {
             //
