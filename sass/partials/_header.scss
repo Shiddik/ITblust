@@ -248,18 +248,18 @@
       }
     }
   }
-  //&.style-two {
-  //  ul {
-  //    li {
-  //      ul {
-  //        background-color: #071c34;
-  //      }
-  //      a {
-  //        color: $white;
-  //      }
-  //    }
-  //  }
-  //}
+  &.style-two {
+    ul {
+      li {
+        ul {
+          background-color: #071c34;
+        }
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
 .animation {
