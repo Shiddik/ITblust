@@ -2370,8 +2370,11 @@ a.meanmenu-reveal {
 
 /* Latest Post Widget*/
 .wp-block-latest-posts .wp-block-latest-posts__post-title,
+.wp-block-latest-posts .wp-block-rss__item-title,
 .wp-block-rss .wp-block-latest-posts__post-title,
-.widget_rss .wp-block-latest-posts__post-title {
+.wp-block-rss .wp-block-rss__item-title,
+.widget_rss .wp-block-latest-posts__post-title,
+.widget_rss .wp-block-rss__item-title {
   display: inline-block;
   width: 100%;
   font-weight: 500;

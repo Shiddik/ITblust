@@ -414,7 +414,8 @@
 .wp-block-latest-posts,
 .wp-block-rss,
 .widget_rss {
-  .wp-block-latest-posts__post-title {
+  .wp-block-latest-posts__post-title,
+  .wp-block-rss__item-title {
     display: inline-block;
     width: 100%;
     font-weight: 500;
