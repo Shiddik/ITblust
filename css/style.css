@@ -2070,6 +2070,14 @@ a.meanmenu-reveal {
 .widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-link {
   display: inline !important;
   text-transform: capitalize;
+  position: relative;
+  color: #4770f7;
+}
+.widget .wp-block-latest-comments li a.wp-block-latest-comments__comment-author:before, .widget .wp-block-latest-comments li a.wp-block-latest-comments__comment-link:before,
+.widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-author:before,
+.widget .wp-block-latest-posts li a.wp-block-latest-comments__comment-link:before {
+  content: "\f274";
+  font-family: "Font Awesome 6 Pro";
 }
 .widget .wp-block-latest-comments li a:hover,
 .widget .wp-block-latest-posts li a:hover {

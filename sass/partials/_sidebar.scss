@@ -71,6 +71,16 @@
         &.wp-block-latest-comments__comment-link {
           display: inline !important;
           text-transform: capitalize;
+          position: relative;
+          color: $primary-color;
+
+          &:before {
+            //position: absolute;
+            content: "\f274";
+            font-family: "Font Awesome 6 Pro";
+            //left: 0;
+            //top: 50%;
+          }
         }
         &:hover {
           color: $primary-color;
