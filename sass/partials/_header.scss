@@ -211,6 +211,10 @@
 
         &:hover {
           color: $primary-color;
+
+          &:before {
+            border-color: $primary-color;
+          }
         }
       }
       &:hover {
