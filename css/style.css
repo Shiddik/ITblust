@@ -1418,6 +1418,11 @@ html {
 .header-btn {
   margin-left: 40px;
 }
+@media only screen and (max-width: 1199px) {
+  .header-btn {
+    display: none;
+  }
+}
 
 .theme-btn,
 .wp-block-loginout a {
@@ -1562,10 +1567,9 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a.mean-expand {
-  margin-top: 1px;
-  width: 26px;
-  height: 28px;
-  padding: 12px !important;
+  width: 49px;
+  height: 100%;
+  padding: 0 !important;
   text-align: center;
   position: absolute;
   right: 0;
@@ -1573,6 +1577,9 @@ a.meanmenu-reveal {
   z-index: 2;
   font-weight: 700;
   border: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mean-container .mean-nav ul li a.mean-expand:hover {

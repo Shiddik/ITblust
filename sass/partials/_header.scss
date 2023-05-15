@@ -341,6 +341,10 @@
 
 .header-btn {
   margin-left: 40px;
+
+  @media only screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .theme-btn,
 .wp-block-loginout a {
