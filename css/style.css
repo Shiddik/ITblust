@@ -1251,7 +1251,7 @@ html {
   color: #4770f7;
 }
 .main-menu ul li.active > a.nav-link:hover {
-  color: #4770f7;
+  color: #4770f7 !important;
 }
 .main-menu ul li.active > a:after {
   position: absolute;
