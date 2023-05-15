@@ -227,6 +227,7 @@
       z-index: 99999;
       transition: all 0.3s ease 0s;
       border-top: 2px solid $primary-color;
+      box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
 
       li {
         float: none;
