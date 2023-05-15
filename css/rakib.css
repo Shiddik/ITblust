@@ -1340,29 +1340,7 @@ button.post-gallery-btn:hover i {
 
 /* client widget CSS */
 .client-slider-wrapper {
-  width: 85%;
   /* the parent */
-}
-.client-slider-wrapper .slick-slide {
-  margin: 0 70px;
-}
-.client-slider-wrapper .slick-list {
-  margin: 0 -70px;
-}
-.client-slider-wrapper .slick-list .slick-track {
-  display: flex;
-  align-items: center;
-}
-.client-slider-wrapper button.client-slider-btn {
-  display: none !important;
-}
-.client-slider-wrapper .client-slider-wrapper {
-  padding: 300px;
-}
-@media screen and (min-width: 1199px) {
-  .client-slider-wrapper {
-    width: 90%;
-  }
 }
 
 /* Service-page CSS */
