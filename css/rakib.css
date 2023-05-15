@@ -472,17 +472,6 @@ button.post-gallery-btn:hover i {
     border-radius: 14px;
   }
 }
-.image-wrapper .main-img.style-two {
-  position: relative;
-  width: 250px;
-  height: 562px;
-  background: url("/images/about-us-main-2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .image-wrapper .topper-img {
   display: none;
 }
@@ -519,25 +508,6 @@ button.post-gallery-btn:hover i {
   align-items: center;
   justify-content: center;
 }
-.image-wrapper .topper-img .video-btn.style-two {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 45%;
-  bottom: 50%;
-  left: 45%;
-  background: #4566d4;
-  z-index: 2;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.image-wrapper .topper-img .video-btn.style-two i {
-  font-size: 20px;
-  color: #ffffff;
-}
 @media screen and (min-width: 1200px) {
   .image-wrapper .topper-img {
     position: absolute;
@@ -547,7 +517,24 @@ button.post-gallery-btn:hover i {
     display: block;
   }
 }
-.image-wrapper .topper-img.style-two {
+.image-wrapper.style-two {
+  position: relative;
+}
+.image-wrapper.style-two .main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 562px;
+}
+@media screen and (min-width: 767px) {
+  .image-wrapper.style-two .main-img {
+    background: url("/images/about-us-main-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.image-wrapper.style-two .topper-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -555,6 +542,33 @@ button.post-gallery-btn:hover i {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.image-wrapper.style-two .topper-img img {
+  border-radius: 14px;
+}
+@media screen and (min-width: 767px) {
+  .image-wrapper.style-two .topper-img img {
+    border-radius: 50%;
+  }
+}
+.image-wrapper.style-two .topper-img .video-btn {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 44%;
+  bottom: 50%;
+  left: 42%;
+  background: #4566d4;
+  z-index: 2;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.image-wrapper.style-two .topper-img .video-btn i {
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .list {
@@ -1045,11 +1059,6 @@ button.post-gallery-btn:hover i {
   text-transform: uppercase;
   color: #04144e;
 }
-.post-card-item .image .article-btn.style-two {
-  top: 20px;
-  left: 20px;
-  bottom: auto;
-}
 .post-card-item .content-wrapper {
   padding: 30px 25px;
   display: flex;
@@ -1073,22 +1082,32 @@ button.post-gallery-btn:hover i {
   text-transform: capitalize;
   color: #4566d4;
 }
-.post-card-item .content-wrapper .post-author-meta.style-two {
-  margin-bottom: 25px;
+.post-card-item.style-two {
+  background: transparent;
+  border-radius: 14px 14px 0px 0px;
 }
-.post-card-item .content-wrapper.style-two {
-  margin: -50px 20px 20px 20px;
+.post-card-item.style-two .image .article-btn {
+  top: 20px;
+  left: 20px;
+  bottom: auto;
+}
+.post-card-item.style-two img {
+  width: 100%;
+}
+.post-card-item.style-two .content-wrapper {
+  margin: 0;
   background: white;
   position: relative;
   z-index: 1;
   border-radius: 14px;
 }
-.post-card-item.style-two {
-  background: transparent;
-  border-radius: 14px 14px 0px 0px;
+.post-card-item.style-two .content-wrapper .post-author-meta {
+  margin-bottom: 25px;
 }
-.post-card-item.style-two img {
-  width: 100%;
+@media screen and (min-width: 767px) {
+  .post-card-item.style-two .content-wrapper {
+    margin: -50px 20px 20px 20px;
+  }
 }
 
 /* Info card-style-one CSS */
@@ -1331,30 +1350,10 @@ button.post-gallery-btn:hover i {
 }
 
 /* client widget CSS */
-.client-slider-wrapper {
-  width: 85%;
-  /* the parent */
-}
-.client-slider-wrapper .slick-slide {
-  margin: 0 70px;
-}
-.client-slider-wrapper .slick-list {
-  margin: 0 -70px;
-}
-.client-slider-wrapper .slick-list .slick-track {
+.client-slider-wrapper .client-img {
   display: flex;
   align-items: center;
-}
-.client-slider-wrapper button.client-slider-btn {
-  display: none !important;
-}
-.client-slider-wrapper .client-slider-wrapper {
-  padding: 300px;
-}
-@media screen and (min-width: 1199px) {
-  .client-slider-wrapper {
-    width: 90%;
-  }
+  justify-content: center;
 }
 
 /* Service-page CSS */
@@ -1370,6 +1369,8 @@ button.post-gallery-btn:hover i {
 .contact-info.style-two {
   position: relative;
   z-index: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .contact-info.style-three {
   flex-direction: column;

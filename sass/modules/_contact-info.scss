@@ -8,6 +8,8 @@
   &.style-two {
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   &.style-three {
     flex-direction: column;

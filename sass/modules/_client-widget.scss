@@ -1,23 +1,7 @@
 .client-slider-wrapper {
-  width: 85%;
-  .slick-slide {
-    margin: 0 70px;
-  }
-  /* the parent */
-  .slick-list {
-    margin: 0 -70px;
-    .slick-track {
-      display: flex;
-      align-items: center;
-    }
-  }
-  button.client-slider-btn {
-    display: none !important;
-  }
-  .client-slider-wrapper {
-    padding: 300px;
-  }
-  @media screen and (min-width: "1199px") {
-    width: 90%;
+  .client-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
