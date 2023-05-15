@@ -1188,6 +1188,19 @@ button.post-gallery-btn:hover i {
   font-size: 22px;
   line-height: 22px;
 }
+.contact-info-item.style-two .contact span {
+  color: #a5aabb;
+}
+.contact-info-item.style-two .contact p {
+  color: #ffffff;
+}
+.contact-info-item.style-two .contact-icon {
+  background: transparent;
+  border: 1px solid #a5aabb;
+}
+.contact-info-item.style-two .contact-icon i {
+  color: #f7cf47;
+}
 
 /* Testimonial card CSS */
 .testimonial-slider {
@@ -1322,10 +1335,20 @@ button.post-gallery-btn:hover i {
   position: relative;
   z-index: 1;
 }
+.contact-info.style-three {
+  flex-direction: row;
+  background: transparent;
+  padding: 65px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #424b6a;
+  border-radius: 0;
+}
 @media screen and (min-width: 1199px) {
   .contact-info {
     padding: 50px;
   }
 }
+
+/* Footer CSS */
 
 /*# sourceMappingURL=rakib.css.map */

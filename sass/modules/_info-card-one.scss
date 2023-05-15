@@ -119,5 +119,22 @@
       line-height: 22px;
     }
   }
+  &.style-two {
+    .contact {
+      span {
+        color: $white-50;
+      }
+      p {
+        color: $white;
+      }
+    }
+    .contact-icon {
+      background: transparent;
+      border: 1px solid $white-50;
+      i {
+        color: $orange-color;
+      }
+    }
+  }
 }
 // contact info item end
