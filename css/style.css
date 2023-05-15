@@ -465,6 +465,10 @@ input:focus {
   padding-left: 50px;
 }
 
+.pl-65 {
+  padding-left: 65px;
+}
+
 .pl-70 {
   padding-left: 70px;
 }
@@ -2952,10 +2956,23 @@ ul.children {
   text-transform: capitalize;
   font-size: 16px;
   transition: all 0.5s ease-out;
+  position: relative;
+}
+.footer-widget .footer-widget-menu li a:before {
+  content: "";
+  transform: rotate(-45deg);
+  border: solid #424b6a;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 10px;
 }
 .footer-widget .footer-widget-menu li a:hover {
   transition: all 0.5s ease-out;
   color: #4770f7;
+}
+.footer-widget .footer-widget-menu li a:hover:before {
+  border-color: #4770f7;
 }
 .footer-widget .footer-widget-contact p {
   color: #a5aabb;
@@ -2964,7 +2981,12 @@ ul.children {
   list-style: none;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.footer-widget .footer-widget-contact .footer-contact ul li:last-child {
+  margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   border: 1px solid #424b6a;
@@ -2977,6 +2999,7 @@ ul.children {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
   color: #a5aabb;
@@ -2986,6 +3009,8 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span {
   color: #a5aabb;
   font-size: 16px;
+  display: inline-block;
+  width: 100%;
 }
 
 .footer-bottom-border {

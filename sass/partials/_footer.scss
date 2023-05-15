@@ -56,10 +56,24 @@
         text-transform: capitalize;
         font-size: 16px;
         @include transition;
+        position: relative;
 
+        &:before {
+          content: "";
+          transform: rotate(-45deg);
+          border: solid $black-100;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin-right: 10px;
+        }
         &:hover {
           @include transition;
           color: $primary-color;
+
+          &:before {
+            border-color: $primary-color;
+          }
         }
       }
     }
@@ -74,8 +88,13 @@
       list-style: none;
 
       li {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
 
+        &:last-child {
+          margin-bottom: 0;
+        }
         .contact-icon {
           border: 1px solid $black-100;
           color: $orange-color;
@@ -87,6 +106,8 @@
           align-items: center;
           justify-content: center;
           margin-right: 10px;
+          flex-shrink: 0;
+
         }
         .contact-text {
           color: $white-50;
@@ -96,6 +117,8 @@
           span {
             color: $white-50;
             font-size: 16px;
+            display: inline-block;
+            width: 100%;
           }
         }
       }
