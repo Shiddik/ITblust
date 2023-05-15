@@ -929,6 +929,12 @@ nav.wp-calendar-nav {
   justify-content: space-between;
   display: flex;
 }
+nav.wp-calendar-nav a {
+  color: #777777;
+}
+nav.wp-calendar-nav a:hover {
+  color: #4770f7;
+}
 
 /*
  Media
