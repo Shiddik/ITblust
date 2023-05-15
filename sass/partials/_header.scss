@@ -95,12 +95,9 @@
         > a {
           color: $primary-color;
 
-          &.nav-link {
-            &:hover {
-              color: $primary-color !important;
-            }
+          &:before {
+            border-color: $primary-color;
           }
-
           &:after {
             position: absolute;
             content: "";
