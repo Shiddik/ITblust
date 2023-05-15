@@ -24,7 +24,7 @@
   line-height: 28px;
 }
 
-.subscribe-form-widget .single-field input {
+.subscribe-form-widget .single-field.style-two input {
   border: 1px solid #a5aabb;
   border-radius: 10px;
 }
@@ -1095,6 +1095,9 @@ button.post-gallery-btn:hover i {
   background: transparent;
   border-radius: 14px 14px 0px 0px;
 }
+.post-card-item.style-two img {
+  width: 100%;
+}
 
 /* Info card-style-one CSS */
 .info-card {
@@ -1337,7 +1340,7 @@ button.post-gallery-btn:hover i {
 
 /* client widget CSS */
 .client-slider-wrapper {
-  width: 75%;
+  width: 85%;
   /* the parent */
 }
 .client-slider-wrapper .slick-slide {
@@ -1355,6 +1358,11 @@ button.post-gallery-btn:hover i {
 }
 .client-slider-wrapper .client-slider-wrapper {
   padding: 300px;
+}
+@media screen and (min-width: 1199px) {
+  .client-slider-wrapper {
+    width: 90%;
+  }
 }
 
 /* Service-page CSS */
@@ -1379,9 +1387,11 @@ button.post-gallery-btn:hover i {
   border-bottom: 1px solid #424b6a;
   border-radius: 0;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 425px) {
   .contact-info.style-three {
     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 65px 30px;
   }
 }
 @media screen and (min-width: 1199px) {

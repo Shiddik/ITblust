@@ -62,7 +62,7 @@
           settings: {
             slidesToShow: 1,
             autoplay: true,
-            infinite: true,
+            infinite: false,
           },
         },
       ],
@@ -152,11 +152,23 @@
         {
           breakpoint: 1200,
           settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 998,
+          settings: {
             slidesToShow: 3,
           },
         },
         {
-          breakpoint: 767,
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 425,
           settings: {
             slidesToShow: 1,
           },

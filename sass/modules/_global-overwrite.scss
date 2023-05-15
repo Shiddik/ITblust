@@ -26,9 +26,11 @@
 }
 .subscribe-form-widget {
   .single-field {
-    input {
-      border: 1px solid $white-50;
-      border-radius: 10px;
+    &.style-two {
+      input {
+        border: 1px solid $white-50;
+        border-radius: 10px;
+      }
     }
   }
   &.style-two {

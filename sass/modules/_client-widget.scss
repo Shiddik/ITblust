@@ -1,5 +1,5 @@
 .client-slider-wrapper {
-  width: 75%;
+  width: 85%;
   .slick-slide {
     margin: 0 70px;
   }
@@ -16,5 +16,8 @@
   }
   .client-slider-wrapper {
     padding: 300px;
+  }
+  @media screen and (min-width: "1199px") {
+    width: 90%;
   }
 }
