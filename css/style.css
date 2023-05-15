@@ -1269,6 +1269,7 @@ html {
 .main-menu ul li.dropdown .dropdown > a:before {
   visibility: visible;
   right: 15px;
+  transform: rotate(-45deg);
 }
 .main-menu ul li ul.submenu li.active > a {
   position: relative;
