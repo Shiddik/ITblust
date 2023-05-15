@@ -24,15 +24,11 @@
 }
 
 .background-ocean {
-  background: rgba(69, 102, 212, 0.1) !important;
+  background: #eceffb !important;
 }
 
 .background-orange {
   background: #f7cf47;
-}
-
-.info-rounded-style-two {
-  border-radius: 0px 14px 14px 0px !important;
 }
 
 .home-btn-two {
@@ -1071,7 +1067,28 @@ button.post-gallery-btn:hover i {
   text-align: center;
 }
 .info-card.style-three.info-rounded-style {
-  border-radius: 14px 0px 0px 14px;
+  border-radius: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .info-card.style-three.info-rounded-style {
+    border-radius: 14px 0px 0px 14px;
+  }
+}
+.info-card.style-three.info-rounded-style-two {
+  border-radius: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .info-card.style-three.info-rounded-style-two {
+    border-radius: 0;
+  }
+}
+.info-card.style-three.info-rounded-style-three {
+  border-radius: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .info-card.style-three.info-rounded-style-three {
+    border-radius: 0px 14px 14px 0px !important;
+  }
 }
 .info-card .icon {
   width: 80px;
@@ -1254,8 +1271,7 @@ button.post-gallery-btn:hover i {
 
 /* client widget CSS */
 .client-slider-wrapper {
-  display: flex;
-  justify-content: space-between;
+  width: 75%;
   /* the parent */
 }
 .client-slider-wrapper .slick-slide {

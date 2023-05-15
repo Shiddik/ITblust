@@ -19,7 +19,22 @@
     justify-content: center;
     text-align: center;
     &.info-rounded-style {
-      border-radius: 14px 0px 0px 14px;
+      border-radius: 14px;
+      @media screen and (min-width: "1199px") {
+        border-radius: 14px 0px 0px 14px;
+      }
+    }
+    &.info-rounded-style-two {
+      border-radius: 14px;
+      @media screen and (min-width: "1199px") {
+        border-radius: 0;
+      }
+    }
+    &.info-rounded-style-three {
+      border-radius: 14px;
+      @media screen and (min-width: "1199px") {
+        border-radius: 0px 14px 14px 0px !important;
+      }
     }
   }
 
