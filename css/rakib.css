@@ -402,6 +402,9 @@ button.post-gallery-btn:hover i {
 .custom-slider-wrapper .post-gallery-btn i {
   color: #04144e;
 }
+.custom-slider-wrapper .post-gallery-btn:hover i {
+  color: #04144e;
+}
 .custom-slider-wrapper .slick-slide .drop-shadow {
   box-shadow: none;
   transition: box-shadow 0.1s ease-in-out;
@@ -418,41 +421,30 @@ button.post-gallery-btn:hover i {
   gap: 30px;
 }
 .custom-slider-wrapper .slick-dots {
-  width: 80%;
+  width: 100%;
   display: flex !important;
   align-items: center;
-  margin: 50px 30px 9px 45px;
+  justify-content: center;
+  padding: 0 110px;
   list-style: none;
-  background: #d2d6e4;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 0;
+  background: white;
+  height: 5px;
+  margin: 78px 70px 10px 0;
 }
 .custom-slider-wrapper .slick-dots li {
-  width: 35%;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
 }
 .custom-slider-wrapper .slick-dots li button {
-  display: none;
-}
-.custom-slider-wrapper .slick-dots ::marker {
-  display: none !important;
-}
-.custom-slider-wrapper .slick-dots .slick-active {
-  background: #4566d4;
-  width: 35%;
+  width: 100%;
   height: 5px;
+  background: #d2d6e4;
+  font-size: 0;
 }
-@media screen and (min-width: 998px) {
-  .custom-slider-wrapper .slick-dots {
-    width: 80%;
-    margin: 80px 70px 10px 90px;
-  }
-}
-@media screen and (min-width: 767px) and (max-width: 997px) {
-  .custom-slider-wrapper .slick-dots {
-    width: 75%;
-    margin: 80px 90px 10px 90px;
-  }
+.custom-slider-wrapper .slick-dots .slick-active button {
+  background: #4566d4;
+  width: 100%;
 }
 
 /* Why choose us CSS(modern tecnology) */

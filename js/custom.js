@@ -37,7 +37,7 @@
     });
 
     $(".custom-slider-wrapper").slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       infinite: false,
       autoplay: false,
       draggable: true,
