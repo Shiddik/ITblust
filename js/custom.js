@@ -58,9 +58,11 @@
           },
         },
         {
-          breakpoint: 575,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
+            autoplay: true,
+            infinite: true,
           },
         },
       ],
@@ -135,7 +137,7 @@
     $(".client-slider-wrapper").slick({
       slidesToShow: 5,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       draggable: true,
       arrows: true,
       slidesToScroll: 1,

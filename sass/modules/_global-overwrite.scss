@@ -1,0 +1,10 @@
+.comment-respond {
+  &.style-two {
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    @media screen and (min-width: "1199px") {
+      padding: 50px;
+    }
+  }
+}

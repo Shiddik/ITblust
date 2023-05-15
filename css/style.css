@@ -2864,11 +2864,6 @@ ul.children {
   border-color: #4770f7;
   transition: all 0.4s ease 0s;
 }
-.comment-respond.style-two {
-  position: relative;
-  z-index: 1;
-  padding: 50px;
-}
 
 /* Footer Section */
 .footer {

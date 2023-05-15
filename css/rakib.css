@@ -1,4 +1,15 @@
 /* variable */
+.comment-respond.style-two {
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+}
+@media screen and (min-width: 1199px) {
+  .comment-respond.style-two {
+    padding: 50px;
+  }
+}
+
 .mt-8 {
   margin-top: 8px;
 }
@@ -377,10 +388,10 @@ button.post-gallery-btn:hover i {
   gap: 30px;
 }
 .custom-slider-wrapper .slick-dots {
+  width: 75% !important;
   display: flex !important;
   align-items: center;
-  margin: 80px 70px 9px 90px;
-  width: 80% !important;
+  margin: 80px 90px 9px 90px;
   list-style: none;
   background: #d2d6e4;
   border-radius: 10px;
@@ -400,6 +411,12 @@ button.post-gallery-btn:hover i {
   background: #4566d4;
   width: 35%;
   height: 5px;
+}
+@media screen and (min-width: 997px) {
+  .custom-slider-wrapper .slick-dots {
+    width: 80% !important;
+    margin: 80px 70px 9px 90px;
+  }
 }
 
 /* Why choose us CSS(modern tecnology) */
@@ -1294,7 +1311,7 @@ button.post-gallery-btn:hover i {
 /* Service-page CSS */
 /* Contact-info-card CSS */
 .contact-info {
-  padding: 50px;
+  padding: 25px;
   background: #ffffff;
   border-radius: 14px;
   display: flex;
@@ -1304,6 +1321,11 @@ button.post-gallery-btn:hover i {
 .contact-info.style-two {
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 1199px) {
+  .contact-info {
+    padding: 50px;
+  }
 }
 
 /*# sourceMappingURL=rakib.css.map */
