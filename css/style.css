@@ -1323,6 +1323,10 @@ html {
   visibility: visible;
   top: 0;
 }
+.main-menu ul li ul li:hover ul ul ul {
+  left: 0;
+  top: 40px;
+}
 .main-menu ul ul {
   background-color: #ffffff;
   left: 0;
@@ -1337,7 +1341,7 @@ html {
 }
 .main-menu ul ul li {
   float: none;
-  width: 250px;
+  width: 210px;
 }
 .main-menu ul ul li ul {
   visibility: hidden;

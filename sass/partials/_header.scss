@@ -204,6 +204,13 @@
             ul {
               visibility: visible;
               top: 0;
+
+              ul {
+                  ul {
+                    left: 0;
+                    top: 40px;
+                  }
+              }
             }
           }
         }
@@ -223,7 +230,7 @@
 
       li {
         float: none;
-        width: 250px;
+        width: 210px;
 
         ul {
           visibility: hidden;
