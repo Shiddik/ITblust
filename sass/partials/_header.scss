@@ -114,64 +114,72 @@
         }
       }
       &.dropdown {
-        a {
-          position: relative;
-          padding-right: 15px;
-
+        > a {
           &:before {
-            position: absolute;
-            content: "";
-            transform: rotate(45deg);
-            border: solid black;
-            border-width: 0 1px 1px 0;
-            display: inline-block;
-            padding: 3px;
-            margin: auto;
-            top: 45%;
-            right: 0;
+            visibility: visible;
           }
-
         }
-        ul {
-          &.submenu {
-            li {
-              a {
-                &:before {
-                  display: none;
-                }
-              }
-              &.dropdown {
-                a {
-                  &:before {
-                    display: block;
-                    right: 15px;
-                    border-color: $white;
-                  }
-                }
-                ul.submenu {
-                  li {
-                    a {
-                      &:before {
-                        display: none;
-                      }
-                    }
+        .dropdown {
+          > a {
+            &:before {
+              visibility: visible;
+              right: 15px;
+            }
+          }
+        }
+      }
 
-                  }
-                }
-              }
-              &.active {
-                > a {
-                  position: relative;
-                  z-index: 2;
-                  color: $white;
+      //a {
+      //  position: relative;
+      //  padding-right: 15px;
+      //
+      //  &:before {
+      //    position: absolute;
+      //    content: "";
+      //    transform: rotate(45deg);
+      //    border: solid black;
+      //    border-width: 0 1px 1px 0;
+      //    display: inline-block;
+      //    padding: 3px;
+      //    margin: auto;
+      //    top: 45%;
+      //    right: 0;
+      //  }
+      //
+      //}
+      ul {
+        &.submenu {
+          li {
+            //&.dropdown {
+            //  a {
+            //    &:before {
+            //      display: block;
+            //      right: 15px;
+            //    }
+            //  }
+            //  //ul.submenu {
+            //  //  li {
+            //  //    a {
+            //  //      &:before {
+            //  //        display: none;
+            //  //      }
+            //  //    }
+            //  //
+            //  //  }
+            //  //}
+            //}
+            &.active {
+              > a {
+                position: relative;
+                z-index: 2;
+                color: $white;
 
-                  &:after {
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    border-radius: 0;
-                    z-index: -1;
-                  }
+                &:after {
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border-radius: 0;
+                  z-index: -1;
                 }
               }
             }
@@ -189,6 +197,19 @@
         font-family: $body-font;
         font-size: 16px;
 
+        &:before {
+          position: absolute;
+          content: "";
+          transform: rotate(45deg);
+          border: solid black;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin-top: -5px;
+          top: 50%;
+          right: 0;
+          visibility: hidden;
+        }
       }
       &:hover {
         > ul {
@@ -203,7 +224,7 @@
           &:hover {
             ul {
               visibility: visible;
-              top: 0;
+              top: -2px;
 
               ul {
                   ul {
@@ -250,6 +271,10 @@
           &:hover {
             background-color: $primary-color;
             color: $white;
+
+            &:before {
+              border-color: $white;
+            }
           }
         }
         &:last-child a {
@@ -265,6 +290,7 @@
 
       }
     }
+
   }
   &.style-two {
     ul {
