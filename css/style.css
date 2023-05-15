@@ -1270,7 +1270,7 @@ html {
   left: 0;
 }
 .main-menu ul li.dropdown > a {
-  padding-right: 15px;
+  padding-right: 30px;
 }
 .main-menu ul li.dropdown > a:before {
   visibility: visible;
@@ -1316,7 +1316,7 @@ html {
   padding: 3px;
   margin-top: -5px;
   top: 50%;
-  right: 0;
+  right: 15px;
   visibility: hidden;
 }
 .main-menu ul li a:hover {
