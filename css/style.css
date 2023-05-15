@@ -1313,6 +1313,9 @@ html {
   right: 0;
   visibility: hidden;
 }
+.main-menu ul li a:hover {
+  color: #4770f7;
+}
 .main-menu ul li:hover > ul {
   visibility: visible;
   transition: all 0.4s ease 0s;

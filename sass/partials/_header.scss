@@ -211,6 +211,10 @@
           right: 0;
           visibility: hidden;
         }
+
+        &:hover {
+          color: $primary-color;
+        }
       }
       &:hover {
         > ul {
