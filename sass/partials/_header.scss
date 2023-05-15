@@ -63,6 +63,10 @@
 .logo {
   position: relative;
   z-index: 2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
 
   .standard-logo {
   }
@@ -91,9 +95,12 @@
         > a {
           color: $primary-color;
 
-          &:hover {
-            color: $primary-color;
+          &.nav-link {
+            &:hover {
+              color: $primary-color;
+            }
           }
+
           &:after {
             position: absolute;
             content: "";
@@ -181,6 +188,7 @@
         color: $secondary-color;
         font-family: $body-font;
         font-size: 16px;
+
       }
       &:hover {
         > ul {

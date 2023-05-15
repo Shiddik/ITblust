@@ -1223,6 +1223,9 @@ html {
 .logo {
   position: relative;
   z-index: 2;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 .logo .retina-logo {
   display: none;
@@ -1247,7 +1250,7 @@ html {
 .main-menu ul li.active > a {
   color: #4770f7;
 }
-.main-menu ul li.active > a:hover {
+.main-menu ul li.active > a.nav-link:hover {
   color: #4770f7;
 }
 .main-menu ul li.active > a:after {
