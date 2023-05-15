@@ -59,5 +59,8 @@
   &.style-two {
     background: transparent;
     border-radius: 14px 14px 0px 0px;
+    img {
+      width: 100%;
+    }
   }
 }

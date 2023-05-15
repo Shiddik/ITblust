@@ -58,9 +58,11 @@
           },
         },
         {
-          breakpoint: 575,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
+            autoplay: true,
+            infinite: false,
           },
         },
       ],
@@ -135,9 +137,9 @@
     $(".client-slider-wrapper").slick({
       slidesToShow: 5,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       draggable: true,
-      arrows: true,
+      arrows: false,
       slidesToScroll: 1,
       loop: true,
       dots: false,
@@ -150,13 +152,25 @@
         {
           breakpoint: 1200,
           settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 998,
+          settings: {
             slidesToShow: 3,
           },
         },
         {
-          breakpoint: 767,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 425,
+          settings: {
+            slidesToShow: 1,
           },
         },
       ],

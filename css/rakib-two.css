@@ -2,30 +2,47 @@
 .nav-bottom {
   background: rgba(4, 20, 78, 0.5) !important;
   backdrop-filter: blur(2px) !important;
-  position: relative;
+  position: absolute;
   z-index: 99999999999;
 }
 
 .hero-section {
   position: relative;
-  padding-bottom: 125px;
+  padding-top: 92px;
+  padding-bottom: 50px;
   z-index: 0;
 }
 .hero-section .page-overlay {
   background: rgba(2, 10, 39, 0.5);
 }
 .hero-section .hero-title {
-  padding: 115px 0;
+  padding: 50px 0;
 }
 .hero-section .hero-title .hero-btn-two {
   border-radius: 5px;
 }
+@media screen and (min-width: 1199px) {
+  .hero-section .hero-title {
+    padding: 115px 0;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .hero-section {
+    padding-bottom: 125px;
+  }
+}
 
 .info-card-section-two {
   position: relative;
-  margin-top: -240px;
-  margin-bottom: 100px;
+  margin-top: 0;
+  margin-bottom: 50px;
   z-index: 0;
+}
+@media screen and (min-width: 1199px) {
+  .info-card-section-two {
+    margin-top: -240px;
+    margin-bottom: 100px;
+  }
 }
 
 .portfolio_slider {
@@ -168,11 +185,6 @@
   outline: none !important;
   border-color: #4770f7;
   transition: all 0.4s ease 0s;
-}
-.comment-respond.style-two {
-  position: relative;
-  z-index: 1;
-  padding: 50px;
 }
 
 /*# sourceMappingURL=rakib-two.css.map */

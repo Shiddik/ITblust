@@ -1,4 +1,45 @@
 /* variable */
+.comment-respond.style-two {
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+}
+@media screen and (min-width: 1199px) {
+  .comment-respond.style-two {
+    padding: 50px;
+  }
+}
+
+.subscribe-area.style-two {
+  background: #ffffff;
+  border-bottom: 0;
+  padding: 20px 24px 0;
+  border-radius: 10px;
+}
+.subscribe-area.style-two .subscribe-title {
+  color: #04144e;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.subscribe-form-widget .single-field.style-two input {
+  border: 1px solid #a5aabb;
+  border-radius: 10px;
+}
+.subscribe-form-widget.style-two {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-bottom-menu.style-two ul {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
 .mt-8 {
   margin-top: 8px;
 }
@@ -24,15 +65,11 @@
 }
 
 .background-ocean {
-  background: rgba(69, 102, 212, 0.1) !important;
+  background: #eceffb !important;
 }
 
 .background-orange {
   background: #f7cf47;
-}
-
-.info-rounded-style-two {
-  border-radius: 0px 14px 14px 0px !important;
 }
 
 .home-btn-two {
@@ -381,10 +418,10 @@ button.post-gallery-btn:hover i {
   gap: 30px;
 }
 .custom-slider-wrapper .slick-dots {
+  width: 80%;
   display: flex !important;
   align-items: center;
-  margin: 80px 70px 9px 90px;
-  width: 80% !important;
+  margin: 50px 30px 9px 45px;
   list-style: none;
   background: #d2d6e4;
   border-radius: 10px;
@@ -404,6 +441,18 @@ button.post-gallery-btn:hover i {
   background: #4566d4;
   width: 35%;
   height: 5px;
+}
+@media screen and (min-width: 998px) {
+  .custom-slider-wrapper .slick-dots {
+    width: 80%;
+    margin: 80px 70px 10px 90px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 997px) {
+  .custom-slider-wrapper .slick-dots {
+    width: 75%;
+    margin: 80px 90px 10px 90px;
+  }
 }
 
 /* Why choose us CSS(modern tecnology) */
@@ -1046,6 +1095,9 @@ button.post-gallery-btn:hover i {
   background: transparent;
   border-radius: 14px 14px 0px 0px;
 }
+.post-card-item.style-two img {
+  width: 100%;
+}
 
 /* Info card-style-one CSS */
 .info-card {
@@ -1071,7 +1123,28 @@ button.post-gallery-btn:hover i {
   text-align: center;
 }
 .info-card.style-three.info-rounded-style {
-  border-radius: 14px 0px 0px 14px;
+  border-radius: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .info-card.style-three.info-rounded-style {
+    border-radius: 14px 0px 0px 14px;
+  }
+}
+.info-card.style-three.info-rounded-style-two {
+  border-radius: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .info-card.style-three.info-rounded-style-two {
+    border-radius: 0;
+  }
+}
+.info-card.style-three.info-rounded-style-three {
+  border-radius: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .info-card.style-three.info-rounded-style-three {
+    border-radius: 0px 14px 14px 0px !important;
+  }
 }
 .info-card .icon {
   width: 80px;
@@ -1153,6 +1226,19 @@ button.post-gallery-btn:hover i {
 .contact-info-item .contact-icon i {
   font-size: 22px;
   line-height: 22px;
+}
+.contact-info-item.style-two .contact span {
+  color: #a5aabb;
+}
+.contact-info-item.style-two .contact p {
+  color: #ffffff;
+}
+.contact-info-item.style-two .contact-icon {
+  background: transparent;
+  border: 1px solid #a5aabb;
+}
+.contact-info-item.style-two .contact-icon i {
+  color: #f7cf47;
 }
 
 /* Testimonial card CSS */
@@ -1254,8 +1340,7 @@ button.post-gallery-btn:hover i {
 
 /* client widget CSS */
 .client-slider-wrapper {
-  display: flex;
-  justify-content: space-between;
+  width: 85%;
   /* the parent */
 }
 .client-slider-wrapper .slick-slide {
@@ -1274,11 +1359,16 @@ button.post-gallery-btn:hover i {
 .client-slider-wrapper .client-slider-wrapper {
   padding: 300px;
 }
+@media screen and (min-width: 1199px) {
+  .client-slider-wrapper {
+    width: 90%;
+  }
+}
 
 /* Service-page CSS */
 /* Contact-info-card CSS */
 .contact-info {
-  padding: 50px;
+  padding: 25px;
   background: #ffffff;
   border-radius: 14px;
   display: flex;
@@ -1289,5 +1379,27 @@ button.post-gallery-btn:hover i {
   position: relative;
   z-index: 1;
 }
+.contact-info.style-three {
+  flex-direction: column;
+  background: transparent;
+  padding: 65px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #424b6a;
+  border-radius: 0;
+}
+@media screen and (min-width: 425px) {
+  .contact-info.style-three {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 65px 30px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contact-info {
+    padding: 50px;
+  }
+}
+
+/* Footer CSS */
 
 /*# sourceMappingURL=rakib.css.map */
