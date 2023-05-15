@@ -112,6 +112,8 @@
       }
       &.dropdown {
         > a {
+          padding-right: 15px;
+
           &:before {
             visibility: visible;
           }
