@@ -34,10 +34,10 @@
     }
   }
   .slick-dots {
-    width: 75% !important;
+    width: 80%;
     display: flex !important;
     align-items: center;
-    margin: 80px 90px 9px 90px;
+    margin: 50px 30px 9px 45px;
     list-style: none;
     background: #d2d6e4;
     border-radius: 10px;
@@ -57,9 +57,13 @@
       width: 35%;
       height: 5px;
     }
-    @media screen and (min-width: "997px") {
-      width: 80% !important;
-      margin: 80px 70px 9px 90px;
+    @media screen and (min-width: "998px") {
+      width: 80%;
+      margin: 80px 70px 10px 90px;
+    }
+    @media screen and (min-width: "767px") and (max-width: "997px") {
+      width: 75%;
+      margin: 80px 90px 10px 90px;
     }
   }
 }
