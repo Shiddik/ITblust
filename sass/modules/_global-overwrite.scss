@@ -2,9 +2,11 @@
 .header-two-wrapper {
   position: relative;
   .header-two {
-    position: absolute;
     top: 0;
     left: 0;
+    @media screen and (min-width: "1199px") {
+      position: absolute;
+    }
   }
 }
 

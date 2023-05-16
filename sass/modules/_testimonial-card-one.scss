@@ -57,6 +57,13 @@
     .testimonial-quote {
       display: flex;
       gap: 4px;
+      // img {
+      //   width: 70%;
+
+      //   @media screen and (min-width: 768px) {
+      //     width: auto;
+      //   }
+      // }
     }
     .testimonial-desc {
       font-family: $heading-font;

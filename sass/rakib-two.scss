@@ -59,4 +59,16 @@
     border-radius: 4px !important;
   }
 }
+// about page css
+.client-section {
+  // pt-80 pb-180 position-relative background-deep-blue
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background: $black;
+  @media screen and (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 180px;
+  }
+}
 @import "modules/comment-form";
