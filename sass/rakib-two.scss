@@ -7,11 +7,12 @@
   backdrop-filter: blur(2px) !important;
   position: absolute;
   z-index: 99999999999;
+  top: 100px;
   // background: white;
 }
 .hero-section {
   position: relative;
-  padding-top: 92px;
+  padding-top: 192px;
   padding-bottom: 50px;
   z-index: 0;
   .page-overlay {

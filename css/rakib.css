@@ -1,4 +1,13 @@
 /* variable */
+.header-two-wrapper {
+  position: relative;
+}
+.header-two-wrapper .header-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .main-menu.style-two ul li ul {
   background-color: #071c34;
 }

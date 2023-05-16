@@ -1,3 +1,13 @@
+// header
+.header-two-wrapper {
+  position: relative;
+  .header-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 // main-menu style-two
 .main-menu {
   &.style-two {
