@@ -10,6 +10,9 @@
     z-index: 1;
     flex-wrap: wrap;
     flex-direction: row;
+    &.with-shadow {
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+    }
   }
   &.style-three {
     flex-direction: column;

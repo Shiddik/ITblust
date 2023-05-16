@@ -23,6 +23,10 @@
   padding: 196px 0;
 }
 
+.breadcrumb-wrapper.style-two {
+  padding: 0;
+}
+
 .comment-respond.style-two {
   position: relative;
   z-index: 1;
@@ -32,6 +36,9 @@
   .comment-respond.style-two {
     padding: 50px;
   }
+}
+.comment-respond.style-two.with-shadow {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
 }
 
 .subscribe-area.style-two {
@@ -396,7 +403,7 @@ button.post-gallery-btn:hover i {
 .portfolio-slider {
   margin-top: 50px;
   width: calc(100% + 30px);
-  padding: 20px 15px;
+  padding: 20px 30px;
   margin-left: -15px;
   position: relative;
 }
@@ -488,12 +495,15 @@ button.post-gallery-btn:hover i {
 
 .info-card-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: 180px;
+  gap: 70px;
+  justify-content: center;
+  flex-direction: column;
 }
 .info-card-wrapper .image-wrapper {
-  width: 40%;
+  width: 80%;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .info-card-wrapper .image-wrapper .main-img img {
   width: 100%;
@@ -540,7 +550,16 @@ button.post-gallery-btn:hover i {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 997px) {
+  .info-card-wrapper .image-wrapper .topper-img {
+    position: absolute;
+    bottom: -60px;
+    right: -70px;
+    z-index: 1;
+    display: block;
+  }
+}
+@media screen and (min-width: 997px) {
   .info-card-wrapper .image-wrapper .topper-img {
     position: absolute;
     bottom: -60px;
@@ -602,8 +621,14 @@ button.post-gallery-btn:hover i {
   font-size: 20px;
   color: #ffffff;
 }
+@media screen and (min-width: 1023px) {
+  .info-card-wrapper .image-wrapper {
+    width: 40%;
+    display: block;
+  }
+}
 .info-card-wrapper .content-wrapper {
-  width: 50%;
+  width: 100%;
 }
 .info-card-wrapper .content-wrapper .list {
   margin-top: 10px;
@@ -636,6 +661,18 @@ button.post-gallery-btn:hover i {
 }
 .info-card-wrapper .content-wrapper .list .about-btn {
   flex-shrink: 0;
+}
+@media screen and (min-width: 1200px) {
+  .info-card-wrapper .content-wrapper {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-card-wrapper {
+    flex-direction: row;
+    gap: 180px;
+    justify-content: space-between;
+  }
 }
 
 /* Service CSS */
@@ -1330,6 +1367,7 @@ button.post-gallery-btn:hover i {
   position: relative;
 }
 .testimonial-slider button.testimonial-slider-btn {
+  display: none !important;
   position: absolute;
   width: 60px;
   height: 60px;
@@ -1361,15 +1399,19 @@ button.post-gallery-btn:hover i {
 .testimonial-slider button.testimonial-slider-btn:hover {
   transition: all 0.5s ease-out;
 }
+@media screen and (min-width: 1023px) {
+  .testimonial-slider button.testimonial-slider-btn {
+    display: block;
+  }
+}
 
-.single-testmonial {
+.single-testimonial {
   display: flex !important;
   justify-content: center;
 }
 
-.testmonial-inner {
+.testimonial-inner {
   width: 856px;
-  height: 413px;
   background: #ffffff;
   border-radius: 14px;
   padding: 50px;
@@ -1377,16 +1419,16 @@ button.post-gallery-btn:hover i {
   flex-direction: column;
   gap: 50px;
 }
-.testmonial-inner .testmonial-content {
+.testimonial-inner .testimonial-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.testmonial-inner .testmonial-content .testmonial-quote {
+.testimonial-inner .testimonial-content .testimonial-quote {
   display: flex;
   gap: 4px;
 }
-.testmonial-inner .testmonial-content .testmonial-desc {
+.testimonial-inner .testimonial-content .testimonial-desc {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 600;
@@ -1394,25 +1436,25 @@ button.post-gallery-btn:hover i {
   line-height: 34px;
   color: #04144e;
 }
-.testmonial-inner .testmonial-content .testmonial-desc p {
+.testimonial-inner .testimonial-content .testimonial-desc p {
   margin: 0;
 }
-.testmonial-inner .user-meta {
+.testimonial-inner .user-meta {
   display: flex;
   gap: 15px;
 }
-.testmonial-inner .user-meta .user-info {
+.testimonial-inner .user-meta .user-info {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.testmonial-inner .user-meta .user-info h3 {
+.testimonial-inner .user-meta .user-info h3 {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   color: #04144e;
 }
-.testmonial-inner .user-meta .user-info h6 {
+.testimonial-inner .user-meta .user-info h6 {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1444,6 +1486,9 @@ button.post-gallery-btn:hover i {
   z-index: 1;
   flex-wrap: wrap;
   flex-direction: row;
+}
+.contact-info.style-two.with-shadow {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
 }
 .contact-info.style-three {
   flex-direction: column;

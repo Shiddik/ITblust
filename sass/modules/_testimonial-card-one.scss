@@ -1,6 +1,7 @@
 .testimonial-slider {
   position: relative;
   button.testimonial-slider-btn {
+    display: none !important;
     position: absolute;
     width: 60px;
     height: 60px;
@@ -32,30 +33,32 @@
     &:hover {
       @include transition;
     }
+    @media screen and (min-width: 1023px) {
+      display: block;
+    }
   }
 }
-.single-testmonial {
+.single-testimonial {
   display: flex !important;
   justify-content: center;
 }
-.testmonial-inner {
+.testimonial-inner {
   width: 856px;
-  height: 413px;
   background: #ffffff;
   border-radius: 14px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  .testmonial-content {
+  .testimonial-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    .testmonial-quote {
+    .testimonial-quote {
       display: flex;
       gap: 4px;
     }
-    .testmonial-desc {
+    .testimonial-desc {
       font-family: $heading-font;
       font-style: normal;
       font-weight: 600;

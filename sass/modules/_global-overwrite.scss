@@ -35,6 +35,11 @@
     padding: 196px 0;
   }
 }
+.breadcrumb-wrapper {
+  &.style-two {
+    padding: 0;
+  }
+}
 
 .comment-respond {
   &.style-two {
@@ -43,6 +48,9 @@
     padding: 25px;
     @media screen and (min-width: "1199px") {
       padding: 50px;
+    }
+    &.with-shadow {
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
     }
   }
 }

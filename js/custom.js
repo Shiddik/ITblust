@@ -160,6 +160,7 @@
           breakpoint: 767,
           settings: {
             autoplay: true,
+            infinite: true,
           },
         },
       ],
