@@ -19,6 +19,10 @@
   border-width: 0 1px 1px 0;
 }
 
+.page-breadcrumb-sec.style-two {
+  padding: 196px 0;
+}
+
 .comment-respond.style-two {
   position: relative;
   z-index: 1;
@@ -210,13 +214,11 @@
 
 .section-title {
   display: flex;
-  gap: 10px;
   flex-direction: column;
   z-index: 2;
   position: relative;
 }
-
-.sub-title {
+.section-title .sub-title {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -228,11 +230,10 @@
   color: #4566d4;
   margin: 0;
 }
-.sub-title.sub-title-style-two {
+.section-title .sub-title.sub-title-style-two {
   text-align: left;
 }
-
-.title {
+.section-title .title {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 700;
@@ -241,16 +242,17 @@
   text-transform: capitalize;
   color: #04144e;
   margin-bottom: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 767px) {
-  .title {
+  .section-title .title {
     font-weight: 800;
     font-size: 45px;
     line-height: 54px;
   }
 }
-
-.title-desc {
+.section-title .title-desc {
   margin: 0;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
@@ -259,6 +261,8 @@
   line-height: 28px;
   text-transform: capitalize;
   color: #6a6c73;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 /* Hero slider CSS */
@@ -884,6 +888,16 @@ button.post-gallery-btn:hover i {
   border-radius: 14px;
 }
 .process-sec.style-two .main-wrapper {
+  margin-top: 70px;
+  padding: 0 30px;
+}
+.process-sec.style-three {
+  margin-top: -100px;
+  border-radius: 14px;
+  position: relative;
+  z-index: 1;
+}
+.process-sec.style-three .main-wrapper {
   margin-top: 70px;
   padding: 0 30px;
 }
