@@ -1,19 +1,26 @@
 .info-card {
   background: $white;
   border-radius: 14px;
-  padding: 30px 22px;
+  padding: 30px 36px 27px 30px;
   display: flex;
   flex-direction: column;
   gap: 25px;
   &.style-two {
     padding: 30px;
     display: flex;
+    flex-direction: row;
     gap: 25px;
     z-index: 1;
     position: relative;
+    .content {
+      .text {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
   }
   &.style-three {
-    padding: 42px;
+    padding: 30px 42px;
     border-radius: 0;
     align-items: center;
     justify-content: center;
@@ -34,6 +41,20 @@
       border-radius: 14px;
       @media screen and (min-width: "1199px") {
         border-radius: 0px 14px 14px 0px !important;
+      }
+    }
+  }
+  &.style-four {
+    padding: 30px;
+    .icon {
+      width: 70px;
+      height: 70px;
+    }
+    .content {
+      .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
       }
     }
   }
