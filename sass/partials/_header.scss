@@ -67,7 +67,6 @@
   display: flex;
   align-items: center;
 
-
   .standard-logo {
   }
 
@@ -238,10 +237,10 @@
               top: -2px;
 
               ul {
-                  ul {
-                    left: 0;
-                    top: 40px;
-                  }
+                ul {
+                  left: 0;
+                  top: 40px;
+                }
               }
             }
           }
@@ -298,20 +297,6 @@
         opacity: 0;
         border-top: 0px;
         border-top: 2px solid $primary-color;
-
-      }
-    }
-
-  }
-  &.style-two {
-    ul {
-      li {
-        ul {
-          background-color: #071c34;
-        }
-        a {
-          color: $white;
-        }
       }
     }
   }

@@ -2923,12 +2923,6 @@ html {
   border-top: 0px;
   border-top: 2px solid #4770f7;
 }
-.main-menu.style-two ul li ul {
-  background-color: #071c34;
-}
-.main-menu.style-two ul li a {
-  color: #ffffff;
-}
 
 .animation {
   -webkit-animation-duration: 0.3s;

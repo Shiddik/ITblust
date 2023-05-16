@@ -37,6 +37,38 @@
     });
 
     $(".custom-slider-wrapper").slick({
+      slidesToShow: 3,
+      infinite: false,
+      autoplay: false,
+      draggable: true,
+      arrows: true,
+      slidesToScroll: 1,
+      loop: true,
+      dots: true,
+      speed: 300,
+      prevArrow:
+        "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+      nextArrow:
+        "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            autoplay: true,
+            infinite: false,
+          },
+        },
+      ],
+    });
+    // portfolio slider home-2
+    $(".portfolio-slider").slick({
       slidesToShow: 4,
       infinite: false,
       autoplay: false,
